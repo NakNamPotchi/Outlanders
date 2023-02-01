@@ -24,7 +24,7 @@ public class MusicSaveController : MonoBehaviour
 
     public void MusicSlider(float music)
     {
-        musicTextUI.text = music.ToString("0.0");
+        musicTextUI.text = ((int)(music * 100)).ToString();
     }
 
     public void SaveMusicButton()
