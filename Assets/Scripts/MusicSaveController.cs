@@ -13,7 +13,7 @@ public class MusicSaveController : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey("VolumeValue"))
         {
-            PlayerPrefs.SetFloat("VolumeValue", 1);
+            PlayerPrefs.SetFloat("VolumeValue", (int)(1 * 100));
             LoadValues();
         }
         else
