@@ -6035,7 +6035,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Shania and Franco felt something was wrong and got up\u2026"
+  m_text: "Shania and Franco felt something \nwas wrong and got up\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79c4c8ba91ef60b498e9e9cda1de26ca, type: 2}
   m_sharedMaterial: {fileID: 5022791117089066462, guid: 79c4c8ba91ef60b498e9e9cda1de26ca, type: 2}
@@ -6044,7 +6044,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3601147
+    rgba: 4281791227
   m_fontColor: {r: 0.9843137, g: 0.9490196, b: 0.21176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6582,7 +6582,6 @@ GameObject:
   - component: {fileID: 1442831807}
   - component: {fileID: 1442831806}
   - component: {fileID: 1442831805}
-  - component: {fileID: 1442831809}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -6673,53 +6672,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!320 &1442831809
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442831804}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -1052649590320149238, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 1639113194}
-  - key: {fileID: 8478812243382554510, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -6953614737713278751, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 468842152}
-  - key: {fileID: 267460816731159337, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 891842585}
-  - key: {fileID: -3910007579942890303, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 1510807854}
-  - key: {fileID: -2082783711237183926, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 419313874}
-  - key: {fileID: 4579797703421791290, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 1313207435}
-  - key: {fileID: 6409016883610834466, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 721979481}
-  - key: {fileID: 6208272903037138305, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 1827056187}
-  - key: {fileID: 8226911279888803553, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 1290841566}
-  - key: {fileID: 5460805798445246296, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 1332605220}
-  - key: {fileID: -5750008827362294604, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 1527944721}
-  - key: {fileID: -814857475854817900, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 1486155270}
-  - key: {fileID: 2673696710529743043, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 1990704978}
-  - key: {fileID: 436500924784418026, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
-    value: {fileID: 202906816}
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &1486155269
 GameObject:
   m_ObjectHideFlags: 0
@@ -7749,7 +7701,7 @@ PlayableDirector:
   m_PlayableAsset: {fileID: 11400000, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
-  m_DirectorUpdateMode: 1
+  m_DirectorUpdateMode: 0
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -1052649590320149238, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
