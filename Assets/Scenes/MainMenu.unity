@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 20548120}
   - component: {fileID: 20548122}
   - component: {fileID: 20548121}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fireflies Smaller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,8 +200,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1742441219
-  m_SortingLayer: 1
+  m_SortingLayerID: 743536153
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -241,7 +241,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20548119}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 14
   simulationSpeed: 1.18
   stopAction: 0
   cullingMode: 0
@@ -316,7 +316,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 7
+      scalar: 14
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -801,7 +801,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 58
+    maxNumParticles: 100
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -1067,7 +1067,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 800
+      scalar: 1275
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -12452,7 +12452,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068031624}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 7
   simulationSpeed: 1.18
   stopAction: 0
   cullingMode: 0
@@ -13078,9 +13078,9 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: -4.28, z: 0}
+    m_Position: {x: 0, y: -3.9, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 0.75, y: -0.2, z: 1}
+    m_Scale: {x: 0.47, y: -0.08, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
