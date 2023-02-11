@@ -356,6 +356,7 @@ GameObject:
   - component: {fileID: 63041950}
   - component: {fileID: 63041952}
   - component: {fileID: 63041951}
+  - component: {fileID: 63041953}
   m_Layer: 3
   m_Name: Toresmundo
   m_TagString: Untagged
@@ -421,6 +422,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63041949}
   m_CullTransparentMesh: 1
+--- !u!114 &63041953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63041949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2440a81c9fd324e9cc8e8840fecf44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LightComponent: {fileID: 1791455637}
+  light: {fileID: 1791455639}
+  amplify: 3
 --- !u!1 &147414212
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +463,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147414212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.9391723, y: 0, z: 0}
+  m_LocalPosition: {x: 6.939245, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1184,9 +1200,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1791455638}
   - component: {fileID: 1791455639}
-  - component: {fileID: 1791455640}
   m_Layer: 0
-  m_Name: Book Bloom
+  m_Name: BookBloom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1463,19 +1478,6 @@ MonoBehaviour:
   - {x: 0.0047020586, y: 0.39430937, z: 0.00000036051716}
   - {x: -0.09614724, y: 0.49515837, z: 0.00000036051716}
   - {x: -0.85297096, y: 0.48319182, z: 0.00000036051716}
---- !u!114 &1791455640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791455637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 259a96be3281968448f54896d724e7a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplify: 0
 --- !u!1 &1883016538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1773,7 +1775,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040665549}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.9391723, y: 0, z: 0}
+  m_LocalPosition: {x: -6.939245, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
