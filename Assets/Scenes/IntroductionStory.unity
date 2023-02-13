@@ -149,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173967011}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.010137, z: 0}
+  m_LocalPosition: {x: 0, y: -7.0102677, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 340173259}
   - component: {fileID: 340173261}
   - component: {fileID: 340173260}
+  - component: {fileID: 340173262}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -339,6 +340,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340173258}
   m_CullTransparentMesh: 1
+--- !u!95 &340173262
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340173258}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &419313869
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +426,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281791227
+    rgba: 3601147
   m_fontColor: {r: 0.9843137, g: 0.9490196, b: 0.21176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -583,7 +604,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281791227
+    rgba: 3601147
   m_fontColor: {r: 0.9843137, g: 0.9490196, b: 0.21176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -755,7 +776,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281791227
+    rgba: 3601147
   m_fontColor: {r: 0.9843137, g: 0.9490196, b: 0.21176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -918,7 +939,7 @@ Camera:
   far clip plane: 10
   field of view: 60
   orthographic: 1
-  orthographic size: 7.510137
+  orthographic size: 7.5102677
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1009,6 +1030,7 @@ GameObject:
   - component: {fileID: 871732958}
   - component: {fileID: 871732960}
   - component: {fileID: 871732959}
+  - component: {fileID: 871732961}
   m_Layer: 5
   m_Name: Fog
   m_TagString: Untagged
@@ -5815,6 +5837,26 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!95 &871732961
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871732957}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &891842580
 GameObject:
   m_ObjectHideFlags: 0
@@ -5882,7 +5924,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281791227
+    rgba: 3601147
   m_fontColor: {r: 0.9843137, g: 0.9490196, b: 0.21176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6076,7 +6118,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281791227
+    rgba: 3601147
   m_fontColor: {r: 0.9843137, g: 0.9490196, b: 0.21176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6230,7 +6272,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281791227
+    rgba: 3601147
   m_fontColor: {r: 0.9843137, g: 0.9490196, b: 0.21176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6529,7 +6571,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388351586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.0001373, z: 0}
+  m_LocalPosition: {x: 0, y: 7.000268, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6867,7 +6909,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281791227
+    rgba: 3601147
   m_fontColor: {r: 0.9843137, g: 0.9490196, b: 0.21176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -7177,7 +7219,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281791227
+    rgba: 3601147
   m_fontColor: {r: 0.9843137, g: 0.9490196, b: 0.21176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -7447,7 +7489,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281791227
+    rgba: 3601147
   m_fontColor: {r: 0.9843137, g: 0.9490196, b: 0.21176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -7733,7 +7775,7 @@ PlayableDirector:
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 0
-  m_InitialTime: 0
+  m_InitialTime: 1
   m_SceneBindings:
   - key: {fileID: -1052649590320149238, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
     value: {fileID: 1639113194}
@@ -7765,6 +7807,8 @@ PlayableDirector:
     value: {fileID: 1990704978}
   - key: {fileID: 436500924784418026, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
     value: {fileID: 202906816}
+  - key: {fileID: 4652308778499769435, guid: 346e44bbaa31d294fb3e6d58f13e7301, type: 2}
+    value: {fileID: 871732961}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &2061140090
