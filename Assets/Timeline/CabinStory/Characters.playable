@@ -2066,7 +2066,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 33.916666666666664
+    m_Start: 33.2
     m_ClipIn: 0
     m_Asset: {fileID: -4492208920724130646}
     m_Duration: 1.3500000000000014
@@ -2306,7 +2306,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 3.3
+        value: 1.14
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2314,10 +2314,19 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
+        time: 0.65
+        value: 1.94
+        inSlope: 0.9191489
+        outSlope: 0.9191489
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 2.35
         value: 3.3
-        inSlope: 0
-        outSlope: 0
+        inSlope: 0.9699481
+        outSlope: 0.9699481
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -2534,7 +2543,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 3.3
+        value: 1.14
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2542,10 +2551,19 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
+        time: 0.65
+        value: 1.94
+        inSlope: 0.9191489
+        outSlope: 0.9191489
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 2.35
         value: 3.3
-        inSlope: 0
-        outSlope: 0
+        inSlope: 0.9699481
+        outSlope: 0.9699481
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -2972,7 +2990,7 @@ MonoBehaviour:
     m_Start: 27.983333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 4394032322709749629}
-    m_Duration: 7.283333333333331
+    m_Duration: 6.56666666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: 5625830232497208306}
     m_EaseInDuration: 0
