@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: 23b260763d304e4439df9ebb73ba553a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e5d822ead3fec4eb1977b9235863bc
+      internalID: 191654392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 288
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97600d48f3c77494ba08a3ee49014960
+      internalID: -1614832079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9265020979330c7468a478285ea88ef6
+      internalID: -1374592503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 288
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58cdfa9f275b4748a766660d0744958
+      internalID: 808581070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2958c0d1a548815489f92846c93f5941
+      internalID: 2027850324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 288
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb955220aae9ac48a8d8881c728ad9a
+      internalID: 697533132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 288
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcb5f793759b9140aaffebc9a13ea68
+      internalID: -706153971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 288
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576e30f6dc915d4448e9a6b20a561070
+      internalID: 2060369608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d10acc0df2f7a479b23acf5ae2b094
+      internalID: 1125689442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 192
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d599197be05b91d4fb63630fcd2747dd
+      internalID: -1429449800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577a9173a11a0e24aa8f1b5c439f6e5c
+      internalID: 386458677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_11
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 192
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4542066b8e2f4aa4d814b33cdf4df6af
+      internalID: 1229949440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954754fa9f979894ea452bfb7ab34d99
+      internalID: 1058014045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_13
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 192
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948277965481be44e87551e7c8f064a3
+      internalID: -676477270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_14
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 192
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e574da488f7704b96dbfcbf5589f86
+      internalID: -116832969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_15
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 192
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e0b0341c7170347847c7c6381da84a
+      internalID: 1146912472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9bb0ee905d6684a857893ef7c263a2
+      internalID: 2036402355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f81ef220ec5f8f4a8cf4ec1ec853e5d
+      internalID: -375586623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5797b80b2c1dbdd42b91d5884b7bbe6d
+      internalID: 494790101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_19
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 96
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13197fdc0c097640a6a1bcb708520e1
+      internalID: -478958551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_20
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3611a8729c6ec1547be2ffdb9a3fbb3b
+      internalID: -101228188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_21
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 96
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6f2c037bdc6894aa7e995cc28947b4
+      internalID: 1175997716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a3f916e183ccc40b099d71ee935f32
+      internalID: -1705285911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_23
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 96
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64dbaa103c27f07478731e1f9b00340d
+      internalID: -303357265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e8eec67987d6c45bc6fef6a187373d
+      internalID: 804219233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195a3243288d4a24db90c08d7c941377
+      internalID: 2030585809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9bec17cb941414aae83342cf3ca1dc
+      internalID: 1989300696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_27
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64008c61e5c685a49b6e459dc3b61364
+      internalID: 3078313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37d98d83caa3394cb708f9a4fecb26a
+      internalID: -266339641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_29
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b338a3c8700c34e91f38733eb60d14
+      internalID: -674095071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_30
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bb6f16d9371704394534a759890315
+      internalID: 44967059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShaniaAnimationSheet_31
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df03cf525d156e4a8119e7459e94134
+      internalID: 2039070266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ShaniaAnimationSheet_17: -375586623
+      ShaniaAnimationSheet_31: 2039070266
+      ShaniaAnimationSheet_8: 1125689442
+      ShaniaAnimationSheet_9: -1429449800
+      ShaniaAnimationSheet_14: -116832969
+      ShaniaAnimationSheet_19: -478958551
+      ShaniaAnimationSheet_3: 808581070
+      ShaniaAnimationSheet_24: 804219233
+      ShaniaAnimationSheet_5: 697533132
+      ShaniaAnimationSheet_20: -101228188
+      ShaniaAnimationSheet_1: -1614832079
+      ShaniaAnimationSheet_15: 1146912472
+      ShaniaAnimationSheet_27: 3078313
+      ShaniaAnimationSheet_28: -266339641
+      ShaniaAnimationSheet_12: 1058014045
+      ShaniaAnimationSheet_26: 1989300696
+      ShaniaAnimationSheet_6: -706153971
+      ShaniaAnimationSheet_30: 44967059
+      ShaniaAnimationSheet_10: 386458677
+      ShaniaAnimationSheet_2: -1374592503
+      ShaniaAnimationSheet_11: 1229949440
+      ShaniaAnimationSheet_18: 494790101
+      ShaniaAnimationSheet_21: 1175997716
+      ShaniaAnimationSheet_13: -676477270
+      ShaniaAnimationSheet_4: 2027850324
+      ShaniaAnimationSheet_29: -674095071
+      ShaniaAnimationSheet_23: -303357265
+      ShaniaAnimationSheet_0: 191654392
+      ShaniaAnimationSheet_25: 2030585809
+      ShaniaAnimationSheet_7: 2060369608
+      ShaniaAnimationSheet_22: -1705285911
+      ShaniaAnimationSheet_16: 2036402355
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
