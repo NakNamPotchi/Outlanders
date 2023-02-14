@@ -149,7 +149,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20548119}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 457.61948}
+  m_LocalPosition: {x: 0, y: 0, z: -105.504944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -242,7 +242,7 @@ ParticleSystem:
   m_GameObject: {fileID: 20548119}
   serializedVersion: 8
   lengthInSec: 14
-  simulationSpeed: 1.18
+  simulationSpeed: 0.69
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -801,7 +801,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 239
+    maxNumParticles: 200
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -869,7 +869,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0.79, y: -4.11, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1.25, y: 0.07, z: 1}
+    m_Scale: {x: 1.25, y: 0.1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -944,8 +944,8 @@ ParticleSystem:
     m_TextureColorAffectsParticles: 1
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
-    randomDirectionAmount: 1
-    sphericalDirectionAmount: 0.1
+    randomDirectionAmount: 0.53
+    sphericalDirectionAmount: 0.81
     randomPositionAmount: 9.8
     radius:
       value: 2.74
@@ -9847,7 +9847,7 @@ Camera:
   far clip plane: 9.7
   field of view: 60
   orthographic: 1
-  orthographic size: 6.325954
+  orthographic size: 6.3253126
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10477,7 +10477,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842223879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.825954, z: 0}
+  m_LocalPosition: {x: 0, y: 5.8253126, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11910,7 +11910,6 @@ GameObject:
   - component: {fileID: 1742706261}
   - component: {fileID: 1742706260}
   - component: {fileID: 1742706259}
-  - component: {fileID: 1742706262}
   m_Layer: 5
   m_Name: StartButton (Legacy)
   m_TagString: Untagged
@@ -12032,18 +12031,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742706257}
   m_CullTransparentMesh: 0
---- !u!114 &1742706262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742706257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 064c865a77623914e8d63aebea9ecc6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1759886196
 GameObject:
   m_ObjectHideFlags: 0
@@ -12198,7 +12185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807467451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.825954, z: 0}
+  m_LocalPosition: {x: 0, y: -5.8253126, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12394,7 +12381,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068031624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 304.1221}
+  m_LocalPosition: {x: 0, y: 0, z: -105.504974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12487,7 +12474,7 @@ ParticleSystem:
   m_GameObject: {fileID: 2068031624}
   serializedVersion: 8
   lengthInSec: 7
-  simulationSpeed: 1.18
+  simulationSpeed: 0.64
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -13046,7 +13033,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 70
+    maxNumParticles: 60
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -13112,9 +13099,9 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: -3.1, z: 0}
+    m_Position: {x: 0, y: -2.09, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 0.78, y: -0.08, z: 1}
+    m_Scale: {x: 0.78, y: -0.12, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -13189,9 +13176,9 @@ ParticleSystem:
     m_TextureColorAffectsParticles: 1
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
-    randomDirectionAmount: 0.64
-    sphericalDirectionAmount: 0.1
-    randomPositionAmount: 16.17
+    randomDirectionAmount: 0.24
+    sphericalDirectionAmount: 0.21
+    randomPositionAmount: 9.3
     radius:
       value: 2.74
       mode: 0
@@ -13312,7 +13299,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 39.41
+      scalar: 14.3
       minScalar: 10
       maxCurve:
         serializedVersion: 2
