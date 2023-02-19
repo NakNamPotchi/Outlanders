@@ -149,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173967011}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.009375, z: 0}
+  m_LocalPosition: {x: 0, y: -5.9945946, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -939,7 +939,7 @@ Camera:
   far clip plane: 10
   field of view: 60
   orthographic: 1
-  orthographic size: 7.509375
+  orthographic size: 6.4945946
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6571,7 +6571,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388351586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.9993753, z: 0}
+  m_LocalPosition: {x: 0, y: 5.9845943, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7625,7 +7625,7 @@ GameObject:
   - component: {fileID: 1988042149}
   - component: {fileID: 1988042148}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: SkipButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7640,7 +7640,7 @@ RectTransform:
   m_GameObject: {fileID: 1988042146}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.13, y: 0.13, z: 0.13}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1442831808}
@@ -7648,8 +7648,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 476.80002, y: 252.52}
-  m_SizeDelta: {x: 250, y: 130}
+  m_AnchoredPosition: {x: -0.0000019073, y: -223.3}
+  m_SizeDelta: {x: 789, y: 357}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1988042148
 Animator:
