@@ -391,6 +391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 39190424}
   - component: {fileID: 39190425}
+  - component: {fileID: 39190426}
   m_Layer: 0
   m_Name: Cabin Light
   m_TagString: Untagged
@@ -492,6 +493,26 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!95 &39190426
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39190423}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &63041949
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +695,7 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
-  m_Color: {r: 0.693825, g: 0.2783019, b: 1, a: 1}
+  m_Color: {r: 0.69411767, g: 0.2784314, b: 1, a: 1}
   m_Intensity: 0.5
   m_LightVolumeIntensity: 1.68
   m_LightVolumeIntensityEnabled: 1
@@ -1189,7 +1210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147414212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.475, y: 0, z: 0}
+  m_LocalPosition: {x: 6.94, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3526,6 +3547,7 @@ GameObject:
   - component: {fileID: 1904701056}
   - component: {fileID: 1904701055}
   - component: {fileID: 1904701054}
+  - component: {fileID: 1904701057}
   m_Layer: 0
   m_Name: Cabin
   m_TagString: Untagged
@@ -3620,6 +3642,26 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!95 &1904701057
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904701052}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1998749432
 GameObject:
   m_ObjectHideFlags: 0
@@ -3745,7 +3787,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040665549}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.475, y: 0, z: 0}
+  m_LocalPosition: {x: -6.94, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3980,6 +4022,12 @@ PlayableDirector:
     value: {fileID: 5529608}
   - key: {fileID: 2357093000570148730, guid: 6e7ce567d3635e14fb0bc0819ea75719, type: 2}
     value: {fileID: 128111092}
+  - key: {fileID: -1538415157363122848, guid: 6e7ce567d3635e14fb0bc0819ea75719, type: 2}
+    value: {fileID: 39190426}
+  - key: {fileID: 7929650636315924235, guid: 6e7ce567d3635e14fb0bc0819ea75719, type: 2}
+    value: {fileID: 128111092}
+  - key: {fileID: -3335077452857414861, guid: 6e7ce567d3635e14fb0bc0819ea75719, type: 2}
+    value: {fileID: 14217731}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &2070236035
