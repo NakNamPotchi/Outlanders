@@ -7,6 +7,6 @@ public class SkipSceneScript : MonoBehaviour
 {
     public void SkipScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
