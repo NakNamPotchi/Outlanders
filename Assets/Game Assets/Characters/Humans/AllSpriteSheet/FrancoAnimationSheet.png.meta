@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: 50
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -799,38 +811,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      FrancoAnimationSheet: 1645583364
+      FrancoAnimationSheet_1: -1230835981
+      FrancoAnimationSheet_10: 1983229118
+      FrancoAnimationSheet_11: -173114759
+      FrancoAnimationSheet_12: 906707722
+      FrancoAnimationSheet_13: -1109672305
+      FrancoAnimationSheet_14: 1170785130
+      FrancoAnimationSheet_15: -1314166554
+      FrancoAnimationSheet_16: 452189862
+      FrancoAnimationSheet_17: -1087630289
+      FrancoAnimationSheet_18: 1434759839
+      FrancoAnimationSheet_19: -1848856311
       FrancoAnimationSheet_2: -185420495
-      FrancoAnimationSheet_8: -587232484
-      FrancoAnimationSheet_4: -1799969948
+      FrancoAnimationSheet_20: -256381700
+      FrancoAnimationSheet_21: 908651305
+      FrancoAnimationSheet_22: -284259245
+      FrancoAnimationSheet_23: 694894735
+      FrancoAnimationSheet_24: -1211555732
+      FrancoAnimationSheet_25: 1918105547
+      FrancoAnimationSheet_26: 244847212
+      FrancoAnimationSheet_27: 1658320902
+      FrancoAnimationSheet_28: -1970466195
       FrancoAnimationSheet_29: 169888377
       FrancoAnimationSheet_3: 1497797844
-      FrancoAnimationSheet_28: -1970466195
-      FrancoAnimationSheet_27: 1658320902
-      FrancoAnimationSheet_16: 452189862
-      FrancoAnimationSheet_14: 1170785130
-      FrancoAnimationSheet_18: 1434759839
-      FrancoAnimationSheet_13: -1109672305
-      FrancoAnimationSheet: 1645583364
-      FrancoAnimationSheet_24: -1211555732
-      FrancoAnimationSheet_10: 1983229118
-      FrancoAnimationSheet_23: 694894735
-      FrancoAnimationSheet_25: 1918105547
-      FrancoAnimationSheet_9: 1195687498
       FrancoAnimationSheet_30: -1945656512
-      FrancoAnimationSheet_17: -1087630289
-      FrancoAnimationSheet_19: -1848856311
-      FrancoAnimationSheet_15: -1314166554
-      FrancoAnimationSheet_6: -1654769989
-      FrancoAnimationSheet_22: -284259245
-      FrancoAnimationSheet_7: -1332247355
-      FrancoAnimationSheet_20: -256381700
-      FrancoAnimationSheet_12: 906707722
-      FrancoAnimationSheet_26: 244847212
-      FrancoAnimationSheet_1: -1230835981
-      FrancoAnimationSheet_11: -173114759
-      FrancoAnimationSheet_21: 908651305
       FrancoAnimationSheet_31: -1380071530
+      FrancoAnimationSheet_4: -1799969948
       FrancoAnimationSheet_5: -652417873
+      FrancoAnimationSheet_6: -1654769989
+      FrancoAnimationSheet_7: -1332247355
+      FrancoAnimationSheet_8: -587232484
+      FrancoAnimationSheet_9: 1195687498
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

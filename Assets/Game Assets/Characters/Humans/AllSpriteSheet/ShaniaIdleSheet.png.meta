@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -463,22 +475,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ShaniaIdleSheet_6: 1800912847
       ShaniaIdleSheet_0: 930021717
-      ShaniaIdleSheet_2: 401224563
       ShaniaIdleSheet_1: 1558716664
       ShaniaIdleSheet_10: 1031450344
-      ShaniaIdleSheet_15: -973807782
+      ShaniaIdleSheet_11: -1628582655
+      ShaniaIdleSheet_12: 388767017
       ShaniaIdleSheet_13: -594499385
-      ShaniaIdleSheet_5: -184949367
-      ShaniaIdleSheet_7: -671169832
       ShaniaIdleSheet_14: -968352614
+      ShaniaIdleSheet_15: -973807782
+      ShaniaIdleSheet_2: 401224563
       ShaniaIdleSheet_3: 402785917
+      ShaniaIdleSheet_4: -1751232405
+      ShaniaIdleSheet_5: -184949367
+      ShaniaIdleSheet_6: 1800912847
+      ShaniaIdleSheet_7: -671169832
       ShaniaIdleSheet_8: 998505278
       ShaniaIdleSheet_9: 58447751
-      ShaniaIdleSheet_12: 388767017
-      ShaniaIdleSheet_4: -1751232405
-      ShaniaIdleSheet_11: -1628582655
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

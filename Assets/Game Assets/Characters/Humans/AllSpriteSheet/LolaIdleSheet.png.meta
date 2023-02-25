@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -463,22 +475,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      LolaIdleSheet_0: -1431977416
+      LolaIdleSheet_1: 1220722916
+      LolaIdleSheet_10: -72945238
+      LolaIdleSheet_11: 1125056862
+      LolaIdleSheet_12: 1064136331
+      LolaIdleSheet_13: -1448560223
+      LolaIdleSheet_14: 1476737581
+      LolaIdleSheet_15: 1875548113
+      LolaIdleSheet_2: 1930251218
       LolaIdleSheet_3: 144724422
       LolaIdleSheet_4: 1055057195
-      LolaIdleSheet_7: -1532207185
-      LolaIdleSheet_14: 1476737581
-      LolaIdleSheet_0: -1431977416
-      LolaIdleSheet_10: -72945238
-      LolaIdleSheet_13: -1448560223
-      LolaIdleSheet_12: 1064136331
-      LolaIdleSheet_15: 1875548113
-      LolaIdleSheet_1: 1220722916
-      LolaIdleSheet_6: 1423721531
-      LolaIdleSheet_9: -4873476
       LolaIdleSheet_5: 1899358975
-      LolaIdleSheet_11: 1125056862
-      LolaIdleSheet_2: 1930251218
+      LolaIdleSheet_6: 1423721531
+      LolaIdleSheet_7: -1532207185
       LolaIdleSheet_8: -279282696
+      LolaIdleSheet_9: -4873476
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

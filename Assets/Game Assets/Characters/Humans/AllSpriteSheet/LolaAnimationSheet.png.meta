@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -799,38 +811,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      LolaAnimationSheet_21: -220239601
+      LolaAnimationSheet_0: -1957899094
+      LolaAnimationSheet_1: -1320540897
       LolaAnimationSheet_10: -422174518
-      LolaAnimationSheet_5: 184661384
+      LolaAnimationSheet_11: -821907618
+      LolaAnimationSheet_12: -1681616194
+      LolaAnimationSheet_13: 967228699
+      LolaAnimationSheet_14: 1737019482
+      LolaAnimationSheet_15: 538540220
+      LolaAnimationSheet_16: -1696869559
+      LolaAnimationSheet_17: 2054729266
       LolaAnimationSheet_18: -1614925025
       LolaAnimationSheet_19: 1552377643
-      LolaAnimationSheet_9: -1009371693
-      LolaAnimationSheet_13: 967228699
-      LolaAnimationSheet_22: 105885198
-      LolaAnimationSheet_28: 187625969
-      LolaAnimationSheet_14: 1737019482
-      LolaAnimationSheet_0: -1957899094
-      LolaAnimationSheet_11: -821907618
-      LolaAnimationSheet_20: -218840754
       LolaAnimationSheet_2: -1487233936
-      LolaAnimationSheet_7: 1850935748
-      LolaAnimationSheet_15: 538540220
-      LolaAnimationSheet_12: -1681616194
-      LolaAnimationSheet_3: -1440457344
+      LolaAnimationSheet_20: -218840754
+      LolaAnimationSheet_21: -220239601
+      LolaAnimationSheet_22: 105885198
       LolaAnimationSheet_23: 624213876
       LolaAnimationSheet_24: 1496281345
-      LolaAnimationSheet_31: 1412951861
-      LolaAnimationSheet_8: 51354880
-      LolaAnimationSheet_27: 1928504862
-      LolaAnimationSheet_17: 2054729266
-      LolaAnimationSheet_1: -1320540897
-      LolaAnimationSheet_6: 976108614
       LolaAnimationSheet_25: -1642961501
-      LolaAnimationSheet_29: 1292504818
       LolaAnimationSheet_26: -125903428
+      LolaAnimationSheet_27: 1928504862
+      LolaAnimationSheet_28: 187625969
+      LolaAnimationSheet_29: 1292504818
+      LolaAnimationSheet_3: -1440457344
       LolaAnimationSheet_30: 1688575303
+      LolaAnimationSheet_31: 1412951861
       LolaAnimationSheet_4: 1993377120
-      LolaAnimationSheet_16: -1696869559
+      LolaAnimationSheet_5: 184661384
+      LolaAnimationSheet_6: 976108614
+      LolaAnimationSheet_7: 1850935748
+      LolaAnimationSheet_8: 51354880
+      LolaAnimationSheet_9: -1009371693
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

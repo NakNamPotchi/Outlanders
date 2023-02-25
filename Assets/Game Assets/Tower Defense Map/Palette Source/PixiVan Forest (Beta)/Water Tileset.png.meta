@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,6 +103,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2122,101 +2134,101 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Water Tileset_72: -960887707
-      Water Tileset_18: 1137724230
-      Water Tileset_24: -1205614750
-      Water Tileset_41: -1537734269
-      Water Tileset_84: 588471577
-      Water Tileset_36: -974676408
-      Water Tileset_8: 1546127103
-      Water Tileset_29: 520430355
-      Water Tileset_14: -108395808
-      Water Tileset_42: 368497179
-      Water Tileset_74: -1069048072
-      Water Tileset_49: -350438181
-      Water Tileset_70: -310213426
-      Water Tileset_2: -2127049862
-      Water Tileset_93: 1841092886
-      Water Tileset_85: 151544629
-      Water Tileset_77: -2134067170
-      Water Tileset_57: -44968118
-      Water Tileset_52: 1168901777
-      Water Tileset_5: 769664649
-      Water Tileset_48: 1140268434
-      Water Tileset_76: -534386085
-      Water Tileset_82: 243604276
-      Water Tileset_17: 1143065961
-      Water Tileset_37: -1732434746
-      Water Tileset_51: 1375486574
-      Water Tileset_79: 1529209972
-      Water Tileset_94: -1881646499
-      Water Tileset_71: -16037327
-      Water Tileset_13: -830567859
-      Water Tileset_10: 282896451
-      Water Tileset_30: 1163714080
       Water Tileset_0: -1379556332
-      Water Tileset_91: -364421570
-      Water Tileset_92: 1232967801
-      Water Tileset_62: 667068230
-      Water Tileset_47: 572473191
-      Water Tileset_60: -2118903873
-      Water Tileset_40: -1180522685
-      Water Tileset_38: -692512754
-      Water Tileset_65: 628841720
-      Water Tileset_34: 1511310638
-      Water Tileset_33: 1558249870
-      Water Tileset_6: -282112798
-      Water Tileset_39: 2004460396
       Water Tileset_1: 705462210
-      Water Tileset_43: 1501321409
-      Water Tileset_9: -1414736441
-      Water Tileset_22: -1506032527
-      Water Tileset_90: 2022305441
-      Water Tileset_75: -1770718120
-      Water Tileset_7: -1144858704
-      Water Tileset_25: 568288057
+      Water Tileset_10: 282896451
+      Water Tileset_11: 393142525
+      Water Tileset_12: -1212039305
+      Water Tileset_13: -830567859
+      Water Tileset_14: -108395808
+      Water Tileset_15: -655612643
+      Water Tileset_16: 358803112
+      Water Tileset_17: 1143065961
+      Water Tileset_18: 1137724230
+      Water Tileset_19: 26140245
+      Water Tileset_2: -2127049862
+      Water Tileset_20: -1063694051
       Water Tileset_21: 1507721662
-      Water Tileset_61: 1516420563
-      Water Tileset_88: -770345347
+      Water Tileset_22: -1506032527
       Water Tileset_23: -1775706768
+      Water Tileset_24: -1205614750
+      Water Tileset_25: 568288057
+      Water Tileset_26: 1505297107
       Water Tileset_27: 1541986457
-      Water Tileset_69: 73792635
+      Water Tileset_28: -374211487
+      Water Tileset_29: 520430355
+      Water Tileset_3: -1543281214
+      Water Tileset_30: 1163714080
+      Water Tileset_31: 699873368
+      Water Tileset_32: 1504827187
+      Water Tileset_33: 1558249870
+      Water Tileset_34: 1511310638
+      Water Tileset_35: -1587400171
+      Water Tileset_36: -974676408
+      Water Tileset_37: -1732434746
+      Water Tileset_38: -692512754
+      Water Tileset_39: 2004460396
       Water Tileset_4: -329165846
-      Water Tileset_50: -1096420519
+      Water Tileset_40: -1180522685
+      Water Tileset_41: -1537734269
+      Water Tileset_42: 368497179
+      Water Tileset_43: 1501321409
+      Water Tileset_44: 2027285509
+      Water Tileset_45: 12581852
       Water Tileset_46: 216691201
-      Water Tileset_59: 1311927554
+      Water Tileset_47: 572473191
+      Water Tileset_48: 1140268434
+      Water Tileset_49: -350438181
+      Water Tileset_5: 769664649
+      Water Tileset_50: -1096420519
+      Water Tileset_51: 1375486574
+      Water Tileset_52: 1168901777
+      Water Tileset_53: 794873896
       Water Tileset_54: 364968019
       Water Tileset_55: 704554583
-      Water Tileset_80: 605808016
-      Water Tileset_53: 794873896
-      Water Tileset_28: -374211487
-      Water Tileset_12: -1212039305
-      Water Tileset_66: -1854929249
-      Water Tileset_44: 2027285509
-      Water Tileset_26: 1505297107
-      Water Tileset_35: -1587400171
-      Water Tileset_63: -2063971453
-      Water Tileset_78: -1949662493
-      Water Tileset_11: 393142525
-      Water Tileset_89: 1785898472
-      Water Tileset_73: 1090385028
-      Water Tileset_45: 12581852
-      Water Tileset_32: 1504827187
-      Water Tileset_58: -1766039679
-      Water Tileset_19: 26140245
       Water Tileset_56: -288581254
-      Water Tileset_83: 635930239
-      Water Tileset_16: 358803112
-      Water Tileset_67: -1239583538
-      Water Tileset_20: -1063694051
-      Water Tileset_86: -1812728697
+      Water Tileset_57: -44968118
+      Water Tileset_58: -1766039679
+      Water Tileset_59: 1311927554
+      Water Tileset_6: -282112798
+      Water Tileset_60: -2118903873
+      Water Tileset_61: 1516420563
+      Water Tileset_62: 667068230
+      Water Tileset_63: -2063971453
       Water Tileset_64: -1217137596
-      Water Tileset_31: 699873368
-      Water Tileset_15: -655612643
+      Water Tileset_65: 628841720
+      Water Tileset_66: -1854929249
+      Water Tileset_67: -1239583538
       Water Tileset_68: -1738697509
-      Water Tileset_3: -1543281214
+      Water Tileset_69: 73792635
+      Water Tileset_7: -1144858704
+      Water Tileset_70: -310213426
+      Water Tileset_71: -16037327
+      Water Tileset_72: -960887707
+      Water Tileset_73: 1090385028
+      Water Tileset_74: -1069048072
+      Water Tileset_75: -1770718120
+      Water Tileset_76: -534386085
+      Water Tileset_77: -2134067170
+      Water Tileset_78: -1949662493
+      Water Tileset_79: 1529209972
+      Water Tileset_8: 1546127103
+      Water Tileset_80: 605808016
       Water Tileset_81: 413185403
+      Water Tileset_82: 243604276
+      Water Tileset_83: 635930239
+      Water Tileset_84: 588471577
+      Water Tileset_85: 151544629
+      Water Tileset_86: -1812728697
       Water Tileset_87: 176033633
+      Water Tileset_88: -770345347
+      Water Tileset_89: 1785898472
+      Water Tileset_9: -1414736441
+      Water Tileset_90: 2022305441
+      Water Tileset_91: -364421570
+      Water Tileset_92: 1232967801
+      Water Tileset_93: 1841092886
+      Water Tileset_94: -1881646499
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

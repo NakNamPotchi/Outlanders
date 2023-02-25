@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -40,6 +41,24 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Node
+    uniqueID: 2563119393
+    locked: 0
+  - name: Enemy
+    uniqueID: 3469143427
+    locked: 0
+  - name: Towers
+    uniqueID: 1879797447
+    locked: 0
+  - name: Projectile
+    uniqueID: 1385317629
+    locked: 0
+  - name: UI
+    uniqueID: 3957653311
+    locked: 0
+  - name: Particles
+    uniqueID: 2770685453
     locked: 0
   - name: Fog
     uniqueID: 1742441219
