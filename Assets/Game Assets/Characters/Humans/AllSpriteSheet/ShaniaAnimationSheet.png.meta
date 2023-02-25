@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -799,38 +811,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ShaniaAnimationSheet_17: -375586623
-      ShaniaAnimationSheet_31: 2039070266
-      ShaniaAnimationSheet_8: 1125689442
-      ShaniaAnimationSheet_9: -1429449800
-      ShaniaAnimationSheet_14: -116832969
-      ShaniaAnimationSheet_19: -478958551
-      ShaniaAnimationSheet_3: 808581070
-      ShaniaAnimationSheet_24: 804219233
-      ShaniaAnimationSheet_5: 697533132
-      ShaniaAnimationSheet_20: -101228188
+      ShaniaAnimationSheet_0: 191654392
       ShaniaAnimationSheet_1: -1614832079
+      ShaniaAnimationSheet_10: 386458677
+      ShaniaAnimationSheet_11: 1229949440
+      ShaniaAnimationSheet_12: 1058014045
+      ShaniaAnimationSheet_13: -676477270
+      ShaniaAnimationSheet_14: -116832969
       ShaniaAnimationSheet_15: 1146912472
+      ShaniaAnimationSheet_16: 2036402355
+      ShaniaAnimationSheet_17: -375586623
+      ShaniaAnimationSheet_18: 494790101
+      ShaniaAnimationSheet_19: -478958551
+      ShaniaAnimationSheet_2: -1374592503
+      ShaniaAnimationSheet_20: -101228188
+      ShaniaAnimationSheet_21: 1175997716
+      ShaniaAnimationSheet_22: -1705285911
+      ShaniaAnimationSheet_23: -303357265
+      ShaniaAnimationSheet_24: 804219233
+      ShaniaAnimationSheet_25: 2030585809
+      ShaniaAnimationSheet_26: 1989300696
       ShaniaAnimationSheet_27: 3078313
       ShaniaAnimationSheet_28: -266339641
-      ShaniaAnimationSheet_12: 1058014045
-      ShaniaAnimationSheet_26: 1989300696
-      ShaniaAnimationSheet_6: -706153971
-      ShaniaAnimationSheet_30: 44967059
-      ShaniaAnimationSheet_10: 386458677
-      ShaniaAnimationSheet_2: -1374592503
-      ShaniaAnimationSheet_11: 1229949440
-      ShaniaAnimationSheet_18: 494790101
-      ShaniaAnimationSheet_21: 1175997716
-      ShaniaAnimationSheet_13: -676477270
-      ShaniaAnimationSheet_4: 2027850324
       ShaniaAnimationSheet_29: -674095071
-      ShaniaAnimationSheet_23: -303357265
-      ShaniaAnimationSheet_0: 191654392
-      ShaniaAnimationSheet_25: 2030585809
+      ShaniaAnimationSheet_3: 808581070
+      ShaniaAnimationSheet_30: 44967059
+      ShaniaAnimationSheet_31: 2039070266
+      ShaniaAnimationSheet_4: 2027850324
+      ShaniaAnimationSheet_5: 697533132
+      ShaniaAnimationSheet_6: -706153971
       ShaniaAnimationSheet_7: 2060369608
-      ShaniaAnimationSheet_22: -1705285911
-      ShaniaAnimationSheet_16: 2036402355
+      ShaniaAnimationSheet_8: 1125689442
+      ShaniaAnimationSheet_9: -1429449800
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
