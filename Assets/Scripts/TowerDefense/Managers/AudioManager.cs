@@ -6,11 +6,11 @@ public class AudioManager : Singleton<AudioManager>
 {
     public enum Sound
     {
-        Pinya,
-        Suklay,
-        Unggoy,
-        Kandila,
-        Durian,
+        pinya,
+        suklay,
+        unggoy,
+        kandila,
+        durian,
     }
 
     [System.Serializable]

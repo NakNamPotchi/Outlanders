@@ -4,30 +4,30 @@ using UnityEngine;
 
 public class TowerShopManager : MonoBehaviour
 {
-    [SerializeField] private GameObject TowerCardPrefab;
-    [SerializeField] private Transform TowerPanelContainer;
+    [SerializeField] private GameObject towerCardPrefab;
+    [SerializeField] private Transform towerPanelContainer;
 
     [Header("Tower Settings")]
-    [SerializeField] private TowerSettings[] Towers;
+    [SerializeField] private TowerSettings[] towers;
 
     private Node _currentNodeSelected;
     
     private void Start()
     {
-        for (int i = 0; i < Towers.Length; i++)
+        for (int i = 0; i < towers.Length; i++)
         {
-            CreateTowerCard(Towers[i]);
+            CreateTowerCard(towers[i]);
         }
     }
 
-    private void CreateTowerCard(TowerSettings TowerSettings)
+    private void CreateTowerCard(TowerSettings towerSettings)
     {
-        GameObject newInstance = Instantiate(TowerCardPrefab, TowerPanelContainer.position, Quaternion.identity);
-        newInstance.transform.SetParent(TowerPanelContainer);
+        GameObject newInstance = Instantiate(towerCardPrefab, towerPanelContainer.position, Quaternion.identity);
+        newInstance.transform.SetParent(towerPanelContainer);
         newInstance.transform.localScale = Vector3.one;
 
         TowerCard cardButton = newInstance.GetComponent<TowerCard>();
-        cardButton.SetupTowerButton(TowerSettings);
+        cardButton.SetupTowerButton(towerSettings);
     }
     
     private void NodeSelected(Node nodeSelected)
@@ -35,16 +35,16 @@ public class TowerShopManager : MonoBehaviour
         _currentNodeSelected = nodeSelected;
     }
     
-    private void PlaceTower(TowerSettings TowerLoaded)
+    private void PlaceTower(TowerSettings towerLoaded)
     {
         if (_currentNodeSelected != null)
         {
-            GameObject TowerInstance = Instantiate(TowerLoaded.TowerPrefab);
-            TowerInstance.transform.localPosition = _currentNodeSelected.transform.position;
-            TowerInstance.transform.parent = _currentNodeSelected.transform;
+            GameObject towerInstance = Instantiate(towerLoaded.TowerPrefab);
+            towerInstance.transform.localPosition = _currentNodeSelected.transform.position;
+            towerInstance.transform.parent = _currentNodeSelected.transform;
 
-            Tower TowerPlaced = TowerInstance.GetComponent<Tower>();
-            _currentNodeSelected.SetTower(TowerPlaced);
+            Tower towerPlaced = towerInstance.GetComponent<Tower>();
+            _currentNodeSelected.SetTower(towerPlaced);
         }
     }
 

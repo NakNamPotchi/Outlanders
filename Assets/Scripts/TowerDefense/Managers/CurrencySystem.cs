@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CurrencySystem : Singleton<CurrencySystem>
 {
-    [SerializeField] private int coinTest;
+    [SerializeField] private int coin;
     private string CURRENCY_SAVE_KEY = "MYGAME_CURRENCY";
     
     public int TotalCoins { get; set; }
@@ -18,7 +18,7 @@ public class CurrencySystem : Singleton<CurrencySystem>
 
     private void LoadCoins()
     {
-        TotalCoins = PlayerPrefs.GetInt(CURRENCY_SAVE_KEY, coinTest);
+        TotalCoins = PlayerPrefs.GetInt(CURRENCY_SAVE_KEY, coin);
     }
     
     public void AddCoins(int amount)
