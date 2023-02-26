@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : Singleton<UIManager>
 {
     [Header("Panels")]
-    [SerializeField] private GameObject TowerShopPanel;
+    [SerializeField] private GameObject towerShopPanel;
     [SerializeField] private GameObject nodeUIPanel;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject winPanel;
@@ -16,12 +16,20 @@ public class UIManager : Singleton<UIManager>
     [Header("Text")] 
     [SerializeField] private TextMeshProUGUI upgradeText;
     [SerializeField] private TextMeshProUGUI sellText;
-    [SerializeField] private TextMeshProUGUI TowerLevelText;
+    [SerializeField] private TextMeshProUGUI towerLevelText;
+    [SerializeField] private TextMeshProUGUI totalCoinsText;
+    [SerializeField] private TextMeshProUGUI livesText;
+    [SerializeField] private TextMeshProUGUI currentWaveText;
     [SerializeField] private TextMeshProUGUI gameOverTotalCoinsText;
     
     private Node _currentNodeSelected;
 
-
+    private void Update()
+    {
+        totalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
+        livesText.text = LevelManager.Instance.TotalLives.ToString();
+        currentWaveText.text = "Wave "+LevelManager.Instance.CurrentWave;
+    }
 
     public void SlowTime()
     {
@@ -59,12 +67,15 @@ public class UIManager : Singleton<UIManager>
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    
 
+    public void ReturnCabin()
+    {
+        SceneManager.LoadScene(4);
+    }
     
     public void CloseTowerShopPanel()
     {
-        TowerShopPanel.SetActive(false);
+        towerShopPanel.SetActive(false);
     }
 
     public void CloseNodeUIPanel()
@@ -103,7 +114,7 @@ public class UIManager : Singleton<UIManager>
 
     private void UpdateTowerLevel()
     {
-        TowerLevelText.text = $"Level {_currentNodeSelected.Tower.TowerUpgrade.Level}";
+        towerLevelText.text = $"Level {_currentNodeSelected.Tower.TowerUpgrade.Level}";
     }
 
     private void UpdateSellValue()
@@ -117,7 +128,7 @@ public class UIManager : Singleton<UIManager>
         _currentNodeSelected = nodeSelected;
         if (_currentNodeSelected.IsEmpty())
         {
-            TowerShopPanel.SetActive(true);
+            towerShopPanel.SetActive(true);
         }
         else
         {

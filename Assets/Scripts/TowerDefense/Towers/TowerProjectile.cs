@@ -41,7 +41,6 @@ public class TowerProjectile : MonoBehaviour
             {
                 _currentProjectileLoaded.transform.parent = null;
                 _currentProjectileLoaded.SetEnemy(_tower.CurrentEnemyTarget);
-                AudioManager.Instance.PlayerSound(AudioManager.Sound.Pinya);
             }
 
             _nextAttackTime = Time.time + DelayPerShot;
