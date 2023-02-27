@@ -12,11 +12,11 @@ public class FolktaleLevelSelector : MonoBehaviour
 
     void Start()
     {
-        int FolktaleLevelSelector = PlayerPrefs.GetInt("FolktaleLevelSelector", 1);
+        int FolktaleLevelSelector = PlayerPrefs.GetInt("FolktaleLevelSelector", 0);
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i + 1 > FolktaleLevelSelector)
+            if (i + 1 >= FolktaleLevelSelector)
                 levelButtons[i].interactable = false;
         }
     }

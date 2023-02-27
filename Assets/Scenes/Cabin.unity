@@ -15831,7 +15831,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1183001461
 MonoBehaviour:
@@ -15845,11 +15845,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 697d229f6bdcf5443ba575902560664f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fader: {fileID: 0}
+  fader: {fileID: 476233676}
   levelButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1071456907}
+  - {fileID: 1341889195}
+  - {fileID: 1664918853}
+  - {fileID: 2052053914}
+  - {fileID: 770418618}
+  - {fileID: 1734963287}
+  - {fileID: 737563531}
+  - {fileID: 1852252809}
+  - {fileID: 1779698581}
+  - {fileID: 649944521}
 --- !u!1 &1186841501
 GameObject:
   m_ObjectHideFlags: 0
@@ -15894,8 +15901,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341f8d499f90a104cbb4ed9185e5f9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fader: {fileID: 0}
-  levelButtons: []
+  fader: {fileID: 476233676}
+  levelButtons:
+  - {fileID: 1499228936}
+  - {fileID: 683742959}
+  - {fileID: 359619812}
+  - {fileID: 1910953786}
+  - {fileID: 747355385}
+  - {fileID: 2038989675}
+  - {fileID: 682199200}
+  - {fileID: 1530973714}
+  - {fileID: 1889840715}
+  - {fileID: 1971625630}
+  - {fileID: 1768120115}
+  - {fileID: 231002494}
+  - {fileID: 1459252224}
+  - {fileID: 684099512}
 --- !u!1 &1236114999
 GameObject:
   m_ObjectHideFlags: 0
@@ -17544,6 +17565,78 @@ MonoBehaviour:
           m_StringArgument: GameStageMap
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 128111090}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 158519975}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1303658751}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114198496}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2070700132}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 161484973}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1644015348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18663,7 +18756,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1867933531
 MonoBehaviour:
@@ -18677,8 +18770,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f62cb5ac343bf44b005fa6d849ca61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fader: {fileID: 0}
-  levelButtons: []
+  fader: {fileID: 476233676}
+  levelButtons:
+  - {fileID: 1301189950}
+  - {fileID: 500782447}
+  - {fileID: 881228579}
+  - {fileID: 1717216339}
+  - {fileID: 1168286912}
+  - {fileID: 1065541268}
+  - {fileID: 2103831912}
+  - {fileID: 1061389082}
+  - {fileID: 1898020733}
+  - {fileID: 1043300691}
+  - {fileID: 4736397}
+  - {fileID: 169379467}
 --- !u!1 &1883016538
 GameObject:
   m_ObjectHideFlags: 0
