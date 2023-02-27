@@ -14,9 +14,9 @@ public class FolktaleLevelSelector : MonoBehaviour
     {
         int FolktaleLevelSelector = PlayerPrefs.GetInt("FolktaleLevelSelector", 0);
 
-        for (int i = 0; i < levelButtons.Length; i++)
+        for (int i = -1; i < levelButtons.Length; i++)
         {
-            if (i + 1 >= FolktaleLevelSelector)
+            if (i + 1 > FolktaleLevelSelector)
                 levelButtons[i].interactable = false;
         }
     }

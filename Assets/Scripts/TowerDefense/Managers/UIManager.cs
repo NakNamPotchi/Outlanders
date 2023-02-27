@@ -22,6 +22,14 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI currentWaveText;
     [SerializeField] private TextMeshProUGUI gameOverTotalCoinsText;
     
+    [SerializeField] public string cabin = "Cabin";
+    [SerializeField] public int StageToUnlock = 2;
+    [SerializeField] public int FolktaleToUnlock = 2;
+    [SerializeField] public int RiddleToUnlock = 3;
+    [SerializeField] public int LegendToUnlock = 2;
+
+    public SceneFader fader;
+
     private Node _currentNodeSelected;
 
     private void Update()
@@ -78,7 +86,11 @@ public class UIManager : Singleton<UIManager>
     public void ReturnCabin()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(4);
+        PlayerPrefs.SetInt("stageReached", StageToUnlock);
+        PlayerPrefs.SetInt("FolktaleLevelSelector", FolktaleToUnlock);
+        PlayerPrefs.SetInt("LegendLevelSelector", LegendToUnlock);
+        PlayerPrefs.SetInt("RiddleLevelSelector", RiddleToUnlock);
+        fader.FadeTo(cabin);
     }
     
     public void CloseTowerShopPanel()
