@@ -102,18 +102,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -129,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pinya_Projectile_0
+      name: PinyaProjectile_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 141ecd5d45d18ef478d0bcdcd6c2c722
-      internalID: 340069559
+      spriteID: 3d1cdb3cc5899744e96180afe552badb
+      internalID: 1369030499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinya_Projectile_1
+      name: PinyaProjectile_1
       rect:
         serializedVersion: 2
         x: 32
@@ -164,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d80dc9e646fc584b827db3b41b387d4
-      internalID: -1135893089
+      spriteID: 50ea7f8a88ca9984abc34ab95e0569e4
+      internalID: 1401755430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinya_Projectile_2
+      name: PinyaProjectile_2
       rect:
         serializedVersion: 2
         x: 64
@@ -185,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c067d98da06a2424b9cdbba9840d880f
-      internalID: 2093050249
+      spriteID: b1fd0fe7a344b8d4f98c23152e37aa12
+      internalID: -962654652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinya_Projectile_3
+      name: PinyaProjectile_3
       rect:
         serializedVersion: 2
         x: 96
@@ -206,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f059dc7940cd2a84694f0038846dd4ce
-      internalID: -102621471
+      spriteID: 92127a88716279a4692136f9898dd50a
+      internalID: -1288597756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pinya_Projectile_4
+      name: PinyaProjectile_4
       rect:
         serializedVersion: 2
         x: 128
@@ -227,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2024ee6d56670a34cad97f46b84fe95f
-      internalID: 196566488
+      spriteID: 5eede0afc451afa4e94a2da59fc85e5b
+      internalID: -1365685294
       vertices: []
       indices: 
       edges: []
@@ -244,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pinya_Projectile_0: 340069559
-      Pinya_Projectile_1: -1135893089
-      Pinya_Projectile_2: 2093050249
-      Pinya_Projectile_3: -102621471
-      Pinya_Projectile_4: 196566488
+      PinyaProjectile_0: 1369030499
+      PinyaProjectile_1: 1401755430
+      PinyaProjectile_2: -962654652
+      PinyaProjectile_3: -1288597756
+      PinyaProjectile_4: -1365685294
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

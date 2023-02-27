@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7067580727761442027}
   - component: {fileID: 8890990928562426836}
   m_Layer: 0
-  m_Name: Pinya_Projectile
+  m_Name: PinyaProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 1385317629
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 340069559, guid: 12ef86bd7c391a34988d3e9dfd312c36, type: 3}
+  m_Sprite: {fileID: 1369030499, guid: 12ef86bd7c391a34988d3e9dfd312c36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
