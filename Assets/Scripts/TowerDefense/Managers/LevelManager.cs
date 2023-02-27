@@ -34,6 +34,12 @@ public class LevelManager : Singleton<LevelManager>
 
     private void YouWin()
     {
+        StartCoroutine(ExecuteAfterTime(4));
+    }
+
+    IEnumerator ExecuteAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
         UIManager.Instance.ShowWinPanel();
         UIManager.Instance.PauseTime();
     }
