@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 62689984}
   - component: {fileID: 62689983}
   - component: {fileID: 62689982}
-  - component: {fileID: 62689987}
   m_Layer: 5
   m_Name: Stage4
   m_TagString: Untagged
@@ -242,19 +241,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &62689987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62689981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465bb2b5c34eb3b408df5fabde215693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 4
 --- !u!1 &209247583
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,7 +254,6 @@ GameObject:
   - component: {fileID: 209247586}
   - component: {fileID: 209247585}
   - component: {fileID: 209247584}
-  - component: {fileID: 209247589}
   m_Layer: 5
   m_Name: Stage5
   m_TagString: Untagged
@@ -374,19 +359,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &209247589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209247583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465bb2b5c34eb3b408df5fabde215693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 5
 --- !u!1 &248030519
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +372,7 @@ GameObject:
   - component: {fileID: 248030522}
   - component: {fileID: 248030521}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: Start6Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,7 +441,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 248030522}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Stage6
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &248030522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,7 +892,6 @@ GameObject:
   - component: {fileID: 364196991}
   - component: {fileID: 364196990}
   - component: {fileID: 364196989}
-  - component: {fileID: 364196994}
   m_Layer: 5
   m_Name: Stage7
   m_TagString: Untagged
@@ -1014,19 +997,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &364196994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364196988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465bb2b5c34eb3b408df5fabde215693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 7
 --- !u!1 &398283563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,7 +1042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 812531707}
-  levelButtons:
+  stageButtons:
   - {fileID: 585336078}
   - {fileID: 1671340816}
   - {fileID: 443654446}
@@ -1894,7 +1864,7 @@ Camera:
   far clip plane: 10
   field of view: 60
   orthographic: 1
-  orthographic size: 4.8746986
+  orthographic size: 4.876875
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2132,7 +2102,7 @@ GameObject:
   - component: {fileID: 614041932}
   - component: {fileID: 614041931}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: Start5Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2201,7 +2171,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 614041932}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Stage5
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &614041932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2397,7 +2379,6 @@ GameObject:
   - component: {fileID: 622338880}
   - component: {fileID: 622338879}
   - component: {fileID: 622338878}
-  - component: {fileID: 622338883}
   m_Layer: 5
   m_Name: Stage2
   m_TagString: Untagged
@@ -2503,19 +2484,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &622338883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622338877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465bb2b5c34eb3b408df5fabde215693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 2
 --- !u!1 &642742908
 GameObject:
   m_ObjectHideFlags: 0
@@ -2799,7 +2767,6 @@ GameObject:
   - component: {fileID: 677223494}
   - component: {fileID: 677223493}
   - component: {fileID: 677223492}
-  - component: {fileID: 677223497}
   m_Layer: 5
   m_Name: Stage10
   m_TagString: Untagged
@@ -2905,19 +2872,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &677223497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677223491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465bb2b5c34eb3b408df5fabde215693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 10
 --- !u!1 &743900343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,7 +2885,7 @@ GameObject:
   - component: {fileID: 743900346}
   - component: {fileID: 743900345}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: Start9Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3000,7 +2954,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 743900346}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Stage9
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &743900346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3050,7 +3016,7 @@ GameObject:
   - component: {fileID: 797851016}
   - component: {fileID: 797851018}
   - component: {fileID: 797851017}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3157,7 +3123,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 812531705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70ed8cdf186d687418b7eb1f51756d53, type: 3}
+  m_Script: {fileID: 11500000, guid: d2b1dce28733983488d46814b10a592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 797851017}
@@ -3427,7 +3393,6 @@ GameObject:
   - component: {fileID: 860330601}
   - component: {fileID: 860330600}
   - component: {fileID: 860330599}
-  - component: {fileID: 860330604}
   m_Layer: 5
   m_Name: Stage1
   m_TagString: Untagged
@@ -3533,19 +3498,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &860330604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860330598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465bb2b5c34eb3b408df5fabde215693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
 --- !u!1 &902037888
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,7 +4191,6 @@ GameObject:
   - component: {fileID: 991210925}
   - component: {fileID: 991210924}
   - component: {fileID: 991210923}
-  - component: {fileID: 991210928}
   m_Layer: 5
   m_Name: Stage8
   m_TagString: Untagged
@@ -4345,19 +4296,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &991210928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991210922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465bb2b5c34eb3b408df5fabde215693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 8
 --- !u!1 &995758883
 GameObject:
   m_ObjectHideFlags: 0
@@ -4549,8 +4487,7 @@ GameObject:
   - component: {fileID: 1044830163}
   - component: {fileID: 1044830166}
   - component: {fileID: 1044830165}
-  - component: {fileID: 1044830164}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4578,23 +4515,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1044830164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044830162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &1044830165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4627,9 +4547,9 @@ Canvas:
   m_GameObject: {fileID: 1044830162}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 582368424}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 11
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -4787,7 +4707,7 @@ GameObject:
   - component: {fileID: 1073470858}
   - component: {fileID: 1073470857}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: Start1Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4857,16 +4777,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 860330604}
-        m_TargetAssemblyTypeName: LoadStageScene, Assembly-CSharp
-        m_MethodName: OpenScene
-        m_Mode: 1
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Stage1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1073470858
@@ -5435,7 +5355,6 @@ GameObject:
   - component: {fileID: 1201216366}
   - component: {fileID: 1201216365}
   - component: {fileID: 1201216364}
-  - component: {fileID: 1201216369}
   m_Layer: 5
   m_Name: Stage3
   m_TagString: Untagged
@@ -5541,19 +5460,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1201216369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201216363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465bb2b5c34eb3b408df5fabde215693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 3
 --- !u!1 &1229124177
 GameObject:
   m_ObjectHideFlags: 0
@@ -5830,16 +5736,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1695387016}
-        m_TargetAssemblyTypeName: GameStageBacktoCabin, Assembly-CSharp
-        m_MethodName: BackCabin
-        m_Mode: 1
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Cabin
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1285700295
@@ -6005,7 +5911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312877950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.8496985, z: 0}
+  m_LocalPosition: {x: 0, y: -4.851875, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6091,7 +5997,7 @@ GameObject:
   - component: {fileID: 1356788626}
   - component: {fileID: 1356788625}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: Start3Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6160,7 +6066,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1356788626}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Stage3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1356788626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6212,7 +6130,7 @@ GameObject:
   - component: {fileID: 1363466362}
   - component: {fileID: 1363466361}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: Start4Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6281,7 +6199,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1363466362}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Stage4
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1363466362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6649,7 +6579,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431351397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.8496985, z: 0}
+  m_LocalPosition: {x: 0, y: 4.851875, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -7048,7 +6978,6 @@ GameObject:
   - component: {fileID: 1538490415}
   - component: {fileID: 1538490414}
   - component: {fileID: 1538490413}
-  - component: {fileID: 1538490418}
   m_Layer: 5
   m_Name: Stage9
   m_TagString: Untagged
@@ -7154,19 +7083,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1538490418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538490412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465bb2b5c34eb3b408df5fabde215693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 9
 --- !u!1 &1542617453
 GameObject:
   m_ObjectHideFlags: 0
@@ -7325,7 +7241,6 @@ GameObject:
   - component: {fileID: 1586240644}
   - component: {fileID: 1586240643}
   - component: {fileID: 1586240642}
-  - component: {fileID: 1586240647}
   m_Layer: 5
   m_Name: Stage6
   m_TagString: Untagged
@@ -7431,19 +7346,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1586240647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586240641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465bb2b5c34eb3b408df5fabde215693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 6
 --- !u!1 &1593056283
 GameObject:
   m_ObjectHideFlags: 0
@@ -8771,7 +8673,7 @@ GameObject:
   - component: {fileID: 1782726375}
   - component: {fileID: 1782726374}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: Start7Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8840,7 +8742,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1782726375}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Stage7
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1782726375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8892,7 +8806,7 @@ GameObject:
   - component: {fileID: 1797644990}
   - component: {fileID: 1797644989}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: Start2Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8961,7 +8875,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1797644990}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Stage2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1797644990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9778,7 +9704,7 @@ GameObject:
   - component: {fileID: 1993994098}
   - component: {fileID: 1993994097}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: Start8Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9847,7 +9773,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1993994098}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Stage8
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1993994098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10215,7 +10153,7 @@ GameObject:
   - component: {fileID: 2132881298}
   - component: {fileID: 2132881297}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: Start10Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10284,7 +10222,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2132881298}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 398283565}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Stage10
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2132881298
 MonoBehaviour:
   m_ObjectHideFlags: 0
