@@ -28,7 +28,14 @@ public class UIManager : Singleton<UIManager>
     {
         totalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
         livesText.text = LevelManager.Instance.TotalLives.ToString();
-        currentWaveText.text = "Wave "+LevelManager.Instance.CurrentWave;
+        int waveNum = LevelManager.Instance.CurrentWave;
+        if (waveNum == 4)
+        {
+            waveNum = waveNum - 1;
+            currentWaveText.text = "Wave "+ waveNum;
+        }
+        else if (waveNum <= 3)
+            currentWaveText.text = "Wave "+ waveNum;
     }
 
     public void SlowTime()
@@ -70,6 +77,7 @@ public class UIManager : Singleton<UIManager>
 
     public void ReturnCabin()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(4);
     }
     
