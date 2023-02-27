@@ -16,7 +16,7 @@ public class RiddleLevelSelector : MonoBehaviour
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i + 1 > RiddleLevelSelector)
+            if (i + 1 >= RiddleLevelSelector)
                 levelButtons[i].interactable = false;
         }
     }

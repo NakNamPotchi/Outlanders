@@ -16,7 +16,7 @@ public class LegendLevelSelector : MonoBehaviour
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i + 1 > LegendLevelSelector)
+            if (i + 1 >= LegendLevelSelector)
                 levelButtons[i].interactable = false;
         }
     }
