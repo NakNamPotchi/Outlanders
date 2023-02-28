@@ -12,9 +12,9 @@ public class ToresLevelSelector : MonoBehaviour
 
     void Start()
     {
-        int ToresLevelSelector = PlayerPrefs.GetInt("ToresLevelSelector", 1);
+        int ToresLevelSelector = PlayerPrefs.GetInt("ToresLevelSelector", 0);
 
-        for (int i = -1; i < levelButtons.Length; i++)
+        for (int i = 0; i < levelButtons.Length; i++)
         {
             if (i + 1 > ToresLevelSelector)
                 levelButtons[i].interactable = false;

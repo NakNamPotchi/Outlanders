@@ -12,9 +12,9 @@ public class HumanLevelSelector : MonoBehaviour
 
     void Start()
     {
-        int HumanLevelSelector = PlayerPrefs.GetInt("HumanLevelSelector", 1);
+        int HumanLevelSelector = PlayerPrefs.GetInt("HumanLevelSelector", 0);
 
-        for (int i = -1; i < levelButtons.Length; i++)
+        for (int i = 0; i < levelButtons.Length; i++)
         {
             if (i + 1 > HumanLevelSelector)
                 levelButtons[i].interactable = false;
