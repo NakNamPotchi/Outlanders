@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MusicSaveController : MonoBehaviour
 {
     [SerializeField] private Slider musicSlider = null;
-
-    [SerializeField] private Text musicTextUI = null;
+    [SerializeField] private TextMeshProUGUI musicTextUI = null;
 
     private void Start()
     {

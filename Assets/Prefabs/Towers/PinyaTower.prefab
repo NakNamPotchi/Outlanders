@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6572653505688705151}
   - component: {fileID: 6572653505688705144}
-  - component: {fileID: 6572653505688705149}
+  - component: {fileID: 267253473312431300}
   - component: {fileID: 6572653505688705148}
   - component: {fileID: 6572653505688705150}
   - component: {fileID: 6572653505688705091}
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 3
---- !u!114 &6572653505688705149
+--- !u!114 &267253473312431300
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6572653505688705145}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11de6ebb5ef182549a101d445523a3db, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d1e42f2ef99d7a4a8caf6933c8eff50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 6572653506023345344}

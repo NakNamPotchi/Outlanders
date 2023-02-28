@@ -22,11 +22,14 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI currentWaveText;
     [SerializeField] private TextMeshProUGUI gameOverTotalCoinsText;
     
-    [SerializeField] public string cabin = "Cabin";
-    [SerializeField] public int StageToUnlock = 2;
-    [SerializeField] public int FolktaleToUnlock = 2;
-    [SerializeField] public int RiddleToUnlock = 3;
-    [SerializeField] public int LegendToUnlock = 2;
+    [SerializeField] public string GoToAfterWin = "Cabin";
+    [SerializeField] public int StageToUnlock;
+    [SerializeField] public int FolktaleToUnlock;
+    [SerializeField] public int RiddleToUnlock;
+    [SerializeField] public int LegendToUnlock;
+    [SerializeField] public int HumanToUnlock;
+    [SerializeField] public int ToresToUnlock;
+    [SerializeField] public int MooltosToUnlock;
 
     public SceneFader fader;
 
@@ -90,7 +93,10 @@ public class UIManager : Singleton<UIManager>
         PlayerPrefs.SetInt("FolktaleLevelSelector", FolktaleToUnlock);
         PlayerPrefs.SetInt("LegendLevelSelector", LegendToUnlock);
         PlayerPrefs.SetInt("RiddleLevelSelector", RiddleToUnlock);
-        fader.FadeTo(cabin);
+        PlayerPrefs.SetInt("HumanLevelSelector", HumanToUnlock);
+        PlayerPrefs.SetInt("ToresLevelSelector", ToresToUnlock);
+        PlayerPrefs.SetInt("MooltosLevelSelector", MooltosToUnlock);
+        fader.FadeTo(GoToAfterWin);
     }
     
     public void CloseTowerShopPanel()

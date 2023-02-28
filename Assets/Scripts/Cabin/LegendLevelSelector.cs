@@ -12,7 +12,7 @@ public class LegendLevelSelector : MonoBehaviour
 
     void Start()
     {
-        int LegendLevelSelector = PlayerPrefs.GetInt("LegendLevelSelector", 0);
+        int LegendLevelSelector = PlayerPrefs.GetInt("LegendLevelSelector", 1);
 
         for (int i = -1; i < levelButtons.Length; i++)
         {

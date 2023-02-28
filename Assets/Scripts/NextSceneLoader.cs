@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class NextSceneLoader : MonoBehaviour
 {
+    public SceneFader fader;
+    [SerializeField] public string NextScene;
+
     void OnEnable() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        fader.FadeTo(NextScene);
     }
 }
