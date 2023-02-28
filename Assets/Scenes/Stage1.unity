@@ -2454,7 +2454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SFXlibrary:
   - sound: 0
-    audioClip: {fileID: 8300000, guid: b4ce975868fff68458a47704dd4a8cdf, type: 3}
+    audioClip: {fileID: 8300000, guid: 19c4913b82880634483bd2cb981a588d, type: 3}
 --- !u!82 &461849662
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2465,9 +2465,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8a5e1f83af616be4ea3d5d224c3f7092, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3567354ea963b864d81fa6d274a73d54, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3043,7 +3043,7 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
+      time: 0.5
       value: 1
       inSlope: 2
       outSlope: 2
@@ -5009,11 +5009,14 @@ MonoBehaviour:
   livesText: {fileID: 142406814}
   currentWaveText: {fileID: 105854784}
   gameOverTotalCoinsText: {fileID: 961275501}
-  cabin: Cabin
+  GoToAfterWin: Cabin
   StageToUnlock: 2
   FolktaleToUnlock: 1
   RiddleToUnlock: 2
   LegendToUnlock: 1
+  HumanToUnlock: 3
+  ToresToUnlock: 1
+  MooltosToUnlock: 1
   fader: {fileID: 524746408}
 --- !u!1 &1085728116
 GameObject:

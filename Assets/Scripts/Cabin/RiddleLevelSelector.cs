@@ -12,7 +12,7 @@ public class RiddleLevelSelector : MonoBehaviour
 
     void Start()
     {
-        int RiddleLevelSelector = PlayerPrefs.GetInt("RiddleLevelSelector", 0);
+        int RiddleLevelSelector = PlayerPrefs.GetInt("RiddleLevelSelector", 1);
 
         for (int i = -1; i < levelButtons.Length; i++)
         {
