@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -316,15 +328,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PortalSheet_1: -682852932
-      PortalSheet_8: -833561051
-      PortalSheet_5: -628212765
       PortalSheet_0: -734010902
-      PortalSheet_4: -1005239521
-      PortalSheet_6: 1440134453
-      PortalSheet_3: 962596015
-      PortalSheet_7: -1244058442
+      PortalSheet_1: -682852932
       PortalSheet_2: 1127556524
+      PortalSheet_3: 962596015
+      PortalSheet_4: -1005239521
+      PortalSheet_5: -628212765
+      PortalSheet_6: 1440134453
+      PortalSheet_7: -1244058442
+      PortalSheet_8: -833561051
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
