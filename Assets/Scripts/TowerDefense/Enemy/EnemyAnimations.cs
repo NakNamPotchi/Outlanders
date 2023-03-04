@@ -22,8 +22,6 @@ public class EnemyAnimations : MonoBehaviour
         _animator.SetTrigger("Hurt");
     }
 
-
-
     private float GetCurrentAnimationLenght()
     {
         float animationLenght = _animator.GetCurrentAnimatorStateInfo(0).length;
@@ -32,7 +30,7 @@ public class EnemyAnimations : MonoBehaviour
     
     private IEnumerator PlayHurt()
     {
-        _enemy.StopMovement();
+        //_enemy.StopMovement();
         PlayHurtAnimation();
         yield return new WaitForSeconds(GetCurrentAnimationLenght() + 0.3f);
         _enemy.ResumeMovement();

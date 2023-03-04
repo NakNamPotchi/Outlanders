@@ -7,17 +7,17 @@ public class NextSceneLoaderIntroductionOnly : MonoBehaviour
 {
     public SceneFader fader;
 
-    public int SkipTutorialStage;
+    private int SkipTutorialStage;
 
     [SerializeField] public string NextScene;
-    [SerializeField] public string SkiptoScene;
+    [SerializeField] public string SkipToScene;
 
-    void OnEnable() {
+    public void OnEnable() {
         SkipTutorialStage = PlayerPrefs.GetInt("SkipTutorialStage");
 
         if (SkipTutorialStage > 0)
         {
-            fader.FadeTo(SkiptoScene);
+            fader.FadeTo(SkipToScene);
         }
         else    
         {

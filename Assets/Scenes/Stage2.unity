@@ -230,12 +230,12 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1245334080}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23.48, y: -15.5}
-  m_SizeDelta: {x: 54.006, y: 26.607}
+  m_AnchoredPosition: {x: -23.3, y: -15.5}
+  m_SizeDelta: {x: 54.006, y: 21.695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &31954322
 MonoBehaviour:
@@ -5086,17 +5086,19 @@ MonoBehaviour:
   livesText: {fileID: 142406814}
   currentWaveText: {fileID: 105854784}
   gameOverTotalCoinsText: {fileID: 961275501}
+  towerUpgradeButton: {fileID: 1557274074}
   GoToAfterWin: Cabin
-  StageToUnlock: 2
-  StoryToUnlock: 1
-  FolktaleToUnlock: 1
-  RiddleToUnlock: 2
+  StageToUnlock: 3
+  StoryToUnlock: 2
+  FolktaleToUnlock: 3
+  RiddleToUnlock: 4
   LegendToUnlock: 1
   HumanToUnlock: 3
   ToresToUnlock: 1
   MooltosToUnlock: 1
   SkipIntroductionStory: 1
   SkipTutorialStage: 1
+  SkipTutorialScene: 1
   fader: {fileID: 524746408}
 --- !u!1 &1085728116
 GameObject:
@@ -5168,7 +5170,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1245334080}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5404,11 +5406,11 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1467960366}
-  - {fileID: 1557274073}
-  - {fileID: 1855790894}
   - {fileID: 31954321}
+  - {fileID: 1557274073}
   - {fileID: 1757866029}
   - {fileID: 1143166041}
+  - {fileID: 1855790894}
   - {fileID: 1646917761}
   - {fileID: 251719639}
   m_Father: {fileID: 2130079941}
@@ -5707,7 +5709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77aaa8544af75e54995611aca822ebe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: 20
+  coin: 30
 --- !u!1 &1467960365
 GameObject:
   m_ObjectHideFlags: 0
@@ -5744,7 +5746,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 14}
-  m_SizeDelta: {x: 45.685, y: 12.117}
+  m_SizeDelta: {x: 67.882, y: 12.117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1467960367
 MonoBehaviour:
@@ -9044,11 +9046,11 @@ RectTransform:
   m_GameObject: {fileID: 1557274072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.115, y: 0.115, z: 0.115}
+  m_LocalScale: {x: 0.114999995, y: 0.114999995, z: 0.114999995}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1245334080}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9237,7 +9239,7 @@ GameObject:
   - component: {fileID: 1757866031}
   - component: {fileID: 1757866030}
   m_Layer: 5
-  m_Name: 'Coin - Img '
+  m_Name: 'UpgradeCoin - Img '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9252,11 +9254,11 @@ RectTransform:
   m_GameObject: {fileID: 1757866028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
+  m_LocalScale: {x: 0.07999998, y: 0.07999998, z: 0.07999998}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1245334080}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9642,7 +9644,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1245334080}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
