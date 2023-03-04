@@ -10,7 +10,7 @@ public class MainMenuSkipStory : MonoBehaviour
 
     public Button[] stageButtons;
 
-    public int SkipIntroductionStory;
+    private int SkipIntroductionStory;
 
     [SerializeField] public string SkipStory;
 

@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5493ec53762c8084983797b135d19b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 4
 --- !u!114 &267253473312431300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 6572653506023345344}
   delayBtwAttacks: 1
-  damage: 6
+  damage: 3
 --- !u!114 &6572653505688705148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,7 +178,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 4
 --- !u!114 &6572653505688705091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +195,10 @@ MonoBehaviour:
   upgradeCostIncremental: 10
   damageIncremental: 2
   delayReduce: 0.1
+  towerLevelText: {fileID: 0}
+  upgradeText: {fileID: 0}
+  upgradeButton: {fileID: 0}
+  upgradeCoinImg: {fileID: 0}
   sellPert: 0.5
 --- !u!1 &6572653506023345345
 GameObject:

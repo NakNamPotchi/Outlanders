@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class UIManager : Singleton<UIManager>
@@ -23,7 +24,11 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI livesText;
     [SerializeField] private TextMeshProUGUI currentWaveText;
     [SerializeField] private TextMeshProUGUI gameOverTotalCoinsText;
+
+    [Header("Button")]
+    [SerializeField] private Button towerUpgradeButton;
     
+    [Header("PlayerPrefs")]
     [SerializeField] public string GoToAfterWin = "Cabin";
     [SerializeField] public int StageToUnlock;
     [SerializeField] public int StoryToUnlock;
@@ -34,9 +39,11 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] public int ToresToUnlock;
     [SerializeField] public int MooltosToUnlock;
 
-    [SerializeField] public int SkipIntroductionStory = 1;
-    [SerializeField] public int SkipTutorialStage = 1;
+    [SerializeField] private int SkipIntroductionStory = 1;
+    [SerializeField] private int SkipTutorialStage = 1;
+    [SerializeField] private int SkipTutorialScene = 1;
 
+    [Header("Scene Fader")]
     public SceneFader fader;
 
     private Node _currentNodeSelected;
@@ -55,7 +62,7 @@ public class UIManager : Singleton<UIManager>
             currentWaveText.text = "Wave "+ waveNum;
     }
 
-    public void SlowTime()
+    /*public void SlowTime()
     {
         Time.timeScale = 0.5f;
     }
@@ -68,7 +75,7 @@ public class UIManager : Singleton<UIManager>
     public void FastTime()
     {
         Time.timeScale = 2f;
-    }
+    }*/
 
     public void PauseTime()
     {
@@ -107,6 +114,7 @@ public class UIManager : Singleton<UIManager>
         PlayerPrefs.SetInt("MooltosLevelSelector", MooltosToUnlock);
         PlayerPrefs.SetInt("SkipIntroductionStory", SkipIntroductionStory);
         PlayerPrefs.SetInt("SkipTutorialStage", SkipTutorialStage);
+        PlayerPrefs.SetInt("SkipTutorialScene", SkipTutorialScene);
         fader.FadeTo(GoToAfterWin);
     }
     
@@ -127,6 +135,7 @@ public class UIManager : Singleton<UIManager>
         UpdateUpgradeText();
         UpdateTowerLevel();
         UpdateSellValue();
+        nodeUIPanel.SetActive(false);
     }
 
     public void SellTower()
@@ -138,6 +147,11 @@ public class UIManager : Singleton<UIManager>
     
     private void ShowNodeUI()
     {
+        if (_currentNodeSelected.Tower.TowerUpgrade.Level == 3)
+            towerUpgradeButton.interactable = false;
+        else
+            towerUpgradeButton.interactable = true;
+
         nodeUIPanel.SetActive(true);
         UpdateUpgradeText();
         UpdateTowerLevel();
@@ -146,12 +160,18 @@ public class UIManager : Singleton<UIManager>
 
     private void UpdateUpgradeText()
     {
-        upgradeText.text = _currentNodeSelected.Tower.TowerUpgrade.UpgradeCost.ToString();
+        if (_currentNodeSelected.Tower.TowerUpgrade.Level == 3)
+            upgradeText.text = "0";
+        else
+            upgradeText.text = _currentNodeSelected.Tower.TowerUpgrade.UpgradeCost.ToString();
     }
 
     private void UpdateTowerLevel()
     {
-        towerLevelText.text = $"Level {_currentNodeSelected.Tower.TowerUpgrade.Level}";
+        if (_currentNodeSelected.Tower.TowerUpgrade.Level == 3)
+            towerLevelText.text = "Level Max";
+        else
+            towerLevelText.text = $"Level {_currentNodeSelected.Tower.TowerUpgrade.Level}";
     }
 
     private void UpdateSellValue()

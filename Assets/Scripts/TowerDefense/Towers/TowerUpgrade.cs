@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class TowerUpgrade : MonoBehaviour
@@ -47,8 +49,11 @@ public class TowerUpgrade : MonoBehaviour
     
     private void UpdateUpgrade()
     {
-        CurrencySystem.Instance.RemoveCoins(UpgradeCost);
-        UpgradeCost += upgradeCostIncremental;
-        Level++;
+        if (Level < 3)
+        {
+            CurrencySystem.Instance.RemoveCoins(UpgradeCost);
+            UpgradeCost += upgradeCostIncremental;
+            Level++;
+        }
     }
 }
