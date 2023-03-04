@@ -12,6 +12,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject nodeUIPanel;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject coinPanel;
+    [SerializeField] private GameObject wavePanel;
 
     [Header("Text")] 
     [SerializeField] private TextMeshProUGUI upgradeText;
@@ -24,12 +26,16 @@ public class UIManager : Singleton<UIManager>
     
     [SerializeField] public string GoToAfterWin = "Cabin";
     [SerializeField] public int StageToUnlock;
+    [SerializeField] public int StoryToUnlock;
     [SerializeField] public int FolktaleToUnlock;
     [SerializeField] public int RiddleToUnlock;
     [SerializeField] public int LegendToUnlock;
     [SerializeField] public int HumanToUnlock;
     [SerializeField] public int ToresToUnlock;
     [SerializeField] public int MooltosToUnlock;
+
+    [SerializeField] public int SkipIntroductionStory = 1;
+    [SerializeField] public int SkipTutorialStage = 1;
 
     public SceneFader fader;
 
@@ -71,6 +77,8 @@ public class UIManager : Singleton<UIManager>
 
     public void ShowGameOverPanel()
     {
+        coinPanel.SetActive(false);
+        wavePanel.SetActive(false);
         gameOverPanel.SetActive(true);
         gameOverTotalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
     }
@@ -90,12 +98,15 @@ public class UIManager : Singleton<UIManager>
     {
         Time.timeScale = 1f;
         PlayerPrefs.SetInt("stageReached", StageToUnlock);
+        PlayerPrefs.SetInt("StorySelector", StoryToUnlock);
         PlayerPrefs.SetInt("FolktaleLevelSelector", FolktaleToUnlock);
         PlayerPrefs.SetInt("LegendLevelSelector", LegendToUnlock);
         PlayerPrefs.SetInt("RiddleLevelSelector", RiddleToUnlock);
         PlayerPrefs.SetInt("HumanLevelSelector", HumanToUnlock);
         PlayerPrefs.SetInt("ToresLevelSelector", ToresToUnlock);
         PlayerPrefs.SetInt("MooltosLevelSelector", MooltosToUnlock);
+        PlayerPrefs.SetInt("SkipIntroductionStory", SkipIntroductionStory);
+        PlayerPrefs.SetInt("SkipTutorialStage", SkipTutorialStage);
         fader.FadeTo(GoToAfterWin);
     }
     
