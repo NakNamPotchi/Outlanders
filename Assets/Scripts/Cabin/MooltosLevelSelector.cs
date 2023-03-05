@@ -10,13 +10,15 @@ public class MooltosLevelSelector : MonoBehaviour
 
     public Button[] levelButtons;
 
+    private int MooltosBookSelector;
+
     void Start()
     {
-        int MooltosLevelSelector = PlayerPrefs.GetInt("MooltosLevelSelector", 0);
+        int MooltosBookSelector = PlayerPrefs.GetInt("MooltosBookSelector");
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i + 1 > MooltosLevelSelector)
+            if (i + 1 > MooltosBookSelector)
                 levelButtons[i].interactable = false;
         }
     }

@@ -10,13 +10,15 @@ public class StorySelector : MonoBehaviour
 
     public Button[] storyButtons;
 
+    private int storyReached;
+
     void Start()
     {
-        int StorySelector = PlayerPrefs.GetInt("StorySelector", 0);
+        int storyReached = PlayerPrefs.GetInt("storyReached");
 
         for (int i = 0; i < storyButtons.Length; i++)
         {
-            if (i + 1 > StorySelector)
+            if (i + 1 > storyReached)
                 storyButtons[i].interactable = false;
         }
     }

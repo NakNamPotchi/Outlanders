@@ -54,12 +54,12 @@ public class UIManager : Singleton<UIManager>
         totalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
         livesText.text = LevelManager.Instance.TotalLives.ToString();
         int waveNum = LevelManager.Instance.CurrentWave;
-        if (waveNum == 4)
+        if (waveNum == Spawner.totalWave + 1)
         {
             waveNum = waveNum - 1;
             currentWaveText.text = "Wave "+ waveNum;
         }
-        else if (waveNum <= 3)
+        else if (waveNum <= Spawner.totalWave)
             currentWaveText.text = "Wave "+ waveNum;
     }
 
@@ -106,13 +106,13 @@ public class UIManager : Singleton<UIManager>
     {
         Time.timeScale = 1f;
         PlayerPrefs.SetInt("stageReached", StageToUnlock);
-        PlayerPrefs.SetInt("StorySelector", StoryToUnlock);
-        PlayerPrefs.SetInt("FolktaleLevelSelector", FolktaleToUnlock);
-        PlayerPrefs.SetInt("LegendLevelSelector", LegendToUnlock);
-        PlayerPrefs.SetInt("RiddleLevelSelector", RiddleToUnlock);
-        PlayerPrefs.SetInt("HumanLevelSelector", HumanToUnlock);
-        PlayerPrefs.SetInt("ToresLevelSelector", ToresToUnlock);
-        PlayerPrefs.SetInt("MooltosLevelSelector", MooltosToUnlock);
+        PlayerPrefs.SetInt("storyReached", StoryToUnlock);
+        PlayerPrefs.SetInt("FolktaleBookSelector", FolktaleToUnlock);
+        PlayerPrefs.SetInt("LegendBookSelector", LegendToUnlock);
+        PlayerPrefs.SetInt("RiddleBookSelector", RiddleToUnlock);
+        PlayerPrefs.SetInt("HumanBookSelector", HumanToUnlock);
+        PlayerPrefs.SetInt("ToresBookSelector", ToresToUnlock);
+        PlayerPrefs.SetInt("MooltosBookSelector", MooltosToUnlock);
         PlayerPrefs.SetInt("SkipIntroductionStory", SkipIntroductionStory);
         PlayerPrefs.SetInt("SkipTutorialStage", SkipTutorialStage);
         PlayerPrefs.SetInt("SkipTutorialScene", SkipTutorialScene);

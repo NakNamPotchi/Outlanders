@@ -1657,14 +1657,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnMode: 1
-  enemyCount: 5
+  enemyCount: 3
   delayBtwWaves: 1
   delayBtwSpawns: 1
   minRandomDelay: 1
   maxRandomDelay: 2
-  enemyWave1Pooler: {fileID: 328415225}
-  enemyWave2Pooler: {fileID: 436561246}
-  enemyWave3Pooler: {fileID: 508468862}
+  enemyWavePooler:
+  - {fileID: 328415225}
+  - {fileID: 436561246}
 --- !u!4 &380588821
 Transform:
   m_ObjectHideFlags: 0
@@ -3042,7 +3042,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524746407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.91, y: 1.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5095,9 +5095,6 @@ MonoBehaviour:
   HumanToUnlock: 3
   ToresToUnlock: 1
   MooltosToUnlock: 1
-  SkipIntroductionStory: 1
-  SkipTutorialStage: 1
-  SkipTutorialScene: 1
   fader: {fileID: 524746408}
 --- !u!1 &1085728116
 GameObject:

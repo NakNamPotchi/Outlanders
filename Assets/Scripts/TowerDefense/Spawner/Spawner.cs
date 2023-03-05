@@ -27,20 +27,23 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float maxRandomDelay;
 
     [Header("Poolers")] 
-    [SerializeField] private ObjectPooler enemyWave1Pooler;
+    /*[SerializeField] private ObjectPooler enemyWave1Pooler;
     [SerializeField] private ObjectPooler enemyWave2Pooler;
-    [SerializeField] private ObjectPooler enemyWave3Pooler;
+    [SerializeField] private ObjectPooler enemyWave3Pooler;*/
 
-    
+    [SerializeField] public ObjectPooler[] enemyWavePooler;
+
     private float _spawnTimer;
     private int _enemiesSpawned;
     private int _enemiesRamaining;
+    public static int totalWave;
     
     private Waypoint _waypoint;
 
     private void Start()
     {
         _waypoint = GetComponent<Waypoint>();
+        totalWave = this.enemyWavePooler.Length;
 
         _enemiesRamaining = enemyCount;
     }
@@ -94,23 +97,27 @@ public class Spawner : MonoBehaviour
     private ObjectPooler GetPooler()
     {
         int currentWave = LevelManager.Instance.CurrentWave;
-        if (currentWave <= 1) // 1- 10
+        for (int i = 0; i < enemyWavePooler.Length; i++)
         {
-            return enemyWave1Pooler;
-        }
+            try
+            {
+                if (currentWave < i) // 1- 10
+                {
+                    return enemyWavePooler[i];
+                }
 
-        if (currentWave > 1 && currentWave <= 2) // 11- 20
-        {
-            return enemyWave2Pooler;
+                if (currentWave > i && currentWave <= i+1) // 11- 20 and so on
+                {
+                    return enemyWavePooler[i];
+                }
+            }
+            catch (System.Exception)
+            {
+                Debug.Log("No More Waves!");
+                throw;
+            }
         }
         
-        if (currentWave > 2 && currentWave <= 3) // 21- 30
-        {
-            return enemyWave3Pooler;
-        }
-        
-
-
         return null;
     }
     

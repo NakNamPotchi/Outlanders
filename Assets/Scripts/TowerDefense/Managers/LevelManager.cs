@@ -47,7 +47,7 @@ public class LevelManager : Singleton<LevelManager>
     private void WaveCompleted()
     {
         CurrentWave++;
-        if (CurrentWave == 4)
+        if (CurrentWave > Spawner.totalWave)
             YouWin();
     }
     

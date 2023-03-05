@@ -10,13 +10,15 @@ public class HumanLevelSelector : MonoBehaviour
 
     public Button[] levelButtons;
 
+    private int HumanBookSelector;
+
     void Start()
     {
-        int HumanLevelSelector = PlayerPrefs.GetInt("HumanLevelSelector", 0);
+        int HumanBookSelector = PlayerPrefs.GetInt("HumanBookSelector");
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i + 1 > HumanLevelSelector)
+            if (i + 1 > HumanBookSelector)
                 levelButtons[i].interactable = false;
         }
     }
