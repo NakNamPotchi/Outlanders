@@ -10,13 +10,15 @@ public class RiddleLevelSelector : MonoBehaviour
 
     public Button[] levelButtons;
 
+    private int RiddleBookSelector;
+
     void Start()
     {
-        int RiddleLevelSelector = PlayerPrefs.GetInt("RiddleLevelSelector", 0);
+        int RiddleBookSelector = PlayerPrefs.GetInt("RiddleBookSelector");
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i + 1 > RiddleLevelSelector)
+            if (i + 1 > RiddleBookSelector)
                 levelButtons[i].interactable = false;
         }
     }

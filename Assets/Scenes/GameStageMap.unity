@@ -1568,7 +1568,7 @@ GameObject:
   - component: {fileID: 416708091}
   - component: {fileID: 416708090}
   m_Layer: 5
-  m_Name: 4
+  m_Name: Stage4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1633,7 +1633,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 416708091}
   m_OnClick:
     m_PersistentCalls:
@@ -1725,7 +1725,7 @@ GameObject:
   - component: {fileID: 443654447}
   - component: {fileID: 443654446}
   m_Layer: 5
-  m_Name: 3
+  m_Name: Stage3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1790,14 +1790,14 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 443654447}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 140105644}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2353,7 +2353,7 @@ GameObject:
   - component: {fileID: 582226495}
   - component: {fileID: 582226494}
   m_Layer: 5
-  m_Name: 7
+  m_Name: Stage7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2418,7 +2418,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 582226495}
   m_OnClick:
     m_PersistentCalls:
@@ -2645,7 +2645,7 @@ GameObject:
   - component: {fileID: 585336079}
   - component: {fileID: 585336078}
   m_Layer: 5
-  m_Name: 1
+  m_Name: Stage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4250,7 +4250,7 @@ GameObject:
   - component: {fileID: 902037891}
   - component: {fileID: 902037890}
   m_Layer: 5
-  m_Name: 10
+  m_Name: Stage10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4315,7 +4315,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 902037891}
   m_OnClick:
     m_PersistentCalls:
@@ -4626,7 +4626,7 @@ GameObject:
   - component: {fileID: 929685486}
   - component: {fileID: 929685485}
   m_Layer: 5
-  m_Name: 6
+  m_Name: Stage6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4691,7 +4691,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 929685486}
   m_OnClick:
     m_PersistentCalls:
@@ -7845,7 +7845,7 @@ GameObject:
   - component: {fileID: 1593056286}
   - component: {fileID: 1593056285}
   m_Layer: 5
-  m_Name: 8
+  m_Name: Stage8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7910,7 +7910,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1593056286}
   m_OnClick:
     m_PersistentCalls:
@@ -8459,7 +8459,7 @@ GameObject:
   - component: {fileID: 1671340817}
   - component: {fileID: 1671340816}
   m_Layer: 5
-  m_Name: 2
+  m_Name: Stage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8854,7 +8854,7 @@ GameObject:
   - component: {fileID: 1715255779}
   - component: {fileID: 1715255778}
   m_Layer: 5
-  m_Name: 5
+  m_Name: Stage5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8919,7 +8919,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1715255779}
   m_OnClick:
     m_PersistentCalls:
@@ -10505,7 +10505,7 @@ GameObject:
   - component: {fileID: 1982133253}
   - component: {fileID: 1982133252}
   m_Layer: 5
-  m_Name: 9
+  m_Name: Stage9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10570,7 +10570,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1982133253}
   m_OnClick:
     m_PersistentCalls:

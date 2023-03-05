@@ -10,13 +10,15 @@ public class LegendLevelSelector : MonoBehaviour
 
     public Button[] levelButtons;
 
+    private int LegendBookSelector;
+
     void Start()
     {
-        int LegendLevelSelector = PlayerPrefs.GetInt("LegendLevelSelector", 0);
+        int LegendBookSelector = PlayerPrefs.GetInt("LegendBookSelector");
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i + 1 > LegendLevelSelector)
+            if (i + 1 > LegendBookSelector)
                 levelButtons[i].interactable = false;
         }
     }

@@ -10,9 +10,11 @@ public class LevelSelector : MonoBehaviour
 
     public Button[] stageButtons;
 
+    private int stageReached;
+
     void Start()
     {
-        int stageReached = PlayerPrefs.GetInt("stageReached", 1);
+        int stageReached = PlayerPrefs.GetInt("stageReached");
 
         for (int i = 0; i < stageButtons.Length; i++)
         {

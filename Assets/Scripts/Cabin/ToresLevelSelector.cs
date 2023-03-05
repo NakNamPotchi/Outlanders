@@ -10,13 +10,15 @@ public class ToresLevelSelector : MonoBehaviour
 
     public Button[] levelButtons;
 
+    private int MooltosBookSelector;
+
     void Start()
     {
-        int ToresLevelSelector = PlayerPrefs.GetInt("ToresLevelSelector", 0);
+        int MooltosBookSelector = PlayerPrefs.GetInt("MooltosBookSelector");
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i + 1 > ToresLevelSelector)
+            if (i + 1 > MooltosBookSelector)
                 levelButtons[i].interactable = false;
         }
     }
