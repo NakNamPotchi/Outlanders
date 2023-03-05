@@ -39,9 +39,10 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] public int ToresToUnlock;
     [SerializeField] public int MooltosToUnlock;
 
-    [SerializeField] private int SkipIntroductionStory = 1;
-    [SerializeField] private int SkipTutorialStage = 1;
-    [SerializeField] private int SkipTutorialScene = 1;
+    private int SkipIntroductionStory = 1;
+    private int SkipTutorialStage = 1;
+    private int SkipTutorialScene = 1;
+    private int SkipStoryUnlock = 1;
 
     [Header("Scene Fader")]
     public SceneFader fader;
@@ -115,6 +116,7 @@ public class UIManager : Singleton<UIManager>
         PlayerPrefs.SetInt("SkipIntroductionStory", SkipIntroductionStory);
         PlayerPrefs.SetInt("SkipTutorialStage", SkipTutorialStage);
         PlayerPrefs.SetInt("SkipTutorialScene", SkipTutorialScene);
+        PlayerPrefs.SetInt("SkipStoryUnlock", SkipStoryUnlock);
         fader.FadeTo(GoToAfterWin);
     }
     
