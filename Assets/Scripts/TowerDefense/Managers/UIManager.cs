@@ -54,6 +54,13 @@ public class UIManager : Singleton<UIManager>
         totalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
         livesText.text = LevelManager.Instance.TotalLives.ToString();
         int waveNum = LevelManager.Instance.CurrentWave;
+        StartCoroutine(ExecuteAfterTime(1.5f, waveNum));
+        
+    }
+
+    IEnumerator ExecuteAfterTime(float time, int waveNum)
+    {
+        yield return new WaitForSeconds(time);
         if (waveNum == Spawner.totalWave + 1)
         {
             waveNum = waveNum - 1;
