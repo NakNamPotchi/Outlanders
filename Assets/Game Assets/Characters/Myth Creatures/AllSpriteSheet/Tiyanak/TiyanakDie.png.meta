@@ -102,6 +102,18 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -122,8 +134,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf0cd9cf34df2174e8da123f3c50c61d
-      internalID: 1997582762
+      spriteID: 2500842ca945f644fad5f418e1260f36
+      internalID: 1842114381
       vertices: []
       indices: 
       edges: []
@@ -141,10 +153,10 @@ TextureImporter:
       name: TiyanakDie_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4629472e2d6bf4e4fba53c501d0565c3
-      internalID: -1590742356
+      spriteID: 65c942607c025a44eaf6758e904d75e2
+      internalID: 1121540454
       vertices: []
       indices: 
       edges: []
@@ -162,10 +174,10 @@ TextureImporter:
       name: TiyanakDie_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 192
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2d82c0afe9bb2648b775919fade1b2e
-      internalID: 525459255
+      spriteID: f64537f238cc0b64ba90d74aa502c3f7
+      internalID: -1606999851
       vertices: []
       indices: 
       edges: []
@@ -183,10 +195,10 @@ TextureImporter:
       name: TiyanakDie_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2eb34ce3e5bd09645be985383a58e664
-      internalID: 1433006286
+      spriteID: 0f254da962b6d5c44958dd92ed014fbd
+      internalID: 1059153116
       vertices: []
       indices: 
       edges: []
@@ -211,10 +223,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TiyanakDie_0: 1997582762
-      TiyanakDie_1: -1590742356
-      TiyanakDie_2: 525459255
-      TiyanakDie_3: 1433006286
+      TiyanakDie_0: 1842114381
+      TiyanakDie_1: 1121540454
+      TiyanakDie_2: -1606999851
+      TiyanakDie_3: 1059153116
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

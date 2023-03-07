@@ -102,6 +102,18 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -122,8 +134,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 170defec960fbe343bca632e871f416c
-      internalID: 1847518579
+      spriteID: b5b6ef4930b06b6478c4c1e9b3960b0a
+      internalID: -1485605036
       vertices: []
       indices: 
       edges: []
@@ -141,10 +153,10 @@ TextureImporter:
       name: WhiteLadyDie_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 307e0722f2036c14fab8bfa4ae71f6b7
-      internalID: -87858191
+      spriteID: bdb6a7ab72ad89d4cacaa3a6049504ae
+      internalID: 379864612
       vertices: []
       indices: 
       edges: []
@@ -162,10 +174,10 @@ TextureImporter:
       name: WhiteLadyDie_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 192
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe0497c337631d2448b7a8827f7c40dd
-      internalID: -44494861
+      spriteID: 03e129f93762faa469e74a77630e2738
+      internalID: -1938688053
       vertices: []
       indices: 
       edges: []
@@ -183,10 +195,10 @@ TextureImporter:
       name: WhiteLadyDie_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f93fd8567b18174ea4a70e7e73830a1
-      internalID: 924239728
+      spriteID: ab6dc64c1a6ddd24093ea2285df427af
+      internalID: -489688786
       vertices: []
       indices: 
       edges: []
@@ -211,10 +223,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WhiteLadyDie_0: 1847518579
-      WhiteLadyDie_1: -87858191
-      WhiteLadyDie_2: -44494861
-      WhiteLadyDie_3: 924239728
+      WhiteLadyDie_0: -1485605036
+      WhiteLadyDie_1: 379864612
+      WhiteLadyDie_2: -1938688053
+      WhiteLadyDie_3: -489688786
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

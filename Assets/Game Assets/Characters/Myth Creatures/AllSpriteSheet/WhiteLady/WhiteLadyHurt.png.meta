@@ -102,6 +102,18 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -122,8 +134,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7730d12a40558d74e99b602a5a7997bb
-      internalID: -1182488164
+      spriteID: 03188a14a7627b54ca5f16b92c1b8f2a
+      internalID: -128541292
       vertices: []
       indices: 
       edges: []
@@ -141,10 +153,10 @@ TextureImporter:
       name: WhiteLadyHurt_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f04d656128ec281459a184f0b7045a5c
-      internalID: -725681021
+      spriteID: 380ed4bfd3f880b4292c7bd66f2758d2
+      internalID: 364035382
       vertices: []
       indices: 
       edges: []
@@ -162,10 +174,10 @@ TextureImporter:
       name: WhiteLadyHurt_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 192
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d39016926d05d24c9286a935543612a
-      internalID: 428267653
+      spriteID: fa2b5df3fe5487c4caeec43f79fee097
+      internalID: -1247473561
       vertices: []
       indices: 
       edges: []
@@ -183,10 +195,10 @@ TextureImporter:
       name: WhiteLadyHurt_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c0e42350b3ccfb46aecd40a3da208a3
-      internalID: 1421229606
+      spriteID: afdb4c7fae87a4c4fb909fb2d3bcdc15
+      internalID: 1954352806
       vertices: []
       indices: 
       edges: []
@@ -211,10 +223,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WhiteLadyHurt_0: -1182488164
-      WhiteLadyHurt_1: -725681021
-      WhiteLadyHurt_2: 428267653
-      WhiteLadyHurt_3: 1421229606
+      WhiteLadyHurt_0: -128541292
+      WhiteLadyHurt_1: 364035382
+      WhiteLadyHurt_2: -1247473561
+      WhiteLadyHurt_3: 1954352806
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
