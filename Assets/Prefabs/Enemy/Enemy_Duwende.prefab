@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6319323793228025874}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.79, y: 2.1, z: 0}
+  m_LocalPosition: {x: 0, y: 2.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6319323794075963231}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: -0.26, z: 10}
+  m_LocalPosition: {x: 3.5, y: 0, z: 10}
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -251,8 +251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarPrefab: {fileID: 870197897910100291, guid: 6663a394c7dde2f44b0778caf66f2b19, type: 3}
   barPosition: {fileID: 6319323793228025873}
-  initialHealth: 15
-  maxHealth: 15
+  initialHealth: 13
+  maxHealth: 13
 --- !u!114 &6319323794189484450
 MonoBehaviour:
   m_ObjectHideFlags: 0
