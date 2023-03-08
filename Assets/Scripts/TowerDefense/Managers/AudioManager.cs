@@ -8,7 +8,7 @@ public class AudioManager : Singleton<AudioManager>
     {
         pinya,
         suklay,
-        unggoy,
+        pagong,
         kandila,
         durian,
     }

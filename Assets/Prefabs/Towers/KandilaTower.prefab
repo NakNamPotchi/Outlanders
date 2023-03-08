@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6113155398593875879
+--- !u!1 &7866781718581711418
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,70 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6113155398593875880}
-  - component: {fileID: 6113155398593875881}
+  - component: {fileID: 7866781718581711419}
   m_Layer: 0
-  m_Name: SuklayTower_Model
+  m_Name: RotatePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6113155398593875880
+--- !u!4 &7866781718581711419
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113155398593875879}
+  m_GameObject: {fileID: 7866781718581711418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7866781719571792281}
+  - {fileID: 7866781720097776428}
+  m_Father: {fileID: 7866781720289271719}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7866781719571792280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7866781719571792281}
+  - component: {fileID: 7866781719571792286}
+  m_Layer: 0
+  m_Name: KandilaTower_Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7866781719571792281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866781719571792280}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 2.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 6113155399263156977}
+  m_Father: {fileID: 7866781718581711419}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6113155398593875881
+--- !u!212 &7866781719571792286
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113155398593875879}
+  m_GameObject: {fileID: 7866781719571792280}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,7 +106,7 @@ SpriteRenderer:
   m_SortingLayerID: 1879797447
   m_SortingLayer: 3
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: f3b1b5f3044c04e4b84bf59a83f77738, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 171e948d25ded5e429713e7cfa12e602, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,7 +117,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &6113155399263156976
+--- !u!1 &7866781720097776431
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,32 +125,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6113155399263156977}
+  - component: {fileID: 7866781720097776428}
   m_Layer: 0
-  m_Name: RotatePoint
+  m_Name: ProjectileSpawnPos
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6113155399263156977
+--- !u!4 &7866781720097776428
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113155399263156976}
+  m_GameObject: {fileID: 7866781720097776431}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.12, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6113155398593875880}
-  - {fileID: 6113155399631717007}
-  m_Father: {fileID: 6113155399350087528}
-  m_RootOrder: 0
+  m_LocalPosition: {x: 0, y: 0.44, z: 0}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 7866781718581711419}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6113155399350087523
+--- !u!1 &7866781720289271741
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,84 +156,84 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6113155399350087528}
-  - component: {fileID: 6113155399350087527}
-  - component: {fileID: 6113155399350087529}
-  - component: {fileID: 6113155399350087526}
-  - component: {fileID: 6113155399350087525}
-  - component: {fileID: 6113155399350087524}
+  - component: {fileID: 7866781720289271719}
+  - component: {fileID: 7866781720289271718}
+  - component: {fileID: 7866781720289271713}
+  - component: {fileID: 7866781720289271712}
+  - component: {fileID: 7866781720289271715}
+  - component: {fileID: 7866781720289271714}
   m_Layer: 0
-  m_Name: SuklayTower
+  m_Name: KandilaTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6113155399350087528
+--- !u!4 &7866781720289271719
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113155399350087523}
+  m_GameObject: {fileID: 7866781720289271741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6113155399263156977}
+  - {fileID: 7866781718581711419}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6113155399350087527
+--- !u!114 &7866781720289271718
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113155399350087523}
+  m_GameObject: {fileID: 7866781720289271741}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5493ec53762c8084983797b135d19b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3.5
---- !u!114 &6113155399350087529
+  attackRange: 4.5
+--- !u!114 &7866781720289271713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113155399350087523}
+  m_GameObject: {fileID: 7866781720289271741}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37b935b570501f34d8652ba42178ac68, type: 3}
+  m_Script: {fileID: 11500000, guid: 93d4d37849f996740b971bda91b33094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpawnPosition: {fileID: 6113155399631717007}
-  delayBtwAttacks: 0.7
-  damage: 5
---- !u!114 &6113155399350087526
+  projectileSpawnPosition: {fileID: 7866781720097776428}
+  delayBtwAttacks: 2.2
+  damage: 8
+--- !u!114 &7866781720289271712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113155399350087523}
+  m_GameObject: {fileID: 7866781720289271741}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b77c5d8a93363ad45a2f762236dc6abc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5518434688515460152, guid: 4e838d2ff99ff7f499de785a10891e25, type: 3}
+  prefab: {fileID: 1613666775870369416, guid: 78ee684ff8510b34d8c9a9922882ca40, type: 3}
   poolSize: 10
---- !u!58 &6113155399350087525
+--- !u!58 &7866781720289271715
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113155399350087523}
+  m_GameObject: {fileID: 7866781720289271741}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -211,52 +242,21 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4
---- !u!114 &6113155399350087524
+  m_Radius: 5
+--- !u!114 &7866781720289271714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113155399350087523}
+  m_GameObject: {fileID: 7866781720289271741}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce54d6c7bd65b924f930286e1dcff112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeInitialCost: 15
-  upgradeCostIncremental: 15
-  damageIncremental: 2
-  delayReduce: 0.1
-  sellPert: 0.5
---- !u!1 &6113155399631717006
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6113155399631717007}
-  m_Layer: 0
-  m_Name: ProjectileSpawnPos
-  m_TagString: Untagged
-  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6113155399631717007
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113155399631717006}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.36, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 6113155399263156977}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  upgradeInitialCost: 20
+  upgradeCostIncremental: 20
+  damageIncremental: 5
+  delayReduce: 0.15
+  sellPert: 0

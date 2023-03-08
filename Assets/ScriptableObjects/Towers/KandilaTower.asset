@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ae9b20722c7ea4285fb552f03d11f3, type: 3}
+  m_Name: KandilaTower
+  m_EditorClassIdentifier: 
+  TowerPrefab: {fileID: 7866781720289271741, guid: d5eaa7086d8bc40448f0e9f3e792feba, type: 3}
+  TowerShopCost: 20
+  TowerShopSprite: {fileID: 21300000, guid: 171e948d25ded5e429713e7cfa12e602, type: 3}

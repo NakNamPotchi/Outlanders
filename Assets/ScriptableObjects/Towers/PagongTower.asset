@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ae9b20722c7ea4285fb552f03d11f3, type: 3}
+  m_Name: PagongTower
+  m_EditorClassIdentifier: 
+  TowerPrefab: {fileID: 5231178186039003137, guid: b93d4bff02fc7754d9d521c4d26dd3ff, type: 3}
+  TowerShopCost: 20
+  TowerShopSprite: {fileID: 21300000, guid: 9e59e6d1afd59ea4c925319465274c23, type: 3}

@@ -7,18 +7,18 @@ using Random = UnityEngine.Random;
 
 public class Light2DOther : MonoBehaviour
 {
-    public Light2D light;
+    public Light2D lightobject;
  
     void Start()
     {
-        light = GetComponent<Light2D>();
+        lightobject = GetComponent<Light2D>();
         StartCoroutine(ExecuteAfterTime(0.5f));
     }
 
     IEnumerator ExecuteAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
-        light.enabled = true;
+        lightobject.enabled = true;
     }
 
     public void ClickPortal() {
@@ -28,6 +28,6 @@ public class Light2DOther : MonoBehaviour
     IEnumerator GameStageMap(float time)
     {
         yield return new WaitForSeconds(time);
-        light.enabled = false;
+        lightobject.enabled = false;
     }
 }
