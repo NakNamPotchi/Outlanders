@@ -554,6 +554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fader: {fileID: 826333427}
   NextScene: IntroductionCabin
+  StoryToSkip: 0
 --- !u!1 &208542372
 GameObject:
   m_ObjectHideFlags: 0
@@ -11714,7 +11715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &826333427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12000,8 +12001,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lola Selle is a superstitious grandma who loves telling \nstories to her
-    grandchildren, Franco and Shania"
+  m_text: 'Every day, Lola Selle shares stories from Folktales, Legends
+
+    and
+    Riddles to her grandchildren, Shania and Franco'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79c4c8ba91ef60b498e9e9cda1de26ca, type: 2}
   m_sharedMaterial: {fileID: 5022791117089066462, guid: 79c4c8ba91ef60b498e9e9cda1de26ca, type: 2}
