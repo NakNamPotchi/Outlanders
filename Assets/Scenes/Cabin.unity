@@ -6209,7 +6209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2440a81c9fd324e9cc8e8840fecf44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 128111093}
+  lightobject: {fileID: 0}
   amplify: 0.7
 --- !u!1 &147414212
 GameObject:
@@ -6237,7 +6237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147414212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.94, y: 0, z: 0}
+  m_LocalPosition: {x: 12.37, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6821,7 +6821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5a25e303db1094da1358d96c58b9ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 158519977}
+  lightobject: {fileID: 0}
 --- !u!1 &161484973
 GameObject:
   m_ObjectHideFlags: 0
@@ -12470,6 +12470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fader: {fileID: 476233676}
   NextScene: GameStageMap
+  StoryToSkip: 0
 --- !u!1 &264493233
 GameObject:
   m_ObjectHideFlags: 0
@@ -19242,7 +19243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5a25e303db1094da1358d96c58b9ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 1303658754}
+  lightobject: {fileID: 0}
 --- !u!1 &1304772759
 GameObject:
   m_ObjectHideFlags: 0
@@ -25338,7 +25339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040665549}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.94, y: 0, z: 0}
+  m_LocalPosition: {x: -12.37, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
