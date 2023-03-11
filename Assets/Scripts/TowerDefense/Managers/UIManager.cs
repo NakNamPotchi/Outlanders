@@ -49,13 +49,17 @@ public class UIManager : Singleton<UIManager>
 
     private Node _currentNodeSelected;
 
+    public void StartGame()
+    {
+        ResumeTime();
+    }
+
     private void Update()
     {
         totalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
         livesText.text = LevelManager.Instance.TotalLives.ToString();
         int waveNum = LevelManager.Instance.CurrentWave;
-        StartCoroutine(ExecuteAfterTime(1.5f, waveNum));
-        
+        StartCoroutine(ExecuteAfterTime(3f, waveNum));
     }
 
     IEnumerator ExecuteAfterTime(float time, int waveNum)
