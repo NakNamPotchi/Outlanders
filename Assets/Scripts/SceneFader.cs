@@ -7,7 +7,7 @@ public class SceneFader : MonoBehaviour {
 
 	public Image img;
 	public AnimationCurve curve;
-	public UIManager UIM;
+	private UIManager UIM;
 
 	void Start ()
 	{
