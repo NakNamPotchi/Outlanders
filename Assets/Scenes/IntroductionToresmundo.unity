@@ -2151,7 +2151,7 @@ Tilemap:
       - {fileID: 901700100, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -659470365, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1267891511, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -9, y: 1, z: 0}
@@ -23992,6 +23992,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  UIM: {fileID: 0}
 --- !u!4 &1191722290
 Transform:
   m_ObjectHideFlags: 0
@@ -24315,7 +24316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2440a81c9fd324e9cc8e8840fecf44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 1396627050}
+  lightobject: {fileID: 0}
   amplify: 0.7
 --- !u!95 &1396627049
 Animator:
