@@ -59,7 +59,7 @@ public class UIManager : Singleton<UIManager>
         totalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
         livesText.text = LevelManager.Instance.TotalLives.ToString();
         int waveNum = LevelManager.Instance.CurrentWave;
-        StartCoroutine(ExecuteAfterTime(3f, waveNum));
+        StartCoroutine(ExecuteAfterTime(5f, waveNum));
     }
 
     IEnumerator ExecuteAfterTime(float time, int waveNum)

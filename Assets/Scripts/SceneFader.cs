@@ -7,7 +7,7 @@ public class SceneFader : MonoBehaviour {
 
 	public Image img;
 	public AnimationCurve curve;
-	private UIManager UIM;
+	public UIManager UIM;
 
 	void Start ()
 	{
@@ -18,7 +18,10 @@ public class SceneFader : MonoBehaviour {
 	IEnumerator ExecuteAfterFadeIn(float time)
     {
         yield return new WaitForSeconds(time);
-        UIM.PauseTime();
+		if (SceneManager.GetActiveScene().name == "TutorialStage")
+		{
+			UIM.PauseTime();
+		}
     }
 
 	public void FadeTo (string scene)
