@@ -2030,7 +2030,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 237651172}
   m_OnClick:
     m_PersistentCalls:
@@ -8471,6 +8471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1085614508}
   - component: {fileID: 1085614509}
+  - component: {fileID: 1085614510}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -8529,6 +8530,20 @@ MonoBehaviour:
   ToresToUnlock: 1
   MooltosToUnlock: 1
   fader: {fileID: 524746408}
+--- !u!114 &1085614510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085614507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9a154cefe373e46a1ebf999ac1e359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fader: {fileID: 524746408}
+  cabinButton: {fileID: 237651171}
 --- !u!1 &1085728116
 GameObject:
   m_ObjectHideFlags: 0

@@ -43,6 +43,7 @@ public class UIManager : Singleton<UIManager>
     private int SkipTutorialStage = 1;
     private int SkipTutorialScene = 1;
     private int SkipStoryUnlock = 1;
+    private int CabinButtonInteract = 1;
 
     [Header("Scene Fader")]
     public SceneFader fader;
@@ -128,6 +129,7 @@ public class UIManager : Singleton<UIManager>
         PlayerPrefs.SetInt("SkipTutorialStage", SkipTutorialStage);
         PlayerPrefs.SetInt("SkipTutorialScene", SkipTutorialScene);
         PlayerPrefs.SetInt("SkipStoryUnlock", SkipStoryUnlock);
+        PlayerPrefs.SetInt("CabinButtonInteract", CabinButtonInteract);
         fader.FadeTo(GoToAfterWin);
     }
     
