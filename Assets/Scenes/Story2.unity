@@ -390,7 +390,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173967011}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.009375, z: -5.74}
+  m_LocalPosition: {x: 0, y: -7.0007734, z: -5.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1326,7 +1326,7 @@ GameObject:
   - component: {fileID: 282672628}
   - component: {fileID: 282672627}
   - component: {fileID: 282672626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ForestBehindTrees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,7 +1408,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 7
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1.40625, y: 2.28125, z: 0}
   m_MaxChunkCount: 16
@@ -12686,7 +12686,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 7.509375
+  orthographic size: 7.5007734
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -20241,7 +20241,7 @@ Tilemap:
       - {fileID: -1866401537, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -683792770, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -273057953, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 12, y: 3, z: 0}
@@ -21709,6 +21709,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  UIM: {fileID: 0}
 --- !u!4 &1191722290
 Transform:
   m_ObjectHideFlags: 0
@@ -22066,7 +22067,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388351586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.9993753, z: -5.74}
+  m_LocalPosition: {x: 0, y: 6.990773, z: -5.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
