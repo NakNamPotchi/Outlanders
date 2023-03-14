@@ -38,6 +38,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] public int HumanToUnlock;
     [SerializeField] public int ToresToUnlock;
     [SerializeField] public int MooltosToUnlock;
+    [SerializeField] public int TowerToUnlock;
 
     private int SkipIntroductionStory = 1;
     private int SkipTutorialStage = 1;
@@ -130,6 +131,8 @@ public class UIManager : Singleton<UIManager>
         PlayerPrefs.SetInt("SkipTutorialScene", SkipTutorialScene);
         PlayerPrefs.SetInt("SkipStoryUnlock", SkipStoryUnlock);
         PlayerPrefs.SetInt("CabinButtonInteract", CabinButtonInteract);
+        PlayerPrefs.SetInt("TowerToUnlock", TowerToUnlock);
+
         fader.FadeTo(GoToAfterWin);
     }
     

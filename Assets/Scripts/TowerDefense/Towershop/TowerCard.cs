@@ -13,12 +13,21 @@ public class TowerCard : MonoBehaviour
     [SerializeField] private TextMeshProUGUI towerCost;
 
     public TowerSettings TowerLoaded { get; set; }
-    
+
     public void SetupTowerButton(TowerSettings towerSettings)
     {
         TowerLoaded = towerSettings;
         towerImage.sprite = towerSettings.TowerShopSprite;
         towerCost.text = towerSettings.TowerShopCost.ToString();
+    }
+
+    public void SetupBlankTowerButton(TowerSettings towerSettings)
+    {
+        Sprite QuestionMark = Resources.Load<Sprite>("QuestionMark");
+
+        TowerLoaded = towerSettings;
+        towerImage.sprite = QuestionMark;
+        towerCost.text = "0";
     }
 
     public void PlaceTower()

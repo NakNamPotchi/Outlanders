@@ -5,18 +5,29 @@ using UnityEngine;
 public class TowerShopManager : MonoBehaviour
 {
     [SerializeField] private GameObject towerCardPrefab;
+    [SerializeField] private GameObject lockedTowerCardPrefab;
     [SerializeField] private Transform towerPanelContainer;
 
     [Header("Tower Settings")]
     [SerializeField] private TowerSettings[] towers;
 
     private Node _currentNodeSelected;
+    private int TowerToUnlock;
     
     private void Start()
     {
+        int TowerToUnlock = PlayerPrefs.GetInt("TowerToUnlock");
+
         for (int i = 0; i < towers.Length; i++)
         {
-            CreateTowerCard(towers[i]);
+            if (TowerToUnlock >= i)
+            {
+                CreateTowerCard(towers[i]); 
+            }
+            else
+            {
+                CreateBlankTowerCard(towers[i]);           
+            }
         }
     }
 
@@ -28,6 +39,16 @@ public class TowerShopManager : MonoBehaviour
 
         TowerCard cardButton = newInstance.GetComponent<TowerCard>();
         cardButton.SetupTowerButton(towerSettings);
+    }
+
+    private void CreateBlankTowerCard(TowerSettings towerSettings)
+    {
+        GameObject newInstance = Instantiate(lockedTowerCardPrefab, towerPanelContainer.position, Quaternion.identity);
+        newInstance.transform.SetParent(towerPanelContainer);
+        newInstance.transform.localScale = Vector3.one;
+
+        TowerCard cardButton = newInstance.GetComponent<TowerCard>();
+        cardButton.SetupBlankTowerButton(towerSettings);
     }
     
     private void NodeSelected(Node nodeSelected)
