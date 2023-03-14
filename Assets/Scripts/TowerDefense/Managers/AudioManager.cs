@@ -20,7 +20,7 @@ public class AudioManager : Singleton<AudioManager>
         public AudioClip audioClip;
     }
 
-    public SoundAudioClip[] SFXlibrary;
+    public SoundAudioClip[] SFXLibrary;
 
     public void PlayerSound(Sound SFX)
     {
@@ -33,7 +33,7 @@ public class AudioManager : Singleton<AudioManager>
 
     private AudioClip GetAudioClip(Sound sound)
     {
-        foreach (var item in SFXlibrary)
+        foreach (var item in SFXLibrary)
         {
             if(item.sound == sound)
             {
