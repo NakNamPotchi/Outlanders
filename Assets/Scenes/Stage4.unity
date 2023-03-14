@@ -2473,6 +2473,8 @@ MonoBehaviour:
   SFXlibrary:
   - sound: 0
     audioClip: {fileID: 8300000, guid: 19c4913b82880634483bd2cb981a588d, type: 3}
+  - sound: 1
+    audioClip: {fileID: 8300000, guid: 9eb54b64ae0e7ea4989dd711eaedc570, type: 3}
 --- !u!82 &461849662
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3512,7 +3514,7 @@ Camera:
   far clip plane: 9.7
   field of view: 60
   orthographic: 1
-  orthographic size: 5.618557
+  orthographic size: 5.6209145
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4471,7 +4473,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842223879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.118557, z: 0}
+  m_LocalPosition: {x: 0, y: 5.1209145, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5489,7 +5491,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019732596}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.5, y: 0, z: 0}
+  m_LocalPosition: {x: 9.499999, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6194,7 +6196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355822050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.5, y: 0, z: 0}
+  m_LocalPosition: {x: -9.499999, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10387,7 +10389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807467451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.118557, z: 0}
+  m_LocalPosition: {x: 0, y: -5.1209145, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
