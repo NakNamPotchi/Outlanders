@@ -61,7 +61,7 @@ public class UIManager : Singleton<UIManager>
         totalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
         livesText.text = LevelManager.Instance.TotalLives.ToString();
         int waveNum = LevelManager.Instance.CurrentWave;
-        StartCoroutine(ExecuteAfterTime(5f, waveNum));
+        StartCoroutine(ExecuteAfterTime(7f, waveNum));
     }
 
     IEnumerator ExecuteAfterTime(float time, int waveNum)
@@ -117,21 +117,26 @@ public class UIManager : Singleton<UIManager>
 
     public void ReturnCabin()
     {
+        int UnlockedStage = PlayerPrefs.GetInt("stageReached");
+
         Time.timeScale = 1f;
-        PlayerPrefs.SetInt("stageReached", StageToUnlock);
-        PlayerPrefs.SetInt("storyReached", StoryToUnlock);
-        PlayerPrefs.SetInt("FolktaleBookSelector", FolktaleToUnlock);
-        PlayerPrefs.SetInt("LegendBookSelector", LegendToUnlock);
-        PlayerPrefs.SetInt("RiddleBookSelector", RiddleToUnlock);
-        PlayerPrefs.SetInt("HumanBookSelector", HumanToUnlock);
-        PlayerPrefs.SetInt("ToresBookSelector", ToresToUnlock);
-        PlayerPrefs.SetInt("MooltosBookSelector", MooltosToUnlock);
-        PlayerPrefs.SetInt("SkipIntroductionStory", SkipIntroductionStory);
-        PlayerPrefs.SetInt("SkipTutorialStage", SkipTutorialStage);
-        PlayerPrefs.SetInt("SkipTutorialScene", SkipTutorialScene);
-        PlayerPrefs.SetInt("SkipStoryUnlock", SkipStoryUnlock);
-        PlayerPrefs.SetInt("CabinButtonInteract", CabinButtonInteract);
-        PlayerPrefs.SetInt("TowerToUnlock", TowerToUnlock);
+        if (UnlockedStage <= StageToUnlock)
+        {
+            PlayerPrefs.SetInt("stageReached", StageToUnlock);
+            PlayerPrefs.SetInt("storyReached", StoryToUnlock);
+            PlayerPrefs.SetInt("FolktaleBookSelector", FolktaleToUnlock);
+            PlayerPrefs.SetInt("LegendBookSelector", LegendToUnlock);
+            PlayerPrefs.SetInt("RiddleBookSelector", RiddleToUnlock);
+            PlayerPrefs.SetInt("HumanBookSelector", HumanToUnlock);
+            PlayerPrefs.SetInt("ToresBookSelector", ToresToUnlock);
+            PlayerPrefs.SetInt("MooltosBookSelector", MooltosToUnlock);
+            PlayerPrefs.SetInt("SkipIntroductionStory", SkipIntroductionStory);
+            PlayerPrefs.SetInt("SkipTutorialStage", SkipTutorialStage);
+            PlayerPrefs.SetInt("SkipTutorialScene", SkipTutorialScene);
+            PlayerPrefs.SetInt("SkipStoryUnlock", SkipStoryUnlock);
+            PlayerPrefs.SetInt("CabinButtonInteract", CabinButtonInteract);
+            PlayerPrefs.SetInt("TowerToUnlock", TowerToUnlock);
+        }
 
         fader.FadeTo(GoToAfterWin);
     }
