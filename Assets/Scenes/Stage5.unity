@@ -472,11 +472,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Folktale 5
+  m_text: 'Folktale 6
 
-    Riddles 5
+    Riddles 6 - 8
 
-    Legend 3'
+    Legend 4
+
+    Pagong Tower'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79c4c8ba91ef60b498e9e9cda1de26ca, type: 2}
   m_sharedMaterial: {fileID: 5022791117089066462, guid: 79c4c8ba91ef60b498e9e9cda1de26ca, type: 2}
@@ -1966,7 +1968,7 @@ Tilemap:
       - {fileID: -1866401537, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -683792770, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -273057953, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -8, y: -1, z: 0}
@@ -1980,7 +1982,7 @@ Tilemap:
       - {fileID: -142257695, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1791580437, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 832384480, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -9, y: 0, z: 0}
@@ -2092,7 +2094,7 @@ Tilemap:
       - {fileID: 901700100, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -659470365, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1267891511, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 5, y: 3, z: 0}
@@ -2967,7 +2969,7 @@ Tilemap:
       - {fileID: -790848813, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1614506936, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1687263867, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 4, y: -4, z: 0}
