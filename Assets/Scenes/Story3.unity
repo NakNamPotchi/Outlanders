@@ -981,8 +981,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: -1731847903
-  m_SortingOrder: 5
+  m_SortingLayerID: 0
+  m_SortingOrder: 8
   m_TargetDisplay: 0
 --- !u!224 &241302763
 RectTransform:
@@ -6865,7 +6865,7 @@ Tilemap:
       - {fileID: 901700100, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -659470365, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1267891511, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 10, y: 2, z: 0}
@@ -6907,7 +6907,7 @@ Tilemap:
       - {fileID: -1866401537, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -683792770, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -273057953, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 11, y: 3, z: 0}
@@ -19253,7 +19253,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1197036385}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+  m_PlayableAsset: {fileID: 0}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 0
@@ -19300,6 +19300,34 @@ PlayableDirector:
   - key: {fileID: 5318589458519332585, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
     value: {fileID: 0}
   - key: {fileID: 1112377005984730172, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -536650458217347449, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1042939645097242542, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3874192396357482236, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -9089551157129830224, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7243778480608197259, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -1576015954964274817, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1181348842727803063, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4748792073335659291, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7571280066922194872, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8690572437393577701, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7221351788422640830, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3246078618682139026, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7524869934176975387, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3621454127583039389, guid: a2bcc4db11164284ca66cfd9ee64cbea, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
@@ -19361,7 +19389,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: -1731847903
+  m_SortingLayerID: 0
   m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1197036391
