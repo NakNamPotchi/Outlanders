@@ -5172,7 +5172,7 @@ Camera:
   far clip plane: 9.7
   field of view: 60
   orthographic: 1
-  orthographic size: 5.6236787
+  orthographic size: 5.623037
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6203,7 +6203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842223879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.1236787, z: 0}
+  m_LocalPosition: {x: 0, y: 5.123037, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6507,13 +6507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Folktale 1
-
-    Legend 1
-
-    Riddles 1 & 2
-
-    Pinya Tower'
+  m_text: Pinya Tower
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79c4c8ba91ef60b498e9e9cda1de26ca, type: 2}
   m_sharedMaterial: {fileID: 5022791117089066462, guid: 79c4c8ba91ef60b498e9e9cda1de26ca, type: 2}
@@ -8351,11 +8345,11 @@ MonoBehaviour:
   gameOverTotalCoinsText: {fileID: 961275501}
   towerUpgradeButton: {fileID: 1557274074}
   GoToAfterWin: Cabin
-  StageToUnlock: 2
-  StoryToUnlock: 2
-  FolktaleToUnlock: 1
-  RiddleToUnlock: 2
-  LegendToUnlock: 1
+  StageToUnlock: 1
+  StoryToUnlock: 1
+  FolktaleToUnlock: 0
+  RiddleToUnlock: 0
+  LegendToUnlock: 0
   HumanToUnlock: 3
   ToresToUnlock: 1
   MooltosToUnlock: 1
@@ -15629,7 +15623,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807467451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.1236787, z: 0}
+  m_LocalPosition: {x: 0, y: -5.123037, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
