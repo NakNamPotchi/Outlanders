@@ -33,7 +33,7 @@ public class Spawner : MonoBehaviour
 
     [SerializeField] public ObjectPooler[] enemyWavePooler;
 
-    private float _spawnTimer;
+    private float _spawnTimer = 7f;
     private int _enemiesSpawned;
     private int _enemiesRamaining;
     public static int totalWave;
@@ -54,7 +54,7 @@ public class Spawner : MonoBehaviour
         if (_spawnTimer < 0)
         {
             _spawnTimer = GetSpawnDelay();
-            if (_enemiesSpawned < enemyCount)
+            if (_enemiesSpawned <= enemyCount)
             {
                 _enemiesSpawned++;
                 SpawnEnemy();
