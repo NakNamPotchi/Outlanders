@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5493ec53762c8084983797b135d19b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 5
+  attackRange: 5.5
 --- !u!114 &5231178186039003151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 5231178186015220380}
-  delayBtwAttacks: 2.8
+  delayBtwAttacks: 2.3
   damage: 6
 --- !u!114 &5231178186039003138
 MonoBehaviour:
@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeInitialCost: 20
-  upgradeCostIncremental: 20
-  damageIncremental: 4
-  delayReduce: 0.25
+  upgradeCostIncremental: 23
+  damageIncremental: 2
+  delayReduce: 0.15
   sellPert: 0.5
 --- !u!1 &5231178187044734328
 GameObject:
