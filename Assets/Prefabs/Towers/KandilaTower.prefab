@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 7866781720097776428}
-  delayBtwAttacks: 2.2
+  delayBtwAttacks: 1.5
   damage: 8
 --- !u!114 &7866781720289271712
 MonoBehaviour:
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeInitialCost: 20
-  upgradeCostIncremental: 20
-  damageIncremental: 5
-  delayReduce: 0.15
-  sellPert: 0
+  upgradeCostIncremental: 27
+  damageIncremental: 3
+  delayReduce: 0.1
+  sellPert: 0.5
