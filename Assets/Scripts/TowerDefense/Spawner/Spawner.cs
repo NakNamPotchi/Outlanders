@@ -64,13 +64,20 @@ public class Spawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        GameObject newInstance = GetPooler().GetInstanceFromPool();
-        Enemy enemy = newInstance.GetComponent<Enemy>();
-        enemy.Waypoint = _waypoint;
-        enemy.ResetEnemy();
+        try
+        {
+            GameObject newInstance = GetPooler().GetInstanceFromPool();
+            Enemy enemy = newInstance.GetComponent<Enemy>();
+            enemy.Waypoint = _waypoint;
+            enemy.ResetEnemy();
 
-        enemy.transform.localPosition = transform.position;
-        newInstance.SetActive(true);
+            enemy.transform.localPosition = transform.position;
+            newInstance.SetActive(true);
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e.Message);
+        }
     }
 
     private float GetSpawnDelay()
