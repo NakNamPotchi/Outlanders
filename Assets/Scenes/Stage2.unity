@@ -3350,7 +3350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6319323794189484452, guid: e7fbf199ff48e11458f4b919c7003b42, type: 3}
-  poolSize: 10
+  poolSize: 5
 --- !u!1 &334713698
 GameObject:
   m_ObjectHideFlags: 0
@@ -3756,7 +3756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 8312554188694447970, guid: e0955d8db16ed5e4caac28b25b34bc1e, type: 3}
-  poolSize: 10
+  poolSize: 5
 --- !u!1 &450408129
 GameObject:
   m_ObjectHideFlags: 0
@@ -8034,7 +8034,7 @@ Tilemap:
       - {fileID: -1917133780, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -970646269, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1679839599, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 9, y: -6, z: 0}
@@ -8048,7 +8048,7 @@ Tilemap:
       - {fileID: -1357902804, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 863618376, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -1655719156, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 8, y: -5, z: 0}
@@ -8062,7 +8062,7 @@ Tilemap:
       - {fileID: -1866401537, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -683792770, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -273057953, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 9, y: -4, z: 0}
@@ -8104,7 +8104,7 @@ Tilemap:
       - {fileID: 901700100, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -659470365, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1267891511, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 0, y: 0, z: 0}
@@ -11440,7 +11440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77aaa8544af75e54995611aca822ebe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: 35
+  coin: 100
 --- !u!1 &1467960365
 GameObject:
   m_ObjectHideFlags: 0
