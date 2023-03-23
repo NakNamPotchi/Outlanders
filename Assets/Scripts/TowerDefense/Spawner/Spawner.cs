@@ -35,7 +35,7 @@ public class Spawner : MonoBehaviour
 
     private float _spawnTimer = 7f;
     private int _enemiesSpawned;
-    private int _enemiesRamaining;
+    private int _enemiesRemaining;
     public static int totalWave;
     
     private Waypoint _waypoint;
@@ -45,7 +45,7 @@ public class Spawner : MonoBehaviour
         _waypoint = GetComponent<Waypoint>();
         totalWave = this.enemyWavePooler.Length;
 
-        _enemiesRamaining = enemyCount;
+        _enemiesRemaining = enemyCount;
     }
 
     private void Update()
@@ -54,7 +54,7 @@ public class Spawner : MonoBehaviour
         if (_spawnTimer < 0)
         {
             _spawnTimer = GetSpawnDelay();
-            if (_enemiesSpawned <= enemyCount)
+            if (_enemiesSpawned < enemyCount)
             {
                 _enemiesSpawned++;
                 SpawnEnemy();
@@ -131,15 +131,15 @@ public class Spawner : MonoBehaviour
     private IEnumerator NextWave()
     {
         yield return new WaitForSeconds(delayBtwWaves);
-        _enemiesRamaining = enemyCount;
+        _enemiesRemaining = enemyCount;
         _spawnTimer = 0f;
         _enemiesSpawned = 0;
     }
     
     private void RecordEnemy(Enemy enemy)
     {
-        _enemiesRamaining--;
-        if (_enemiesRamaining <= 0)
+        _enemiesRemaining--;
+        if (_enemiesRemaining <= 0)
         {
             OnWaveCompleted?.Invoke();
             StartCoroutine(NextWave());
