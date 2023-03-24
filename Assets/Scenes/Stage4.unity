@@ -606,7 +606,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -664,6 +664,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -9, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 6
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -7, y: 5, z: 0}
     second:
       serializedVersion: 2
@@ -675,6 +685,16 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: -4, y: 5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 6
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 0, y: 5, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 4
@@ -714,7 +734,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 6
+  - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: 1e8aa8c106a1dac4495d2479aaf137d9, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -725,7 +745,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 6
+  - m_RefCount: 8
     m_Data: {fileID: -2004429169, guid: ab3132032b4a5524a8e7d342c8cd4dff, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 0
@@ -836,7 +856,7 @@ Tilemap:
       e31: 0
       e32: 7.75e-43
       e33: 7.78e-43
-  - m_RefCount: 6
+  - m_RefCount: 8
     m_Data:
       e00: 1
       e01: 0
@@ -855,7 +875,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 6
+  - m_RefCount: 8
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -1349,6 +1369,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &251719641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,7 +1550,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2569,8 +2601,8 @@ Tilemap:
   - first: {x: 1, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 22
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3042,7 +3074,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: c125cf4984f32cd4d852d7ab4701d5d0, type: 2}
   - m_RefCount: 9
     m_Data: {fileID: 11400000, guid: ef3063eeb6665954db1151e27d73422b, type: 2}
-  - m_RefCount: 12
+  - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: 994e60a5047973e429c9dbb5c4519713, type: 2}
   - m_RefCount: 18
     m_Data: {fileID: 11400000, guid: 6109fc6ae22c30447a3218cdf351266b, type: 2}
@@ -3082,14 +3114,14 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 45a7d32bf99db11498269ac1ccd75b48, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 116c8398a0a75a649b85bb0496641a76, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 2c36dd713010c34479a8a9991a49ada9, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 13
     m_Data: {fileID: -1405337429, guid: cfda851d3d9d70d49a157653ad0df42f, type: 3}
   - m_RefCount: 9
     m_Data: {fileID: -1979378708, guid: cfda851d3d9d70d49a157653ad0df42f, type: 3}
-  - m_RefCount: 12
+  - m_RefCount: 11
     m_Data: {fileID: -1963407048, guid: cfda851d3d9d70d49a157653ad0df42f, type: 3}
   - m_RefCount: 18
     m_Data: {fileID: -89033582, guid: cfda851d3d9d70d49a157653ad0df42f, type: 3}
@@ -3107,8 +3139,8 @@ Tilemap:
     m_Data: {fileID: 1613203713, guid: cfda851d3d9d70d49a157653ad0df42f, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 2010398345, guid: cfda851d3d9d70d49a157653ad0df42f, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 521405353, guid: cfda851d3d9d70d49a157653ad0df42f, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 1537862926, guid: cfda851d3d9d70d49a157653ad0df42f, type: 3}
   - m_RefCount: 1
@@ -3485,7 +3517,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3811,7 +3843,7 @@ Tilemap:
       - {fileID: -1844324152, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1324934987, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -586366124, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 4, y: -5, z: 0}
@@ -3831,7 +3863,7 @@ Tilemap:
       - {fileID: -577818977, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 139703636, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -2146241329, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 1, y: -3, z: 0}
@@ -5479,7 +5511,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5567,27 +5599,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -9, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 2
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 3, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 2
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 5, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -5605,7 +5617,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 71492b4e0a87ee44dac380a6be255a78, type: 2}
-  - m_RefCount: 7
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 1e8aa8c106a1dac4495d2479aaf137d9, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -5614,7 +5626,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 1336225544, guid: ab3132032b4a5524a8e7d342c8cd4dff, type: 3}
-  - m_RefCount: 7
+  - m_RefCount: 5
     m_Data: {fileID: -2004429169, guid: ab3132032b4a5524a8e7d342c8cd4dff, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 0
@@ -5653,7 +5665,7 @@ Tilemap:
       e31: 0
       e32: 7.75e-43
       e33: 7.78e-43
-  - m_RefCount: 8
+  - m_RefCount: 6
     m_Data:
       e00: 1
       e01: 0
@@ -5672,7 +5684,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 8
+  - m_RefCount: 6
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -5974,6 +5986,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: CloseTowerShopPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7510,6 +7534,11 @@ MonoBehaviour:
   MooltosToUnlock: 2
   TowerToUnlock: 1
   fader: {fileID: 524746408}
+  NodeButtons:
+  - {fileID: 1982188821}
+  - {fileID: 1778529137}
+  - {fileID: 1982587513}
+  - {fileID: 1692494881}
 --- !u!1 &1085728116
 GameObject:
   m_ObjectHideFlags: 0
@@ -8683,7 +8712,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9350,7 +9379,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11866,7 +11895,7 @@ Tilemap:
       - {fileID: 1088372464, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 821730882, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1792549320, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 6, y: -5, z: 0}
@@ -11876,7 +11905,7 @@ Tilemap:
       - {fileID: 1947924334, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1347045817, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1646078421, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -8, y: -3, z: 0}
@@ -11896,7 +11925,7 @@ Tilemap:
       - {fileID: 1947924334, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1347045817, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1646078421, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 1, y: -2, z: 0}
@@ -11916,7 +11945,7 @@ Tilemap:
       - {fileID: 1088372464, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 821730882, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1792549320, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -3, y: 0, z: 0}
@@ -12134,6 +12163,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1557274075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12340,6 +12381,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1982188821}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1778529137}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1982587513}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1692494881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
 --- !u!4 &1692494880 stripped
@@ -12347,6 +12408,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
   m_PrefabInstance: {fileID: 1692494879}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1692494881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+  m_PrefabInstance: {fileID: 1692494879}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1725310888
 GameObject:
   m_ObjectHideFlags: 0
@@ -12598,6 +12670,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1982188821}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1778529137}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1982587513}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1692494881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
 --- !u!4 &1778529136 stripped
@@ -12605,6 +12697,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
   m_PrefabInstance: {fileID: 1778529135}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1778529137 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+  m_PrefabInstance: {fileID: 1778529135}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1807467451
 GameObject:
   m_ObjectHideFlags: 0
@@ -13000,6 +13103,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: SellTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13789,6 +13904,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1982188821}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1778529137}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1982587513}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1692494881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
 --- !u!4 &1982188820 stripped
@@ -13796,6 +13931,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
   m_PrefabInstance: {fileID: 1982188819}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1982188821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+  m_PrefabInstance: {fileID: 1982188819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1982587511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13851,6 +13997,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1982188821}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1778529137}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1982587513}
+    - target: {fileID: 1107787940994954, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1692494881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
 --- !u!4 &1982587512 stripped
@@ -13858,6 +14024,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
   m_PrefabInstance: {fileID: 1982587511}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1982587513 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: dee142c51b8aa7d4cb8f8fdb5aee47e2, type: 3}
+  m_PrefabInstance: {fileID: 1982587511}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2038919137
 GameObject:
   m_ObjectHideFlags: 0

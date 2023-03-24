@@ -2063,6 +2063,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &251719641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3618,6 +3630,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 513747420}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 795556029}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 390797735}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1107786852276174}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &390797734 stripped
@@ -3625,6 +3657,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 390797733}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &390797735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 390797733}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &396558199
 GameObject:
   m_ObjectHideFlags: 0
@@ -4332,6 +4375,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 513747420}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 795556029}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 390797735}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1107786852276174}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &513747419 stripped
@@ -4339,6 +4402,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 513747418}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &513747420 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 513747418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &517772501
 GameObject:
   m_ObjectHideFlags: 0
@@ -5444,6 +5518,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 513747420}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 795556029}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 390797735}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1107786852276174}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &795556028 stripped
@@ -5451,6 +5545,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 795556027}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &795556029 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 795556027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &799164496
 GameObject:
   m_ObjectHideFlags: 0
@@ -8062,7 +8167,7 @@ Tilemap:
       - {fileID: -1866401537, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -683792770, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -273057953, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 9, y: -4, z: 0}
@@ -8076,7 +8181,7 @@ Tilemap:
       - {fileID: -1917133780, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -970646269, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1679839599, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 0, y: -1, z: 0}
@@ -8146,7 +8251,7 @@ Tilemap:
       - {fileID: -1866401537, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -683792770, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -273057953, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -8359,6 +8464,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: CloseTowerShopPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10166,6 +10283,11 @@ MonoBehaviour:
   MooltosToUnlock: 1
   TowerToUnlock: 0
   fader: {fileID: 524746408}
+  NodeButtons:
+  - {fileID: 513747420}
+  - {fileID: 795556029}
+  - {fileID: 390797735}
+  - {fileID: 1107786852276174}
 --- !u!1 &1085728116
 GameObject:
   m_ObjectHideFlags: 0
@@ -11872,6 +11994,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1557274075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12590,6 +12724,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: SellTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13319,5 +13465,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 513747420}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 795556029}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 390797735}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1107786852276174}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+--- !u!114 &1107786852276174 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 1107786852276173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

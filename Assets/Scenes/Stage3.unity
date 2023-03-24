@@ -1032,7 +1032,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 1.78125, y: 2.5625, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -1643,6 +1643,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 1, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 4
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -4, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -1673,6 +1683,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 0, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 4
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 4, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -1688,6 +1708,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 18
       m_TileSpriteIndex: 18
+      m_TileMatrixIndex: 4
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 8, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 10
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 4
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1728,6 +1758,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 9
+      m_TileMatrixIndex: 4
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 8, y: -2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 4
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2129,15 +2169,15 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: d1f88138c58fd8140a7b9d4809725cbc, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 1bc902ba7921d804c87e45be06f84208, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b0f8c44ce77ec794288c32b5e9e4980e, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: d3713cecf4b156e4d8da94eee4574aa2, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 9164b20a85563fa44a93bd6cdf6d5704, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 0846966953daf574d863e7cdfa66ab62, type: 2}
@@ -2145,7 +2185,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 01173db54261ea340a5ece70f8f48a7e, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: fec7e323546f068469ba4b6f91a78055, type: 2}
-  - m_RefCount: 5
+  - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: f038259f9ad6ddf4fa1f06a8f5ad261c, type: 2}
   - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: f616a99450174f94c852119c5d520ad0, type: 2}
@@ -2172,15 +2212,15 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1080234901, guid: e4c5bb28ece126c44a489dbc01c69f78, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 1695618166, guid: f925162d9a75f794bb5b67ae43b7bb98, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1295816807, guid: e4c5bb28ece126c44a489dbc01c69f78, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -2032296386, guid: e4c5bb28ece126c44a489dbc01c69f78, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 1735198850, guid: e4c5bb28ece126c44a489dbc01c69f78, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1696959506, guid: e4c5bb28ece126c44a489dbc01c69f78, type: 3}
@@ -2188,7 +2228,7 @@ Tilemap:
     m_Data: {fileID: 2100757297, guid: e4c5bb28ece126c44a489dbc01c69f78, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 1646662455, guid: e4c5bb28ece126c44a489dbc01c69f78, type: 3}
-  - m_RefCount: 5
+  - m_RefCount: 6
     m_Data: {fileID: -558205328, guid: e4c5bb28ece126c44a489dbc01c69f78, type: 3}
   - m_RefCount: 7
     m_Data: {fileID: 1048942904, guid: e4c5bb28ece126c44a489dbc01c69f78, type: 3}
@@ -2283,7 +2323,7 @@ Tilemap:
       e31: 0
       e32: 4.13e-43
       e33: 4.16e-43
-  - m_RefCount: 56
+  - m_RefCount: 60
     m_Data:
       e00: 1
       e01: 0
@@ -2302,7 +2342,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 56
+  - m_RefCount: 60
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -2341,11 +2381,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.09
+      value: 4.02
       objectReference: {fileID: 0}
     - target: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.88
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2383,6 +2423,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1639032568}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 262818827}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 283426702}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 245998985}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[4]
+      value: 
+      objectReference: {fileID: 1661054598}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &245998984 stripped
@@ -2390,6 +2454,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 245998983}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &245998985 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 245998983}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &251719638
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,6 +2551,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: CloseNodeUIPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3826,6 +3913,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1639032568}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 262818827}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 283426702}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 245998985}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[4]
+      value: 
+      objectReference: {fileID: 1661054598}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &262818826 stripped
@@ -3833,6 +3944,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 262818825}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &262818827 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 262818825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &283426700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3846,11 +3968,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.77
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.23
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3888,6 +4010,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1639032568}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 262818827}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 283426702}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 245998985}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[4]
+      value: 
+      objectReference: {fileID: 1661054598}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &283426701 stripped
@@ -3895,6 +4041,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 283426700}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &283426702 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 283426700}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &290163211
 GameObject:
   m_ObjectHideFlags: 0
@@ -7639,6 +7796,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &823462963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9259,6 +9428,12 @@ MonoBehaviour:
   MooltosToUnlock: 2
   TowerToUnlock: 1
   fader: {fileID: 524746408}
+  NodeButtons:
+  - {fileID: 1639032568}
+  - {fileID: 262818827}
+  - {fileID: 283426702}
+  - {fileID: 245998985}
+  - {fileID: 1661054598}
 --- !u!1 &1085728116
 GameObject:
   m_ObjectHideFlags: 0
@@ -10475,6 +10650,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1557274075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10703,6 +10890,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1639032568}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 262818827}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 283426702}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 245998985}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[4]
+      value: 
+      objectReference: {fileID: 1661054598}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &1639032567 stripped
@@ -10710,6 +10921,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 1639032566}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1639032568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 1639032566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1646917760
 GameObject:
   m_ObjectHideFlags: 0
@@ -10841,6 +11063,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1639032568}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 262818827}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 283426702}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 245998985}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[4]
+      value: 
+      objectReference: {fileID: 1661054598}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &1661054597 stripped
@@ -10848,6 +11094,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 1661054596}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1661054598 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 1661054596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1702934498
 GameObject:
   m_ObjectHideFlags: 0
@@ -11633,6 +11890,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: SellTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

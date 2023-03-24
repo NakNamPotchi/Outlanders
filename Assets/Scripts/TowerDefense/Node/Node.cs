@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Node : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class Node : MonoBehaviour
     public static Action OnTowerSold;
 
     [SerializeField] private GameObject attackRangeSprite;
+    public Button[] NodeButtons;
     
     public Tower Tower { get; set; }
 
@@ -21,9 +23,17 @@ public class Node : MonoBehaviour
     public void SetTower(Tower tower)
     {
         Tower = tower;
+        for (int x = 0; x < NodeButtons.Length; x++)
+        {
+            NodeButtons[x].interactable = true;
+        }
     }
     public bool IsEmpty()
     {
+        for (int x = 0; x < NodeButtons.Length; x++)
+        {
+            NodeButtons[x].interactable = true;
+        }
         return Tower == null;
     }
     public void CloseAttackRangeSprite()
@@ -36,6 +46,14 @@ public class Node : MonoBehaviour
         if (!IsEmpty())
         {
             ShowTowerInfo();
+            for (int x = 0; x < NodeButtons.Length; x++)
+            {
+                NodeButtons[x].interactable = false;
+            }
+        }
+        for (int x = 0; x < NodeButtons.Length; x++)
+        {
+            NodeButtons[x].interactable = false;
         }
     }
     public void SellTower()
