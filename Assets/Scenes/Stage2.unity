@@ -4392,7 +4392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.08627451, g: 0.078431375, b: 0.078431375, a: 0}
+  m_Color: {r: 0.08627451, g: 0.078431375, b: 0.078431375, a: 0.69803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8034,7 +8034,7 @@ Tilemap:
       - {fileID: -1917133780, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -970646269, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1679839599, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 9, y: -6, z: 0}
@@ -8062,7 +8062,7 @@ Tilemap:
       - {fileID: -1866401537, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -683792770, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -273057953, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 9, y: -4, z: 0}
@@ -8104,7 +8104,7 @@ Tilemap:
       - {fileID: 901700100, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -659470365, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1267891511, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 0, y: 0, z: 0}
@@ -8146,7 +8146,7 @@ Tilemap:
       - {fileID: -1866401537, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -683792770, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -273057953, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -8631,7 +8631,7 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
@@ -10536,7 +10536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.60784316}
+  m_Color: {r: 0.08627451, g: 0.078431375, b: 0.078431375, a: 0.69803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10914,7 +10914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.84313726}
+  m_Color: {r: 0.08627451, g: 0.078431375, b: 0.078431375, a: 0.69803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

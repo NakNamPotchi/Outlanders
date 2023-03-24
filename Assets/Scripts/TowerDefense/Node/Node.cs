@@ -15,7 +15,7 @@ public class Node : MonoBehaviour
 
     private void Start()
     {
-        _rangeSize = attackRangeSprite.GetComponent<SpriteRenderer>().bounds.size.y;
+        _rangeSize = attackRangeSprite.GetComponent<SpriteRenderer>().bounds.size.y + 1;
         _rangeOriginalSize = attackRangeSprite.transform.localScale;
     }
     public void SetTower(Tower tower)
