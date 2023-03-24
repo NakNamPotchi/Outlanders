@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5493ec53762c8084983797b135d19b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3.5
+  attackRange: 3
 --- !u!114 &6113155399350087529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +227,7 @@ MonoBehaviour:
   upgradeInitialCost: 15
   upgradeCostIncremental: 18
   damageIncremental: 1
-  delayReduce: 0.15
+  delayReduce: 0.2
   sellPert: 0.5
 --- !u!1 &6113155399631717006
 GameObject:

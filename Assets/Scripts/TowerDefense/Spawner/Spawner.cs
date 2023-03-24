@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
     
     [Header("Settings")]
     [SerializeField] private SpawnModes spawnMode = SpawnModes.Fixed;
-    [SerializeField] private int enemyCount = 10;
+    //[SerializeField] private int enemyCount = 10;
     [SerializeField] private float delayBtwWaves = 1f;
 
     [Header("Fixed Delay")]
@@ -32,11 +32,13 @@ public class Spawner : MonoBehaviour
     [SerializeField] private ObjectPooler enemyWave3Pooler;*/
 
     [SerializeField] public ObjectPooler[] enemyWavePooler;
+    private int enemyCount;
 
     private float _spawnTimer = 7f;
     private int _enemiesSpawned;
     private int _enemiesRemaining;
     public static int totalWave;
+    private int Wave = 1;
     
     private Waypoint _waypoint;
 
@@ -45,7 +47,8 @@ public class Spawner : MonoBehaviour
         _waypoint = GetComponent<Waypoint>();
         totalWave = this.enemyWavePooler.Length;
 
-        _enemiesRemaining = enemyCount;
+        _enemiesRemaining = enemyWavePooler[0].enemyCount;
+        enemyCount = _enemiesRemaining;
     }
 
     private void Update()
@@ -128,12 +131,20 @@ public class Spawner : MonoBehaviour
         return null;
     }
     
-    private IEnumerator NextWave()
+    private IEnumerator NextWave(int Wave)
     {
         yield return new WaitForSeconds(delayBtwWaves);
-        _enemiesRemaining = enemyCount;
-        _spawnTimer = 0f;
-        _enemiesSpawned = 0;
+        if (Wave < enemyWavePooler.Length)
+        {
+            _enemiesRemaining = enemyWavePooler[Wave].enemyCount;
+            enemyCount = _enemiesRemaining;
+            _spawnTimer = 0f;
+            _enemiesSpawned = 0;
+        }
+        else
+        {
+            Debug.Log("No More Waves!");
+        }
     }
     
     private void RecordEnemy(Enemy enemy)
@@ -142,7 +153,8 @@ public class Spawner : MonoBehaviour
         if (_enemiesRemaining <= 0)
         {
             OnWaveCompleted?.Invoke();
-            StartCoroutine(NextWave());
+            StartCoroutine(NextWave(Wave));
+            Wave++;
         }
     }
     

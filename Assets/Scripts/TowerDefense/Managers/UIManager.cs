@@ -51,6 +51,9 @@ public class UIManager : Singleton<UIManager>
 
     private Node _currentNodeSelected;
 
+    [Header("Nodes")]
+    public Button[] NodeButtons;
+
     public void StartGame()
     {
         ResumeTime();
@@ -62,6 +65,14 @@ public class UIManager : Singleton<UIManager>
         livesText.text = LevelManager.Instance.TotalLives.ToString();
         int waveNum = LevelManager.Instance.CurrentWave;
         StartCoroutine(ExecuteAfterTime(10f, waveNum));
+    }
+
+    public void ClosePanelEnableInteractable()
+    {
+        for (int x = 0; x < NodeButtons.Length; x++)
+        {
+            NodeButtons[x].interactable = true;
+        }
     }
 
     IEnumerator ExecuteAfterTime(float time, int waveNum)
