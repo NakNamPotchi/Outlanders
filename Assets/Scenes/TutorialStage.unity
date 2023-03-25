@@ -1168,6 +1168,53 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &96859772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96859774}
+  - component: {fileID: 96859773}
+  m_Layer: 0
+  m_Name: Wave 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &96859773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96859772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c5d8a93363ad45a2f762236dc6abc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6319323794189484452, guid: e7fbf199ff48e11458f4b919c7003b42, type: 3}
+  enemyCount: 9
+  poolSize: 10
+--- !u!4 &96859774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96859772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1085728117}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &105854782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1540,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 144205080}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1956020194}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 896572722}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1917683340}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &144205079 stripped
@@ -1500,6 +1567,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 144205078}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &144205080 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 144205078}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &160672502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2285,6 +2363,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &251719641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2535,6 +2625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6319323794189484452, guid: e7fbf199ff48e11458f4b919c7003b42, type: 3}
+  enemyCount: 5
   poolSize: 10
 --- !u!1 &334713698
 GameObject:
@@ -2721,7 +2812,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnMode: 1
-  enemyCount: 3
   delayBtwWaves: 1
   delayBtwSpawns: 1
   minRandomDelay: 1
@@ -2729,6 +2819,7 @@ MonoBehaviour:
   enemyWavePooler:
   - {fileID: 328415225}
   - {fileID: 436561246}
+  - {fileID: 96859773}
 --- !u!4 &380588821
 Transform:
   m_ObjectHideFlags: 0
@@ -4131,6 +4222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6319323794189484452, guid: e7fbf199ff48e11458f4b919c7003b42, type: 3}
+  enemyCount: 7
   poolSize: 10
 --- !u!1 &461849659
 GameObject:
@@ -5277,7 +5369,7 @@ Camera:
   far clip plane: 9.7
   field of view: 60
   orthographic: 1
-  orthographic size: 5.627803
+  orthographic size: 5.623457
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6192,6 +6284,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &823462963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6308,7 +6412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842223879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.127803, z: 0}
+  m_LocalPosition: {x: 0, y: 5.123457, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6864,6 +6968,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 144205080}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1956020194}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 896572722}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1917683340}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &896572721 stripped
@@ -6871,6 +6995,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 896572720}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &896572722 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 896572720}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &924353278
 GameObject:
   m_ObjectHideFlags: 0
@@ -8460,6 +8595,11 @@ MonoBehaviour:
   MooltosToUnlock: 1
   TowerToUnlock: 0
   fader: {fileID: 524746408}
+  NodeButtons:
+  - {fileID: 144205080}
+  - {fileID: 1956020194}
+  - {fileID: 896572722}
+  - {fileID: 1917683340}
 --- !u!114 &1085614510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8504,6 +8644,7 @@ Transform:
   m_Children:
   - {fileID: 328415224}
   - {fileID: 436561245}
+  - {fileID: 96859774}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9732,6 +9873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 8812914937922015590, guid: a183dbb49576e7c4da4c3efff69d6e2f, type: 3}
+  enemyCount: 0
   poolSize: 10
 --- !u!114 &1361631973
 MonoBehaviour:
@@ -14452,6 +14594,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1557274075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15728,7 +15882,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807467451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.127803, z: 0}
+  m_LocalPosition: {x: 0, y: -5.123457, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16094,6 +16248,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: SellTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1085614509}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePanelEnableInteractable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16476,6 +16642,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 144205080}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1956020194}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 896572722}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1917683340}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &1917683339 stripped
@@ -16483,6 +16669,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 1917683338}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1917683340 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 1917683338}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1929191451
 GameObject:
   m_ObjectHideFlags: 0
@@ -16749,6 +16946,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkNode (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 144205080}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1956020194}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 896572722}
+    - target: {fileID: 1107787940994954, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+      propertyPath: NodeButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1917683340}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
 --- !u!4 &1956020193 stripped
@@ -16756,6 +16973,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1107787940994952, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
   m_PrefabInstance: {fileID: 1956020192}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1956020194 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107787367581828, guid: 94fb224dd2ea71a4fb339c70f8852ff8, type: 3}
+  m_PrefabInstance: {fileID: 1956020192}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1956024358
 GameObject:
   m_ObjectHideFlags: 0
