@@ -15,6 +15,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject winPanel;
     [SerializeField] private GameObject coinPanel;
     [SerializeField] private GameObject wavePanel;
+    [SerializeField] private GameObject countdownPanel;
+    [SerializeField] private Image countdownBlackImage;
 
     [Header("Text")] 
     [SerializeField] private TextMeshProUGUI upgradeText;
@@ -24,6 +26,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI livesText;
     [SerializeField] private TextMeshProUGUI currentWaveText;
     [SerializeField] private TextMeshProUGUI gameOverTotalCoinsText;
+    [SerializeField] private TextMeshProUGUI countdownText;
 
     [Header("Button")]
     [SerializeField] private Button towerUpgradeButton;
@@ -45,6 +48,9 @@ public class UIManager : Singleton<UIManager>
     private int SkipTutorialScene = 1;
     private int SkipStoryUnlock = 1;
     private int CabinButtonInteract = 1;
+    private float fadeDuration = 1f;
+    private float startingAlpha;
+    private float startingAlpha2;
 
     [Header("Scene Fader")]
     public SceneFader fader;
@@ -64,7 +70,31 @@ public class UIManager : Singleton<UIManager>
         totalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
         livesText.text = LevelManager.Instance.TotalLives.ToString();
         int waveNum = LevelManager.Instance.CurrentWave;
-        StartCoroutine(ExecuteAfterTime(10f, waveNum));
+        StartCoroutine(ExecuteAfterTime(7f, waveNum));
+    }
+
+    private void Start()
+    {
+        int seconds = 5;
+        StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
+    }
+
+    IEnumerator ExecuteCountdownAfterTime(int seconds, float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        if (seconds >= 1)
+        {
+            countdownText.text = $"Enemy spawn in {seconds.ToString()} seconds";
+            --seconds;
+            StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
+        }
+        else
+        {
+            countdownText.text = $"Enemy spawn in {seconds.ToString()} seconds";
+            --seconds;
+            StartCoroutine(FadeOut());
+        }
     }
 
     public void ClosePanelEnableInteractable()
@@ -78,6 +108,7 @@ public class UIManager : Singleton<UIManager>
     IEnumerator ExecuteAfterTime(float time, int waveNum)
     {
         yield return new WaitForSeconds(time);
+
         if (waveNum == Spawner.totalWave + 1)
         {
             waveNum = waveNum - 1;
@@ -85,6 +116,23 @@ public class UIManager : Singleton<UIManager>
         }
         else if (waveNum <= Spawner.totalWave)
             currentWaveText.text = "Wave "+ waveNum;
+    }
+
+    IEnumerator FadeOut()
+    {
+        float t = 0f;
+        startingAlpha = countdownBlackImage.color.a;
+        startingAlpha2 = countdownText.color.a;
+        while (t < fadeDuration)
+        {
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(startingAlpha, 0f, t / fadeDuration);
+            float alpha2 = Mathf.Lerp(startingAlpha2, 0f, t / fadeDuration);
+            countdownBlackImage.color = new Color(countdownBlackImage.color.r, countdownBlackImage.color.g, countdownBlackImage.color.b, alpha);
+            countdownText.color = new Color(countdownText.color.r, countdownText.color.g, countdownText.color.b, alpha2);
+            yield return null;
+        }
+        countdownPanel.SetActive(false);
     }
 
     /*public void SlowTime()

@@ -34,7 +34,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] public ObjectPooler[] enemyWavePooler;
     private int enemyCount;
 
-    private float _spawnTimer = 7f;
+    private float _spawnTimer = 5f;
     private int _enemiesSpawned;
     private int _enemiesRemaining;
     public static int totalWave;
