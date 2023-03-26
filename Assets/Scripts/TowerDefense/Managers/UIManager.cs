@@ -16,6 +16,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject coinPanel;
     [SerializeField] private GameObject wavePanel;
     [SerializeField] private GameObject countdownPanel;
+
+    [Header("Images")]
     [SerializeField] private Image countdownBlackImage;
 
     [Header("Text")] 
@@ -75,15 +77,23 @@ public class UIManager : Singleton<UIManager>
 
     private void Start()
     {
-        int seconds = 5;
-        StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
+        if (SceneManager.GetActiveScene().name == "TutorialStage" || SceneManager.GetActiveScene().name == "Stage0")
+        {
+            int seconds = 8;
+            StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
+        }
+        else
+        {
+            int seconds = 5;
+            StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
+        }
     }
 
     IEnumerator ExecuteCountdownAfterTime(int seconds, float time)
     {
         yield return new WaitForSeconds(time);
 
-        if (seconds >= 1)
+        if (seconds >= 1 && seconds <= 5)
         {
             countdownText.text = $"Enemy spawn in {seconds.ToString()} seconds";
             --seconds;
