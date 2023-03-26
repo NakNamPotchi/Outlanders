@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5493ec53762c8084983797b135d19b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 3
+  attackRange: 2
 --- !u!114 &6113155399350087529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 6113155399631717007}
   delayBtwAttacks: 0.7
-  damage: 4
+  damage: 3
 --- !u!114 &6113155399350087526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 5518434688515460152, guid: 4e838d2ff99ff7f499de785a10891e25, type: 3}
+  enemyCount: 0
   poolSize: 10
 --- !u!58 &6113155399350087525
 CircleCollider2D:
@@ -224,10 +225,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce54d6c7bd65b924f930286e1dcff112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeInitialCost: 15
-  upgradeCostIncremental: 18
-  damageIncremental: 1
-  delayReduce: 0.2
+  upgradeInitialCost: 18
+  upgradeCostIncremental: 15
+  damageIncremental: 2
+  delayReduce: 0.15
   sellPert: 0.5
 --- !u!1 &6113155399631717006
 GameObject:
