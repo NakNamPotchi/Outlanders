@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using UnityEngine.SceneManagement;
 
 public enum SpawnModes
 {
@@ -34,7 +35,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] public ObjectPooler[] enemyWavePooler;
     private int enemyCount;
 
-    private float _spawnTimer = 5f;
+    private float _spawnTimer;
     private int _enemiesSpawned;
     private int _enemiesRemaining;
     public static int totalWave;
@@ -44,6 +45,15 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
+        if (SceneManager.GetActiveScene().name == "TutorialStage" || SceneManager.GetActiveScene().name == "Stage0")
+		{
+			_spawnTimer = 13f;
+		}
+        else
+        {
+            _spawnTimer = 5f;
+        }
+        
         _waypoint = GetComponent<Waypoint>();
         totalWave = this.enemyWavePooler.Length;
 
