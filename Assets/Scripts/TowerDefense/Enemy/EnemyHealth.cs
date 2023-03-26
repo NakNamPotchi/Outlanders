@@ -44,14 +44,17 @@ public class EnemyHealth : MonoBehaviour
 
     public void DealDamage(float damageReceived)
     {
-        CurrentHealth -= damageReceived;
-        if (CurrentHealth <= 0)
+        if (CurrentHealth > 0)
         {
-            CurrentHealth = 0;
-            Die();
+            CurrentHealth -= damageReceived;
+            if (CurrentHealth <= 0)
+            {
+                CurrentHealth = 0;
+                Die();
+            }
+            else
+                OnEnemyHit?.Invoke(_enemy);
         }
-        else
-            OnEnemyHit?.Invoke(_enemy);
     }
 
     public void ResetHealth()
@@ -61,10 +64,7 @@ public class EnemyHealth : MonoBehaviour
     }
     
     private void Die()
-    {/*
-        AchievementManager.Instance.AddProgress("Kill20", 1);
-        AchievementManager.Instance.AddProgress("Kill50", 1);
-        AchievementManager.Instance.AddProgress("Kill100", 1);*/
+    {
         OnEnemyKilled?.Invoke(_enemy);
     }
 }

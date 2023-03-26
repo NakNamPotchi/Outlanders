@@ -27,7 +27,7 @@ public class Projectile : MonoBehaviour
     protected virtual void MoveProjectile()
     {
         transform.position = Vector2.MoveTowards(transform.position, 
-            _enemyTarget.transform.position, moveSpeed * Time.deltaTime);
+        _enemyTarget.transform.position, moveSpeed * Time.deltaTime);
         float distanceToTarget = (_enemyTarget.transform.position - transform.position).magnitude;
         if (distanceToTarget < minDistanceToDealDamage)
         {

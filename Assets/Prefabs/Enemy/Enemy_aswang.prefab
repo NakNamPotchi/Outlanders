@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1.8
-  deathCoinReward: 6
+  deathCoinReward: 4
   Waypoint: {fileID: 0}
 --- !u!114 &1320150386832706674
 MonoBehaviour:
@@ -189,8 +189,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarPrefab: {fileID: 870197897910100291, guid: 6663a394c7dde2f44b0778caf66f2b19, type: 3}
   barPosition: {fileID: 1320150386883106714}
-  initialHealth: 20
-  maxHealth: 20
+  initialHealth: 30
+  maxHealth: 30
 --- !u!114 &1320150386832706675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1320150386883106714}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BarPosition
   m_TagString: Untagged
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
@@ -272,8 +272,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320150387313845598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.5, y: 0, z: 1.3}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalPosition: {x: 5, y: 0, z: 1.3}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1320150386832706673}
