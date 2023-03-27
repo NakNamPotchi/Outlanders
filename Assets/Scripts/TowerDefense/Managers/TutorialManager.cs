@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,12 +8,22 @@ public class TutorialManager : MonoBehaviour
 {
     [Header("Panels")]
     [SerializeField] private GameObject nextButtonPanel;
-
-    [Header("Images")]
-    [SerializeField] private Image blackImage;
+    [SerializeField] private GameObject canvasBlackBackground;
+    [SerializeField] private GameObject enemyPanel;
+    [SerializeField] private GameObject countdownNextButtonPanel;
+    [SerializeField] private GameObject waveArrowPanel;
+    [SerializeField] private GameObject waveArrowNextButtonPanel;
 
     [Header("Button")]
     [SerializeField] private Button welcomeNext;
+    [SerializeField] private Button countdownNext;
+    [SerializeField] private Button enemyNext;
+
+    [Header("Text")] 
+    [SerializeField] private TextMeshProUGUI countdownMainText;
+    [SerializeField] private TextMeshProUGUI countdownSubText;
+    [SerializeField] private TextMeshProUGUI enemyMainText;
+    [SerializeField] private TextMeshProUGUI enemySubText;
 
     private float fadeDuration = 1f;
     private float startingAlpha;
@@ -43,7 +54,54 @@ public class TutorialManager : MonoBehaviour
         PauseTime();
         buttonColor.a = 1;
         welcomeNext.image.color = buttonColor;
+    }
+
+    public void StartCountdownEnemyTutorial()
+    {
+        StartCoroutine(ExecuteCountdownEnemyEnable(1f));
+    }
+
+    IEnumerator ExecuteCountdownEnemyEnable(float time)
+    {
+        yield return new WaitForSeconds(time);
         
+        countdownMainText.color = new Color(countdownMainText.color.r, countdownMainText.color.g, countdownMainText.color.b, 0);;
+        countdownSubText.color = new Color(countdownSubText.color.r, countdownSubText.color.g, countdownSubText.color.b, 0);;
+        float timeElapsed = 0;
+        enemyPanel.SetActive(true);
+
+        while (timeElapsed < fadeDuration)
+        {
+            timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            countdownMainText.color = new Color(countdownMainText.color.r, countdownMainText.color.g, countdownMainText.color.b, alpha);
+            countdownSubText.color = new Color(countdownSubText.color.r, countdownSubText.color.g, countdownSubText.color.b, alpha);;
+            yield return null;
+        }
+
+        StartCoroutine(ExecuteCountdownNextEnable(3f));
+    }
+
+    IEnumerator ExecuteCountdownNextEnable(float time)
+    {
+        yield return new WaitForSeconds(time);
+        countdownNextButtonPanel.SetActive(true);
+        float timeElapsed = 0;
+        Color buttonColor = countdownNext.image.color;
+
+        while (timeElapsed < fadeDuration)
+        {
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            buttonColor.a = alpha;
+            countdownNext.image.color = buttonColor;
+
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        PauseTime();
+        buttonColor.a = 1;
+        countdownNext.image.color = buttonColor;
     }
 
     public void ResumeTime()
