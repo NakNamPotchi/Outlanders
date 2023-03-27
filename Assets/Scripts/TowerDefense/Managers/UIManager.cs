@@ -79,7 +79,7 @@ public class UIManager : Singleton<UIManager>
     {
         if (SceneManager.GetActiveScene().name == "TutorialStage" || SceneManager.GetActiveScene().name == "Stage0")
         {
-            int seconds = 8;
+            int seconds = 18;
             StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
         }
         else
@@ -99,11 +99,16 @@ public class UIManager : Singleton<UIManager>
             --seconds;
             StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
         }
-        else
+        else if (seconds == 0)
         {
             countdownText.text = $"Enemy spawn in {seconds.ToString()} seconds";
             --seconds;
             StartCoroutine(FadeOut());
+        }
+        else 
+        {
+            --seconds;
+            StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
         }
     }
 
