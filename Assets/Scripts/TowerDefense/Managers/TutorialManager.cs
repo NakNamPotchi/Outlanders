@@ -9,7 +9,7 @@ public class TutorialManager : MonoBehaviour
     [Header("Panels")]
     [SerializeField] private GameObject nextButtonPanel;
     [SerializeField] private GameObject canvasBlackBackground;
-    [SerializeField] private GameObject enemyPanel;
+    [SerializeField] private GameObject countdownPanel;
     [SerializeField] private GameObject countdownNextButtonPanel;
     [SerializeField] private GameObject waveArrowPanel;
     [SerializeField] private GameObject waveArrowNextButtonPanel;
@@ -17,13 +17,13 @@ public class TutorialManager : MonoBehaviour
     [Header("Button")]
     [SerializeField] private Button welcomeNext;
     [SerializeField] private Button countdownNext;
-    [SerializeField] private Button enemyNext;
+    [SerializeField] private Button waveArrowNext;
 
     [Header("Text")] 
     [SerializeField] private TextMeshProUGUI countdownMainText;
     [SerializeField] private TextMeshProUGUI countdownSubText;
-    [SerializeField] private TextMeshProUGUI enemyMainText;
-    [SerializeField] private TextMeshProUGUI enemySubText;
+    [SerializeField] private TextMeshProUGUI waveArrowMainText;
+    [SerializeField] private TextMeshProUGUI waveArrowSubText;
 
     private float fadeDuration = 1f;
     private float startingAlpha;
@@ -50,32 +50,33 @@ public class TutorialManager : MonoBehaviour
             timeElapsed += Time.deltaTime;
             yield return null;
         }
-
+        
+        welcomeNext.interactable = true;
         PauseTime();
         buttonColor.a = 1;
         welcomeNext.image.color = buttonColor;
     }
 
-    public void StartCountdownEnemyTutorial()
+    public void StartCountdownTutorial()
     {
-        StartCoroutine(ExecuteCountdownEnemyEnable(1f));
+        StartCoroutine(ExecuteCountdownEnable(0.5f));
     }
 
-    IEnumerator ExecuteCountdownEnemyEnable(float time)
+    IEnumerator ExecuteCountdownEnable(float time)
     {
         yield return new WaitForSeconds(time);
         
-        countdownMainText.color = new Color(countdownMainText.color.r, countdownMainText.color.g, countdownMainText.color.b, 0);;
-        countdownSubText.color = new Color(countdownSubText.color.r, countdownSubText.color.g, countdownSubText.color.b, 0);;
+        countdownMainText.color = new Color(countdownMainText.color.r, countdownMainText.color.g, countdownMainText.color.b, 0);
+        countdownSubText.color = new Color(countdownSubText.color.r, countdownSubText.color.g, countdownSubText.color.b, 0);
         float timeElapsed = 0;
-        enemyPanel.SetActive(true);
+        countdownPanel.SetActive(true);
 
         while (timeElapsed < fadeDuration)
         {
             timeElapsed += Time.deltaTime;
             float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
             countdownMainText.color = new Color(countdownMainText.color.r, countdownMainText.color.g, countdownMainText.color.b, alpha);
-            countdownSubText.color = new Color(countdownSubText.color.r, countdownSubText.color.g, countdownSubText.color.b, alpha);;
+            countdownSubText.color = new Color(countdownSubText.color.r, countdownSubText.color.g, countdownSubText.color.b, alpha);
             yield return null;
         }
 
@@ -99,9 +100,59 @@ public class TutorialManager : MonoBehaviour
             yield return null;
         }
 
+        countdownNext.interactable = true;
         PauseTime();
         buttonColor.a = 1;
         countdownNext.image.color = buttonColor;
+    }
+
+    public void StartWaveArrowTutorial()
+    {
+        StartCoroutine(ExecuteWaveArrowEnable(0.5f));
+    }
+
+    IEnumerator ExecuteWaveArrowEnable(float time)
+    {
+        yield return new WaitForSeconds(time);
+        
+        waveArrowMainText.color = new Color(waveArrowMainText.color.r, waveArrowMainText.color.g, waveArrowMainText.color.b, 0);
+        waveArrowSubText.color = new Color(waveArrowSubText.color.r, waveArrowSubText.color.g, waveArrowSubText.color.b, 0);
+        float timeElapsed = 0;
+        waveArrowPanel.SetActive(true);
+
+        while (timeElapsed < fadeDuration)
+        {
+            timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            waveArrowMainText.color = new Color(waveArrowMainText.color.r, waveArrowMainText.color.g, waveArrowMainText.color.b, alpha);
+            waveArrowSubText.color = new Color(waveArrowSubText.color.r, waveArrowSubText.color.g, waveArrowSubText.color.b, alpha);
+            yield return null;
+        }
+
+        StartCoroutine(ExecuteWaveArrowNextEnable(3f));
+    }
+
+    IEnumerator ExecuteWaveArrowNextEnable(float time)
+    {
+        yield return new WaitForSeconds(time);
+        waveArrowNextButtonPanel.SetActive(true);
+        float timeElapsed = 0;
+        Color buttonColor = waveArrowNext.image.color;
+
+        while (timeElapsed < fadeDuration)
+        {
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            buttonColor.a = alpha;
+            waveArrowNext.image.color = buttonColor;
+
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        waveArrowNext.interactable = true;
+        PauseTime();
+        buttonColor.a = 1;
+        waveArrowNext.image.color = buttonColor;
     }
 
     public void ResumeTime()
