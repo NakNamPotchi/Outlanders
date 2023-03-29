@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1613666775870369416, guid: 78ee684ff8510b34d8c9a9922882ca40, type: 3}
+  enemyCount: 0
   poolSize: 10
 --- !u!58 &7866781720289271715
 CircleCollider2D:
@@ -255,8 +256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce54d6c7bd65b924f930286e1dcff112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeInitialCost: 20
-  upgradeCostIncremental: 27
+  upgradeInitialCost: 27
+  upgradeCostIncremental: 13
   damageIncremental: 3
   delayReduce: 0.1
   sellPert: 0.5

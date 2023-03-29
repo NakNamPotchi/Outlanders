@@ -45,9 +45,9 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == "TutorialStage" || SceneManager.GetActiveScene().name == "Stage0")
+        if (SceneManager.GetActiveScene().name == "Stage0")
 		{
-			_spawnTimer = 21f;
+			_spawnTimer = 31.5f;
 		}
         else
         {
