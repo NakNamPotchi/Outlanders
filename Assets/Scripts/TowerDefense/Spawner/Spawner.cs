@@ -31,13 +31,17 @@ public class Spawner : MonoBehaviour
     /*[SerializeField] private ObjectPooler enemyWave1Pooler;
     [SerializeField] private ObjectPooler enemyWave2Pooler;
     [SerializeField] private ObjectPooler enemyWave3Pooler;*/
-
-    [SerializeField] public ObjectPooler[] enemyWavePooler;
-    private int enemyCount;
+    [SerializeField] private ObjectPooler[] enemyWavePooler;
+    [SerializeField] private ObjectPooler[] enemyWave2Pooler;
 
     private float _spawnTimer;
+
+    private int enemyCount;
+    private int enemyCount2;
     private int _enemiesSpawned;
+    private int _enemiesSpawned2;
     private int _enemiesRemaining;
+    
     public static int totalWave;
     private int Wave = 1;
     
@@ -55,10 +59,11 @@ public class Spawner : MonoBehaviour
         }
         
         _waypoint = GetComponent<Waypoint>();
-        totalWave = this.enemyWavePooler.Length;
+        totalWave = Mathf.Min(enemyWavePooler.Length, enemyWave2Pooler.Length);
 
-        _enemiesRemaining = enemyWavePooler[0].enemyCount;
-        enemyCount = _enemiesRemaining;
+        _enemiesRemaining = enemyWavePooler[0].enemyCount + enemyWave2Pooler[0].enemyCount;
+        enemyCount = enemyWavePooler[0].enemyCount;
+        enemyCount2 = enemyWave2Pooler[0].enemyCount;
     }
 
     private void Update()
@@ -71,6 +76,11 @@ public class Spawner : MonoBehaviour
             {
                 _enemiesSpawned++;
                 SpawnEnemy();
+            }
+            if (_enemiesSpawned2 < enemyCount2)
+            {
+                _enemiesSpawned2++;
+                SpawnEnemy2();
             }
         }
     }
@@ -86,6 +96,24 @@ public class Spawner : MonoBehaviour
 
             enemy.transform.localPosition = transform.position;
             newInstance.SetActive(true);
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e.Message);
+        }
+    }
+
+    private void SpawnEnemy2()
+    {
+        try
+        {
+            GameObject newInstance2 = GetPooler2().GetInstanceFromPool();
+            Enemy enemy2 = newInstance2.GetComponent<Enemy>();
+            enemy2.Waypoint = _waypoint;
+            enemy2.ResetEnemy();
+
+            enemy2.transform.localPosition = transform.position;
+            newInstance2.SetActive(true);
         }
         catch (Exception e)
         {
@@ -133,7 +161,34 @@ public class Spawner : MonoBehaviour
             }
             catch (System.Exception)
             {
-                Debug.Log("No More Waves!");
+                Debug.Log("Object Pooler Error!");
+                throw;
+            }
+        }
+        
+        return null;
+    }
+
+    private ObjectPooler GetPooler2()
+    {
+        int currentWave = LevelManager.Instance.CurrentWave;
+        for (int i = 0; i < enemyWave2Pooler.Length; i++)
+        {
+            try
+            {
+                if (currentWave < i) // 1- 10
+                {
+                    return enemyWave2Pooler[i];
+                }
+
+                if (currentWave > i && currentWave <= i+1) // 11- 20 and so on
+                {
+                    return enemyWave2Pooler[i];
+                }
+            }
+            catch (System.Exception)
+            {
+                Debug.Log("Object Pooler Error!");
                 throw;
             }
         }
@@ -144,12 +199,14 @@ public class Spawner : MonoBehaviour
     private IEnumerator NextWave(int Wave)
     {
         yield return new WaitForSeconds(delayBtwWaves);
-        if (Wave < enemyWavePooler.Length)
+        if (Wave < totalWave)
         {
-            _enemiesRemaining = enemyWavePooler[Wave].enemyCount;
-            enemyCount = _enemiesRemaining;
+            _enemiesRemaining = enemyWavePooler[Wave].enemyCount + enemyWave2Pooler[Wave].enemyCount;
+            enemyCount = enemyWavePooler[Wave].enemyCount;
+            enemyCount2 = enemyWave2Pooler[Wave].enemyCount;
             _spawnTimer = 0f;
             _enemiesSpawned = 0;
+            _enemiesSpawned2 = 0;
         }
         else
         {
