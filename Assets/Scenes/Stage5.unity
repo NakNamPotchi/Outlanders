@@ -2498,7 +2498,7 @@ Tilemap:
       - {fileID: -142257695, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1791580437, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 832384480, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -9, y: 0, z: 0}
@@ -2624,7 +2624,7 @@ Tilemap:
       - {fileID: -1357902804, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 863618376, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -1655719156, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 6, y: 3, z: 0}
@@ -3663,7 +3663,7 @@ Tilemap:
       - {fileID: -790848813, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1614506936, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1687263867, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 4, y: -4, z: 0}
@@ -3743,7 +3743,7 @@ Tilemap:
       - {fileID: 1249042333, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1531615538, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1256369601, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -6, y: 2, z: 0}
@@ -3763,7 +3763,7 @@ Tilemap:
       - {fileID: 1870374201, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 781791904, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1206122035, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -3, y: 2, z: 0}
@@ -3783,7 +3783,7 @@ Tilemap:
       - {fileID: -577818977, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 139703636, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -2146241329, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -9, y: 3, z: 0}
@@ -3813,7 +3813,7 @@ Tilemap:
       - {fileID: 1249042333, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1531615538, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1256369601, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -5, y: 4, z: 0}
@@ -4382,7 +4382,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -32.87}
-  m_SizeDelta: {x: 409, y: 119}
+  m_SizeDelta: {x: 529, y: 119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &479938314
 MonoBehaviour:
@@ -4460,7 +4460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 859f50dd8ae829e4f80fa784c2c8cb6c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a4103d779e79a44da7bf77ed3254261, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5301,7 +5301,7 @@ Camera:
   far clip plane: 9.7
   field of view: 60
   orthographic: 1
-  orthographic size: 5.6293707
+  orthographic size: 5.62212
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6279,7 +6279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842223879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.1293707, z: 0}
+  m_LocalPosition: {x: 0, y: 5.12212, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7873,7 +7873,7 @@ MonoBehaviour:
   gameOverTotalCoinsText: {fileID: 961275501}
   countdownText: {fileID: 877824082}
   towerUpgradeButton: {fileID: 1557274074}
-  GoToAfterWin: Cabin
+  GoToAfterWin: GameStageMap
   StageToUnlock: 6
   StoryToUnlock: 6
   FolktaleToUnlock: 6
@@ -16564,7 +16564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807467451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.1293707, z: 0}
+  m_LocalPosition: {x: 0, y: -5.12212, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
