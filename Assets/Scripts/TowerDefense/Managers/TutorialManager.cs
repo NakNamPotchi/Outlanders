@@ -23,6 +23,8 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private GameObject mooltosNextButtonPanel;
     [SerializeField] private GameObject towerTilesPanel;
     [SerializeField] private GameObject towerTilesNextButtonPanel;
+    [SerializeField] private GameObject upgradeSellPanel;
+    [SerializeField] private GameObject smallCanvasBlackBackground;
 
     [Header("Button")]
     [SerializeField] private Button welcomeNext;
@@ -53,9 +55,11 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI mooltosSubText;
     [SerializeField] private TextMeshProUGUI towerTilesMainText;
     [SerializeField] private TextMeshProUGUI towerTilesSubText;
+    [SerializeField] private TextMeshProUGUI upgradeSellMainText;
 
     private float fadeDuration = 1f;
     private float startingAlpha;
+    private float executedOnce = 0;
 
     private void Start()
     {
@@ -353,7 +357,7 @@ public class TutorialManager : MonoBehaviour
             yield return null;
         }
 
-        StartCoroutine(ExecuteMooltosNextEnable(3f));
+        StartCoroutine(ExecuteMooltosNextEnable(1f));
     }
 
     IEnumerator ExecuteMooltosNextEnable(float time)
@@ -428,6 +432,53 @@ public class TutorialManager : MonoBehaviour
         PauseTime();
         buttonColor.a = 1;
         towerTilesNext.image.color = buttonColor;
+    }
+
+    public void StartUpgradeSellTutorial()
+    {
+        if (executedOnce == 0)
+        {
+            StartCoroutine(ExecuteUpgradeSellEnable(1f));
+        }
+        else
+        {
+            StartCoroutine(ExecuteUpgradeSellEnable(99f));
+        }
+    }
+
+    IEnumerator ExecuteUpgradeSellEnable(float time)
+    {
+        yield return new WaitForSeconds(time);
+        
+        upgradeSellPanel.SetActive(true);
+        upgradeSellMainText.color = new Color(upgradeSellMainText.color.r, upgradeSellMainText.color.g, upgradeSellMainText.color.b, 0);
+        float timeElapsed = 0;
+
+        while (timeElapsed < fadeDuration)
+        {
+            timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            upgradeSellMainText.color = new Color(upgradeSellMainText.color.r, upgradeSellMainText.color.g, upgradeSellMainText.color.b, alpha);
+            
+            if (timeElapsed > 0.8)
+            {
+                smallCanvasBlackBackground.SetActive(true);
+            }
+            executedOnce = 1;
+
+            yield return null;
+        }
+        StartCoroutine(ExecuteUpgradeSellDisable(8f));
+    }
+
+    IEnumerator ExecuteUpgradeSellDisable(float time)
+    {
+        yield return new WaitForSeconds(time);
+        
+        upgradeSellPanel.SetActive(false);
+        smallCanvasBlackBackground.SetActive(false);
+
+        yield return null;
     }
 
     public void ResumeTime()
