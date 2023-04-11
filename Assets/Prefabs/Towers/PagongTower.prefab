@@ -95,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 5231178186015220380}
   delayBtwAttacks: 1.8
-  damage: 6
+  damage: 4
 --- !u!114 &5231178186039003138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,10 +139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce54d6c7bd65b924f930286e1dcff112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeInitialCost: 21
+  upgradeInitialCost: 20
   upgradeCostIncremental: 15
   damageIncremental: 2
-  delayReduce: 0.15
+  delayReduce: 0.2
   sellPert: 0.5
 --- !u!1 &5231178187044734328
 GameObject:
