@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class TutorialManager : MonoBehaviour
 {
     [Header("Panels")]
-    [SerializeField] private GameObject nextButtonPanel;
+    [SerializeField] private GameObject clickAnywhereToContinuePanel;
     [SerializeField] private GameObject canvasBlackBackground;
     [SerializeField] private GameObject countdownPanel;
     [SerializeField] private GameObject countdownNextButtonPanel;
@@ -40,7 +40,8 @@ public class TutorialManager : MonoBehaviour
     [Header("Nodes")]
     [SerializeField] private Button[] node;
 
-    [Header("Text")] 
+    [Header("Text")]
+    [SerializeField] private TextMeshProUGUI clickAnywhereToContinueText;
     [SerializeField] private TextMeshProUGUI countdownMainText;
     [SerializeField] private TextMeshProUGUI countdownSubText;
     [SerializeField] private TextMeshProUGUI waveArrowMainText;
@@ -61,38 +62,31 @@ public class TutorialManager : MonoBehaviour
     private float startingAlpha;
     private float executedOnce = 0;
 
-    private void Start()
+    private void ClickAnywhereToContinueFade()
     {
-        StartCoroutine(ExecuteNextEnable(5f));
-    }
-
-    IEnumerator ExecuteNextEnable(float time)
-    {
-        yield return new WaitForSeconds(time);
-
+        clickAnywhereToContinueText.color = new Color(clickAnywhereToContinueText.color.r, clickAnywhereToContinueText.color.g, clickAnywhereToContinueText.color.b, 0);
         float timeElapsed = 0;
-        Color buttonColor = welcomeNext.image.color;
-        nextButtonPanel.SetActive(true);
+        clickAnywhereToContinuePanel.SetActive(true);
 
         while (timeElapsed < fadeDuration)
         {
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            buttonColor.a = alpha;
-            welcomeNext.image.color = buttonColor;
-
             timeElapsed += Time.deltaTime;
-            yield return null;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            clickAnywhereToContinueText.color = new Color(clickAnywhereToContinueText.color.r, clickAnywhereToContinueText.color.g, clickAnywhereToContinueText.color.b, alpha);
         }
-        
-        welcomeNext.interactable = true;
-        PauseTime();
-        buttonColor.a = 1;
-        welcomeNext.image.color = buttonColor;
+    }
+
+    // function for click
+
+    private void Start()
+    {
+        ResumeTime();
+        StartCountdownTutorial();
     }
 
     public void StartCountdownTutorial()
     {
-        StartCoroutine(ExecuteCountdownEnable(0.5f));
+        StartCoroutine(ExecuteCountdownEnable(0.1f));
     }
 
     IEnumerator ExecuteCountdownEnable(float time)
