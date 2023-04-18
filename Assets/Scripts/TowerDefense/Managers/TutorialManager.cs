@@ -27,7 +27,6 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private GameObject smallCanvasBlackBackground;
 
     [Header("Button")]
-    [SerializeField] private Button welcomeNext;
     [SerializeField] private Button countdownNext;
     [SerializeField] private Button waveArrowNext;
     [SerializeField] private Button coinsHeartsNext;
@@ -41,7 +40,6 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private Button[] node;
 
     [Header("Text")]
-    [SerializeField] private TextMeshProUGUI clickAnywhereToContinueText;
     [SerializeField] private TextMeshProUGUI countdownMainText;
     [SerializeField] private TextMeshProUGUI countdownSubText;
     [SerializeField] private TextMeshProUGUI waveArrowMainText;
@@ -58,25 +56,18 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI towerTilesSubText;
     [SerializeField] private TextMeshProUGUI upgradeSellMainText;
 
+    [Header("ClickText")]
+    [SerializeField] private TextMeshProUGUI countdownText;
+    [SerializeField] private TextMeshProUGUI waveArrowText;
+    [SerializeField] private TextMeshProUGUI coinsHeartsText;
+    [SerializeField] private TextMeshProUGUI waveText;
+    [SerializeField] private TextMeshProUGUI enemyPathText;
+    [SerializeField] private TextMeshProUGUI mooltosText;
+    [SerializeField] private TextMeshProUGUI towerTilesText;
+
     private float fadeDuration = 1f;
     private float startingAlpha;
     private float executedOnce = 0;
-
-    private void ClickAnywhereToContinueFade()
-    {
-        clickAnywhereToContinueText.color = new Color(clickAnywhereToContinueText.color.r, clickAnywhereToContinueText.color.g, clickAnywhereToContinueText.color.b, 0);
-        float timeElapsed = 0;
-        clickAnywhereToContinuePanel.SetActive(true);
-
-        while (timeElapsed < fadeDuration)
-        {
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            clickAnywhereToContinueText.color = new Color(clickAnywhereToContinueText.color.r, clickAnywhereToContinueText.color.g, clickAnywhereToContinueText.color.b, alpha);
-        }
-    }
-
-    // function for click
 
     private void Start()
     {
@@ -107,30 +98,26 @@ public class TutorialManager : MonoBehaviour
             yield return null;
         }
 
-        StartCoroutine(ExecuteCountdownNextEnable(3f));
+        StartCoroutine(ExecuteCountdownNextEnable(0.5f));
     }
 
     IEnumerator ExecuteCountdownNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
         countdownNextButtonPanel.SetActive(true);
+        countdownText.color = new Color(countdownText.color.r, countdownText.color.g, countdownText.color.b, 0);
         float timeElapsed = 0;
-        Color buttonColor = countdownNext.image.color;
 
         while (timeElapsed < fadeDuration)
         {
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            buttonColor.a = alpha;
-            countdownNext.image.color = buttonColor;
-
             timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            countdownText.color = new Color(countdownText.color.r, countdownText.color.g, countdownText.color.b, alpha);
             yield return null;
         }
 
         countdownNext.interactable = true;
         PauseTime();
-        buttonColor.a = 1;
-        countdownNext.image.color = buttonColor;
     }
 
     public void StartWaveArrowTutorial()
@@ -156,30 +143,26 @@ public class TutorialManager : MonoBehaviour
             yield return null;
         }
 
-        StartCoroutine(ExecuteWaveArrowNextEnable(3f));
+        StartCoroutine(ExecuteWaveArrowNextEnable(0.5f));
     }
 
     IEnumerator ExecuteWaveArrowNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
         waveArrowNextButtonPanel.SetActive(true);
+        waveArrowText.color = new Color(waveArrowText.color.r, waveArrowText.color.g, waveArrowText.color.b, 0);
         float timeElapsed = 0;
-        Color buttonColor = waveArrowNext.image.color;
 
         while (timeElapsed < fadeDuration)
         {
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            buttonColor.a = alpha;
-            waveArrowNext.image.color = buttonColor;
-
             timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            waveArrowText.color = new Color(waveArrowText.color.r, waveArrowText.color.g, waveArrowText.color.b, alpha);
             yield return null;
         }
 
         waveArrowNext.interactable = true;
         PauseTime();
-        buttonColor.a = 1;
-        waveArrowNext.image.color = buttonColor;
     }
 
     public void StartCoinsHeartTutorial()
@@ -205,30 +188,26 @@ public class TutorialManager : MonoBehaviour
             yield return null;
         }
 
-        StartCoroutine(ExecuteCoinsHeartNextEnable(3f));
+        StartCoroutine(ExecuteCoinsHeartNextEnable(0.5f));
     }
 
     IEnumerator ExecuteCoinsHeartNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
         coinsHeartsNextButtonPanel.SetActive(true);
+        coinsHeartsText.color = new Color(coinsHeartsText.color.r, coinsHeartsText.color.g, coinsHeartsText.color.b, 0);
         float timeElapsed = 0;
-        Color buttonColor = coinsHeartsNext.image.color;
 
         while (timeElapsed < fadeDuration)
         {
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            buttonColor.a = alpha;
-            coinsHeartsNext.image.color = buttonColor;
-
             timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            coinsHeartsText.color = new Color(coinsHeartsText.color.r, coinsHeartsText.color.g, coinsHeartsText.color.b, alpha);
             yield return null;
         }
 
         coinsHeartsNext.interactable = true;
         PauseTime();
-        buttonColor.a = 1;
-        coinsHeartsNext.image.color = buttonColor;
     }
 
     public void StartWaveTutorial()
@@ -254,30 +233,26 @@ public class TutorialManager : MonoBehaviour
             yield return null;
         }
 
-        StartCoroutine(ExecuteWaveNextEnable(3f));
+        StartCoroutine(ExecuteWaveNextEnable(0.5f));
     }
 
     IEnumerator ExecuteWaveNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
         waveNextButtonPanel.SetActive(true);
+        waveText.color = new Color(waveText.color.r, waveText.color.g, waveText.color.b, 0);
         float timeElapsed = 0;
-        Color buttonColor = waveNext.image.color;
 
         while (timeElapsed < fadeDuration)
         {
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            buttonColor.a = alpha;
-            waveNext.image.color = buttonColor;
-
             timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            waveText.color = new Color(waveText.color.r, waveText.color.g, waveText.color.b, alpha);
             yield return null;
         }
 
         waveNext.interactable = true;
         PauseTime();
-        buttonColor.a = 1;
-        waveNext.image.color = buttonColor;
     }
 
     public void StartEnemyPathTutorial()
@@ -303,30 +278,26 @@ public class TutorialManager : MonoBehaviour
             yield return null;
         }
 
-        StartCoroutine(ExecuteEnemyPathNextEnable(3f));
+        StartCoroutine(ExecuteEnemyPathNextEnable(0.5f));
     }
 
     IEnumerator ExecuteEnemyPathNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
         enemyPathNextButtonPanel.SetActive(true);
+        enemyPathText.color = new Color(enemyPathText.color.r, enemyPathText.color.g, enemyPathText.color.b, 0);
         float timeElapsed = 0;
-        Color buttonColor = enemyPathNext.image.color;
 
         while (timeElapsed < fadeDuration)
         {
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            buttonColor.a = alpha;
-            enemyPathNext.image.color = buttonColor;
-
             timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            enemyPathText.color = new Color(enemyPathText.color.r, enemyPathText.color.g, enemyPathText.color.b, alpha);
             yield return null;
         }
 
         enemyPathNext.interactable = true;
         PauseTime();
-        buttonColor.a = 1;
-        enemyPathNext.image.color = buttonColor;
     }
 
     public void StartMooltosTutorial()
@@ -358,24 +329,19 @@ public class TutorialManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         mooltosNextButtonPanel.SetActive(true);
+        mooltosText.color = new Color(mooltosText.color.r, mooltosText.color.g, mooltosText.color.b, 0);
         float timeElapsed = 0;
-        Color buttonColor = mooltosNext.image.color;
 
         while (timeElapsed < fadeDuration)
         {
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            buttonColor.a = alpha;
-            mooltosNext.image.color = buttonColor;
-
             timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            mooltosText.color = new Color(mooltosText.color.r, mooltosText.color.g, mooltosText.color.b, alpha);
             yield return null;
         }
 
         mooltosNext.interactable = true;
-        mooltosPanel.SetActive(true);
         PauseTime();
-        buttonColor.a = 1;
-        mooltosNext.image.color = buttonColor;
     }
 
     public void StartTowerTilesTutorial()
@@ -409,23 +375,19 @@ public class TutorialManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         towerTilesNextButtonPanel.SetActive(true);
+        towerTilesText.color = new Color(towerTilesText.color.r, towerTilesText.color.g, towerTilesText.color.b, 0);
         float timeElapsed = 0;
-        Color buttonColor = towerTilesNext.image.color;
 
         while (timeElapsed < fadeDuration)
         {
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            buttonColor.a = alpha;
-            towerTilesNext.image.color = buttonColor;
-
             timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            towerTilesText.color = new Color(towerTilesText.color.r, towerTilesText.color.g, towerTilesText.color.b, alpha);
             yield return null;
         }
 
         towerTilesNext.interactable = true;
         PauseTime();
-        buttonColor.a = 1;
-        towerTilesNext.image.color = buttonColor;
     }
 
     public void StartUpgradeSellTutorial()
