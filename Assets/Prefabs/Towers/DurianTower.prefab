@@ -192,6 +192,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce54d6c7bd65b924f930286e1dcff112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerSprites:
+  - {fileID: 21300000, guid: da5f34e6122798d49b78524da924d4ac, type: 3}
+  - {fileID: 21300000, guid: d21a07d0a91f50643b6e41d874785b44, type: 3}
+  - {fileID: 21300000, guid: e0f435c086ce3294ab62ccc46f8f652e, type: 3}
+  tower: {fileID: 7705924814799311654}
+  spriteLevel: 0
   upgradeInitialCost: 22
   upgradeCostIncremental: 13
   damageIncremental: 2
