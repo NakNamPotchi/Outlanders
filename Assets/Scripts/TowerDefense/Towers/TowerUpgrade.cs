@@ -7,6 +7,9 @@ using UnityEngine;
 
 public class TowerUpgrade : MonoBehaviour
 {
+    public Sprite[] towerSprites;
+    [SerializeField] private SpriteRenderer tower;
+    public int spriteLevel = 0;
     [SerializeField] private int upgradeInitialCost;
     [SerializeField] private int upgradeCostIncremental;
     [SerializeField] private float damageIncremental;
@@ -35,8 +38,10 @@ public class TowerUpgrade : MonoBehaviour
     {
         if (CurrencySystem.Instance.TotalCoins >= UpgradeCost)
         {
+            spriteLevel++;
             _towerProjectile.Damage += damageIncremental;
             _towerProjectile.DelayPerShot -= delayReduce;
+            tower.sprite = towerSprites[spriteLevel];
             UpdateUpgrade();
         }
     }
