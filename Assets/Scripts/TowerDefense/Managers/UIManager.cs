@@ -58,6 +58,7 @@ public class UIManager : Singleton<UIManager>
     public SceneFader fader;
 
     private Node _currentNodeSelected;
+    public CoinCheckerManager coinCheckerManager;
 
     [Header("Nodes")]
     public Button[] NodeButtons;
@@ -72,7 +73,7 @@ public class UIManager : Singleton<UIManager>
         totalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
         livesText.text = LevelManager.Instance.TotalLives.ToString();
         int waveNum = LevelManager.Instance.CurrentWave;
-        StartCoroutine(ExecuteAfterTime(7f, waveNum));
+        StartCoroutine(ExecuteAfterTime(1f, waveNum));
     }
 
     private void Start()
@@ -228,11 +229,18 @@ public class UIManager : Singleton<UIManager>
     
     public void UpgradeTower()
     {
-        _currentNodeSelected.Tower.TowerUpgrade.UpgradeTower();
-        UpdateUpgradeText();
-        UpdateTowerLevel();
-        UpdateSellValue();
-        nodeUIPanel.SetActive(false);
+        if (CurrencySystem.Instance.TotalCoins >= _currentNodeSelected.Tower.TowerUpgrade.UpgradeCost)
+        {
+            _currentNodeSelected.Tower.TowerUpgrade.UpgradeTower();
+            UpdateUpgradeText();
+            UpdateTowerLevel();
+            UpdateSellValue();
+            nodeUIPanel.SetActive(false);
+        }
+        else
+        {
+            coinCheckerManager.ShowMessage();
+        }
     }
 
     public void SellTower()
