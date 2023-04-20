@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class TutorialManager : MonoBehaviour
 {
     [Header("Panels")]
-    [SerializeField] private GameObject clickAnywhereToContinuePanel;
     [SerializeField] private GameObject canvasBlackBackground;
     [SerializeField] private GameObject countdownPanel;
     [SerializeField] private GameObject countdownNextButtonPanel;
@@ -322,6 +321,7 @@ public class TutorialManager : MonoBehaviour
             yield return null;
         }
 
+        mooltosPanel.SetActive(true);
         StartCoroutine(ExecuteMooltosNextEnable(1f));
     }
 
