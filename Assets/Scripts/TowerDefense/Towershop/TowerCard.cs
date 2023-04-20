@@ -38,5 +38,9 @@ public class TowerCard : MonoBehaviour
             UIManager.Instance.CloseTowerShopPanel();
             OnPlaceTower?.Invoke(TowerLoaded);
         }
+        else
+        {
+            CoinCheckerManager.Instance.ShowMessage();
+        }
     }
 }
