@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c977ff0151984499a1ee992a9273cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.2
+  moveSpeed: 6
   deathCoinReward: 3
   Waypoint: {fileID: 0}
 --- !u!114 &6319323794189484449
@@ -265,9 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 415952f6eb7198143a37d2e961cfaa0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textDamageSpawnPosition: {fileID: 0}
   deathParticles: {fileID: 119968, guid: e73000b12fb76244cbffd6abbf8bb6e4, type: 3}
-  coinGain: +3
 --- !u!114 &6319323794189484451
 MonoBehaviour:
   m_ObjectHideFlags: 0

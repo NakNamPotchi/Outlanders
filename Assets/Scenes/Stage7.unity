@@ -3344,7 +3344,7 @@ Tilemap:
       - {fileID: 253822928, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1050248759, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -371829312, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -7, y: -4, z: 0}
@@ -3374,7 +3374,7 @@ Tilemap:
       - {fileID: -1844324152, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1324934987, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -586366124, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -4, y: -3, z: 0}
@@ -3384,7 +3384,7 @@ Tilemap:
       - {fileID: 253822928, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1050248759, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -371829312, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -1, y: -3, z: 0}
@@ -3464,7 +3464,7 @@ Tilemap:
       - {fileID: -389525947, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1544775459, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1400105846, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -7, y: -1, z: 0}
@@ -3504,7 +3504,7 @@ Tilemap:
       - {fileID: -972479696, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -352619229, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 2013384859, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -2, y: 0, z: 0}
@@ -3594,7 +3594,7 @@ Tilemap:
       - {fileID: -1230466837, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1043164047, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1756136718, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -4493,6 +4493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 10
+  heartController: {fileID: 1018025925}
 --- !u!1 &494181946
 GameObject:
   m_ObjectHideFlags: 0
@@ -5192,7 +5193,7 @@ Camera:
   far clip plane: 9.7
   field of view: 60
   orthographic: 1
-  orthographic size: 5.62212
+  orthographic size: 5.6206555
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6236,7 +6237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842223879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.12212, z: 0}
+  m_LocalPosition: {x: 0, y: 5.1206555, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7044,6 +7045,8 @@ GameObject:
   - component: {fileID: 1018025922}
   - component: {fileID: 1018025924}
   - component: {fileID: 1018025923}
+  - component: {fileID: 1018025926}
+  - component: {fileID: 1018025925}
   m_Layer: 5
   m_Name: Lives - Img
   m_TagString: Untagged
@@ -7109,6 +7112,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018025921}
   m_CullTransparentMesh: 0
+--- !u!114 &1018025925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018025921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d90985c718c5354f98b92913f34f4d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &1018025926
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018025921}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f4ab8b0d6fa3f84bb3e6c4e0b43fff1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1019732596
 GameObject:
   m_ObjectHideFlags: 0
@@ -15523,7 +15558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807467451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.12212, z: 0}
+  m_LocalPosition: {x: 0, y: -5.1206555, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

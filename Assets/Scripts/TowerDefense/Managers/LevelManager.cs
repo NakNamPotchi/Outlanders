@@ -9,6 +9,7 @@ public class LevelManager : Singleton<LevelManager>
 
     public int TotalLives { get; set; }
     public int CurrentWave { get; set; }
+    public HeartController heartController;
     
     private void Start()
     {
@@ -19,11 +20,18 @@ public class LevelManager : Singleton<LevelManager>
     private void ReduceLives(Enemy enemy)
     {
         TotalLives--;
+        StartCoroutine(PlayHeartReduce());
         if (TotalLives <= 0)
         {
             TotalLives = 0;
             GameOver();
         }
+    }
+
+    private IEnumerator PlayHeartReduce()
+    {
+        heartController.TriggerHeartShaker();
+        yield return new WaitForSeconds(0.1f);
     }
 
     private void GameOver()
