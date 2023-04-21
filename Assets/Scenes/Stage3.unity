@@ -5490,6 +5490,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1804562732}
+        m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
+        m_MethodName: SaveMusicButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &602069918
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8594,18 +8606,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ResumeTime
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1804562732}
-        m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
-        m_MethodName: SaveMusicButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

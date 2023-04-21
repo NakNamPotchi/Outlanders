@@ -3448,7 +3448,7 @@ Tilemap:
       - {fileID: 253822928, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1050248759, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -371829312, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 4, y: -6, z: 0}
@@ -3628,7 +3628,7 @@ Tilemap:
       - {fileID: 372563754, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1869802658, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -56695309, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -5, y: 0, z: 0}
@@ -7420,18 +7420,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 228511344}
-        m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
-        m_MethodName: SaveMusicButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &837301699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9232,6 +9220,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
         m_MethodName: MusicSlider
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 228511344}
+        m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
+        m_MethodName: SaveMusicButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -3068,7 +3068,7 @@ Tilemap:
       - {fileID: 1088372464, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 821730882, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1792549320, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 6, y: -3, z: 0}
@@ -3108,7 +3108,7 @@ Tilemap:
       - {fileID: 372563754, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1869802658, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -56695309, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -4216,7 +4216,7 @@ Tilemap:
       - {fileID: -1844324152, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1324934987, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -586366124, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 4, y: -5, z: 0}
@@ -4236,7 +4236,7 @@ Tilemap:
       - {fileID: -577818977, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 139703636, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -2146241329, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 1, y: -3, z: 0}
@@ -4296,7 +4296,7 @@ Tilemap:
       - {fileID: -1956531070, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1902449865, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -425890233, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 3, y: 0, z: 0}
@@ -10164,18 +10164,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1232653350}
-        m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
-        m_MethodName: SaveMusicButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1464627110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11116,6 +11104,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
         m_MethodName: MusicSlider
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1232653350}
+        m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
+        m_MethodName: SaveMusicButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13781,7 +13781,7 @@ Tilemap:
       - {fileID: 372563754, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1869802658, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -56695309, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -8, y: -5, z: 0}
@@ -14582,7 +14582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1757866028

@@ -3741,7 +3741,7 @@ Tilemap:
       - {fileID: -1646571476, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -105537171, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -394541572, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -5, y: -2, z: 0}
@@ -3751,7 +3751,7 @@ Tilemap:
       - {fileID: 253822928, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1050248759, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -371829312, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -3, y: -2, z: 0}
@@ -3771,7 +3771,7 @@ Tilemap:
       - {fileID: 253822928, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1050248759, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -371829312, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 3, y: 0, z: 0}
@@ -3811,7 +3811,7 @@ Tilemap:
       - {fileID: -1844324152, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1324934987, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -586366124, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -4, y: 3, z: 0}
@@ -5616,18 +5616,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ResumeTime
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1275737305}
-        m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
-        m_MethodName: SaveMusicButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7574,6 +7562,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
         m_MethodName: MusicSlider
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1275737305}
+        m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
+        m_MethodName: SaveMusicButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

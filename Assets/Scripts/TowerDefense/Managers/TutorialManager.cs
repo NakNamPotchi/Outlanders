@@ -9,21 +9,18 @@ public class TutorialManager : MonoBehaviour
     [Header("Panels")]
     [SerializeField] private GameObject canvasBlackBackground;
     [SerializeField] private GameObject countdownPanel;
-    [SerializeField] private GameObject countdownNextButtonPanel;
     [SerializeField] private GameObject waveArrowPanel;
-    [SerializeField] private GameObject waveArrowNextButtonPanel;
     [SerializeField] private GameObject coinsHeartsPanel;
-    [SerializeField] private GameObject coinsHeartsNextButtonPanel;
     [SerializeField] private GameObject wavePanel;
-    [SerializeField] private GameObject waveNextButtonPanel;
     [SerializeField] private GameObject enemyPathPanel;
-    [SerializeField] private GameObject enemyPathNextButtonPanel;
     [SerializeField] private GameObject mooltosPanel;
-    [SerializeField] private GameObject mooltosNextButtonPanel;
     [SerializeField] private GameObject towerTilesPanel;
-    [SerializeField] private GameObject towerTilesNextButtonPanel;
+    [SerializeField] private GameObject placeTowerPanel;
     [SerializeField] private GameObject upgradeSellPanel;
     [SerializeField] private GameObject smallCanvasBlackBackground;
+    [SerializeField] private Image smallCanvasBlackBackgroundImage;
+    [SerializeField] private GameObject smallCanvasBlackBackground2;
+    [SerializeField] private Image smallCanvasBlackBackgroundImage2;
 
     [Header("Button")]
     [SerializeField] private Button countdownNext;
@@ -53,16 +50,8 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI mooltosSubText;
     [SerializeField] private TextMeshProUGUI towerTilesMainText;
     [SerializeField] private TextMeshProUGUI towerTilesSubText;
+    [SerializeField] private TextMeshProUGUI placeTowerText;
     [SerializeField] private TextMeshProUGUI upgradeSellMainText;
-
-    [Header("ClickText")]
-    [SerializeField] private TextMeshProUGUI countdownText;
-    [SerializeField] private TextMeshProUGUI waveArrowText;
-    [SerializeField] private TextMeshProUGUI coinsHeartsText;
-    [SerializeField] private TextMeshProUGUI waveText;
-    [SerializeField] private TextMeshProUGUI enemyPathText;
-    [SerializeField] private TextMeshProUGUI mooltosText;
-    [SerializeField] private TextMeshProUGUI towerTilesText;
 
     private float fadeDuration = 1f;
     private float startingAlpha;
@@ -103,17 +92,6 @@ public class TutorialManager : MonoBehaviour
     IEnumerator ExecuteCountdownNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
-        countdownNextButtonPanel.SetActive(true);
-        countdownText.color = new Color(countdownText.color.r, countdownText.color.g, countdownText.color.b, 0);
-        float timeElapsed = 0;
-
-        while (timeElapsed < fadeDuration)
-        {
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            countdownText.color = new Color(countdownText.color.r, countdownText.color.g, countdownText.color.b, alpha);
-            yield return null;
-        }
 
         countdownNext.interactable = true;
         PauseTime();
@@ -148,17 +126,6 @@ public class TutorialManager : MonoBehaviour
     IEnumerator ExecuteWaveArrowNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
-        waveArrowNextButtonPanel.SetActive(true);
-        waveArrowText.color = new Color(waveArrowText.color.r, waveArrowText.color.g, waveArrowText.color.b, 0);
-        float timeElapsed = 0;
-
-        while (timeElapsed < fadeDuration)
-        {
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            waveArrowText.color = new Color(waveArrowText.color.r, waveArrowText.color.g, waveArrowText.color.b, alpha);
-            yield return null;
-        }
 
         waveArrowNext.interactable = true;
         PauseTime();
@@ -193,17 +160,6 @@ public class TutorialManager : MonoBehaviour
     IEnumerator ExecuteCoinsHeartNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
-        coinsHeartsNextButtonPanel.SetActive(true);
-        coinsHeartsText.color = new Color(coinsHeartsText.color.r, coinsHeartsText.color.g, coinsHeartsText.color.b, 0);
-        float timeElapsed = 0;
-
-        while (timeElapsed < fadeDuration)
-        {
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            coinsHeartsText.color = new Color(coinsHeartsText.color.r, coinsHeartsText.color.g, coinsHeartsText.color.b, alpha);
-            yield return null;
-        }
 
         coinsHeartsNext.interactable = true;
         PauseTime();
@@ -238,17 +194,6 @@ public class TutorialManager : MonoBehaviour
     IEnumerator ExecuteWaveNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
-        waveNextButtonPanel.SetActive(true);
-        waveText.color = new Color(waveText.color.r, waveText.color.g, waveText.color.b, 0);
-        float timeElapsed = 0;
-
-        while (timeElapsed < fadeDuration)
-        {
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            waveText.color = new Color(waveText.color.r, waveText.color.g, waveText.color.b, alpha);
-            yield return null;
-        }
 
         waveNext.interactable = true;
         PauseTime();
@@ -283,17 +228,6 @@ public class TutorialManager : MonoBehaviour
     IEnumerator ExecuteEnemyPathNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
-        enemyPathNextButtonPanel.SetActive(true);
-        enemyPathText.color = new Color(enemyPathText.color.r, enemyPathText.color.g, enemyPathText.color.b, 0);
-        float timeElapsed = 0;
-
-        while (timeElapsed < fadeDuration)
-        {
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            enemyPathText.color = new Color(enemyPathText.color.r, enemyPathText.color.g, enemyPathText.color.b, alpha);
-            yield return null;
-        }
 
         enemyPathNext.interactable = true;
         PauseTime();
@@ -318,6 +252,12 @@ public class TutorialManager : MonoBehaviour
             float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
             mooltosMainText.color = new Color(mooltosMainText.color.r, mooltosMainText.color.g, mooltosMainText.color.b, alpha);
             mooltosSubText.color = new Color(mooltosSubText.color.r, mooltosSubText.color.g, mooltosSubText.color.b, alpha);
+
+            if (alpha >= 0.1)
+            {
+                mooltosPanel.SetActive(true);
+            }
+
             yield return null;
         }
 
@@ -328,17 +268,6 @@ public class TutorialManager : MonoBehaviour
     IEnumerator ExecuteMooltosNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
-        mooltosNextButtonPanel.SetActive(true);
-        mooltosText.color = new Color(mooltosText.color.r, mooltosText.color.g, mooltosText.color.b, 0);
-        float timeElapsed = 0;
-
-        while (timeElapsed < fadeDuration)
-        {
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            mooltosText.color = new Color(mooltosText.color.r, mooltosText.color.g, mooltosText.color.b, alpha);
-            yield return null;
-        }
 
         mooltosNext.interactable = true;
         PauseTime();
@@ -363,6 +292,11 @@ public class TutorialManager : MonoBehaviour
             float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
             towerTilesMainText.color = new Color(towerTilesMainText.color.r, towerTilesMainText.color.g, towerTilesMainText.color.b, alpha);
             towerTilesSubText.color = new Color(towerTilesSubText.color.r, towerTilesSubText.color.g, towerTilesSubText.color.b, alpha);
+
+            if (alpha >= 0.1)
+            {
+                towerTilesPanel.SetActive(true);
+            }
             
             yield return null;
         }
@@ -374,19 +308,37 @@ public class TutorialManager : MonoBehaviour
     IEnumerator ExecuteTowerTilesNextEnable(float time)
     {
         yield return new WaitForSeconds(time);
-        towerTilesNextButtonPanel.SetActive(true);
-        towerTilesText.color = new Color(towerTilesText.color.r, towerTilesText.color.g, towerTilesText.color.b, 0);
+
+        towerTilesNext.interactable = true;
+        PauseTime();
+    }
+
+    public void PlaceTowersTutorial()
+    {
+        StartCoroutine(ExecutePlaceTowersEnable(0.1f));
+    }
+
+    IEnumerator ExecutePlaceTowersEnable(float time)
+    {
+        yield return new WaitForSeconds(time);
+    
+        smallCanvasBlackBackground.SetActive(true);
+        placeTowerPanel.SetActive(true);
+        placeTowerText.color = new Color(placeTowerText.color.r, placeTowerText.color.g, placeTowerText.color.b, 0);
+        smallCanvasBlackBackgroundImage.color = new Color(smallCanvasBlackBackgroundImage.color.r, smallCanvasBlackBackgroundImage.color.g, smallCanvasBlackBackgroundImage.color.b, 0f);
         float timeElapsed = 0;
 
         while (timeElapsed < fadeDuration)
         {
             timeElapsed += Time.deltaTime;
             float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
-            towerTilesText.color = new Color(towerTilesText.color.r, towerTilesText.color.g, towerTilesText.color.b, alpha);
+            placeTowerText.color = new Color(placeTowerText.color.r, placeTowerText.color.g, placeTowerText.color.b, alpha);
+            if (alpha <= 0.8)
+            {
+                smallCanvasBlackBackgroundImage.color = new Color(smallCanvasBlackBackgroundImage.color.r, smallCanvasBlackBackgroundImage.color.g, smallCanvasBlackBackgroundImage.color.b, alpha);
+            }
             yield return null;
         }
-
-        towerTilesNext.interactable = true;
         PauseTime();
     }
 
@@ -394,20 +346,19 @@ public class TutorialManager : MonoBehaviour
     {
         if (executedOnce == 0)
         {
-            StartCoroutine(ExecuteUpgradeSellEnable(1f));
-        }
-        else
-        {
-            StartCoroutine(ExecuteUpgradeSellEnable(99f));
+            executedOnce = 1;
+            StartCoroutine(ExecuteUpgradeSellEnable(4f));
         }
     }
 
     IEnumerator ExecuteUpgradeSellEnable(float time)
     {
         yield return new WaitForSeconds(time);
-        
+
         upgradeSellPanel.SetActive(true);
+        smallCanvasBlackBackground2.SetActive(true);
         upgradeSellMainText.color = new Color(upgradeSellMainText.color.r, upgradeSellMainText.color.g, upgradeSellMainText.color.b, 0);
+        smallCanvasBlackBackgroundImage2.color = new Color(smallCanvasBlackBackgroundImage2.color.r, smallCanvasBlackBackgroundImage2.color.g, smallCanvasBlackBackgroundImage2.color.b, 0f);
         float timeElapsed = 0;
 
         while (timeElapsed < fadeDuration)
@@ -415,16 +366,13 @@ public class TutorialManager : MonoBehaviour
             timeElapsed += Time.deltaTime;
             float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
             upgradeSellMainText.color = new Color(upgradeSellMainText.color.r, upgradeSellMainText.color.g, upgradeSellMainText.color.b, alpha);
-            
-            if (timeElapsed > 0.8)
+            if (alpha <= 0.8)
             {
-                smallCanvasBlackBackground.SetActive(true);
+                smallCanvasBlackBackgroundImage2.color = new Color(smallCanvasBlackBackgroundImage2.color.r, smallCanvasBlackBackgroundImage2.color.g, smallCanvasBlackBackgroundImage2.color.b, alpha);
             }
-            executedOnce = 1;
-
             yield return null;
         }
-        StartCoroutine(ExecuteUpgradeSellDisable(8f));
+        StartCoroutine(ExecuteUpgradeSellDisable(10f));
     }
 
     IEnumerator ExecuteUpgradeSellDisable(float time)
@@ -432,7 +380,7 @@ public class TutorialManager : MonoBehaviour
         yield return new WaitForSeconds(time);
         
         upgradeSellPanel.SetActive(false);
-        smallCanvasBlackBackground.SetActive(false);
+        smallCanvasBlackBackground2.SetActive(false);
 
         yield return null;
     }
