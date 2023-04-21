@@ -2629,7 +2629,7 @@ Tilemap:
       - {fileID: -1357902804, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 863618376, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -1655719156, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 6, y: 1, z: 0}
@@ -3713,7 +3713,7 @@ Tilemap:
       - {fileID: 1870374201, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 781791904, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1206122035, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 3, y: -6, z: 0}
@@ -3763,7 +3763,7 @@ Tilemap:
       - {fileID: -790848813, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1614506936, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1687263867, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 4, y: -4, z: 0}
@@ -3903,7 +3903,7 @@ Tilemap:
       - {fileID: 1947924334, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1347045817, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1646078421, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -7, y: 4, z: 0}
@@ -3943,7 +3943,7 @@ Tilemap:
       - {fileID: 1346905501, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 157028648, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -214190585, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -8813,6 +8813,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
         m_MethodName: MusicSlider
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1804253597}
+        m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
+        m_MethodName: SaveMusicButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16446,18 +16458,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ResumeTime
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1804253597}
-        m_TargetAssemblyTypeName: MusicSaveController, Assembly-CSharp
-        m_MethodName: SaveMusicButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

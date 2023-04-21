@@ -80,7 +80,7 @@ public class UIManager : Singleton<UIManager>
     {
         if (SceneManager.GetActiveScene().name == "TutorialStage" || SceneManager.GetActiveScene().name == "Stage0")
         {
-            int seconds = 18;
+            int seconds = 16;
             StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
         }
         else

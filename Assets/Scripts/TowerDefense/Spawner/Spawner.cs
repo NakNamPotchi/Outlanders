@@ -51,7 +51,7 @@ public class Spawner : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Stage0")
 		{
-			_spawnTimer = 18.5f;
+			_spawnTimer = 15f;
 		}
         else
         {
