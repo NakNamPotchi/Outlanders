@@ -29,6 +29,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI currentWaveText;
     [SerializeField] private TextMeshProUGUI gameOverTotalCoinsText;
     [SerializeField] private TextMeshProUGUI countdownText;
+    [SerializeField] private TextMeshProUGUI waveStartText;
+    [SerializeField] private TextMeshProUGUI finalWaveStartText;
 
     [Header("Button")]
     [SerializeField] private Button towerUpgradeButton;
@@ -110,6 +112,88 @@ public class UIManager : Singleton<UIManager>
         {
             --seconds;
             StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
+        }
+    }
+
+    public void ShowWaveText() 
+    {
+        StartCoroutine(ExecuteWaveMessageFadeIn(0.1f));
+    }
+
+    IEnumerator ExecuteWaveMessageFadeIn(float time)
+    {
+        yield return new WaitForSeconds(time);
+        
+        waveStartText.color = new Color(waveStartText.color.r, waveStartText.color.g, waveStartText.color.b, 0);
+        float timeElapsed = 0;
+
+        while (timeElapsed < fadeDuration)
+        {
+            timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            waveStartText.color = new Color(waveStartText.color.r, waveStartText.color.g, waveStartText.color.b, alpha);
+            yield return null;
+        }
+
+        StartCoroutine(ExecuteWaveMessageFadeOut(1f));
+    }
+
+    IEnumerator ExecuteWaveMessageFadeOut(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        waveStartText.color = new Color(waveStartText.color.r, waveStartText.color.g, waveStartText.color.b, 1);
+        float timeElapsed = 0;
+        float startAlpha = 1f; 
+        float targetAlpha = 0f; 
+
+        while (timeElapsed < fadeDuration)
+        {
+            timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, targetAlpha, timeElapsed / fadeDuration);
+            waveStartText.color = new Color(waveStartText.color.r, waveStartText.color.g, waveStartText.color.b, alpha);
+            yield return null;
+        }
+    }
+
+    public void ShowLastWaveText() 
+    {
+        StartCoroutine(ExecuteLastWaveMessageFadeIn(0.1f));
+    }
+
+    IEnumerator ExecuteLastWaveMessageFadeIn(float time)
+    {
+        yield return new WaitForSeconds(time);
+        
+        finalWaveStartText.color = new Color(finalWaveStartText.color.r, finalWaveStartText.color.g, finalWaveStartText.color.b, 0);
+        float timeElapsed = 0;
+
+        while (timeElapsed < fadeDuration)
+        {
+            timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, timeElapsed / fadeDuration);
+            finalWaveStartText.color = new Color(finalWaveStartText.color.r, finalWaveStartText.color.g, finalWaveStartText.color.b, alpha);
+            yield return null;
+        }
+
+        StartCoroutine(ExecuteLastWaveMessageFadeOut(1f));
+    }
+
+    IEnumerator ExecuteLastWaveMessageFadeOut(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        finalWaveStartText.color = new Color(finalWaveStartText.color.r, finalWaveStartText.color.g, finalWaveStartText.color.b, 1);
+        float timeElapsed = 0;
+        float startAlpha = 1f; 
+        float targetAlpha = 0f; 
+
+        while (timeElapsed < fadeDuration)
+        {
+            timeElapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, targetAlpha, timeElapsed / fadeDuration);
+            finalWaveStartText.color = new Color(finalWaveStartText.color.r, finalWaveStartText.color.g, finalWaveStartText.color.b, alpha);
+            yield return null;
         }
     }
 
