@@ -124,6 +124,7 @@ public class UIManager : Singleton<UIManager>
     {
         yield return new WaitForSeconds(time);
         
+        waveStartText.text = $"Wave {LevelManager.Instance.CurrentWave.ToString()} will start now";
         waveStartText.color = new Color(waveStartText.color.r, waveStartText.color.g, waveStartText.color.b, 0);
         float timeElapsed = 0;
 
@@ -135,13 +136,14 @@ public class UIManager : Singleton<UIManager>
             yield return null;
         }
 
-        StartCoroutine(ExecuteWaveMessageFadeOut(1f));
+        StartCoroutine(ExecuteWaveMessageFadeOut(2f));
     }
 
     IEnumerator ExecuteWaveMessageFadeOut(float time)
     {
         yield return new WaitForSeconds(time);
 
+        float blinkInterval = 0.1f;
         waveStartText.color = new Color(waveStartText.color.r, waveStartText.color.g, waveStartText.color.b, 1);
         float timeElapsed = 0;
         float startAlpha = 1f; 
@@ -152,6 +154,16 @@ public class UIManager : Singleton<UIManager>
             timeElapsed += Time.deltaTime;
             float alpha = Mathf.Lerp(startAlpha, targetAlpha, timeElapsed / fadeDuration);
             waveStartText.color = new Color(waveStartText.color.r, waveStartText.color.g, waveStartText.color.b, alpha);
+
+            if (timeElapsed % (2 * blinkInterval) < blinkInterval)
+            {
+                waveStartText.color = new Color(waveStartText.color.r, waveStartText.color.g, waveStartText.color.b, 0);
+            }
+            else
+            {
+                waveStartText.color = new Color(waveStartText.color.r, waveStartText.color.g, waveStartText.color.b, alpha);
+            }
+
             yield return null;
         }
     }
@@ -176,13 +188,14 @@ public class UIManager : Singleton<UIManager>
             yield return null;
         }
 
-        StartCoroutine(ExecuteLastWaveMessageFadeOut(1f));
+        StartCoroutine(ExecuteLastWaveMessageFadeOut(2f));
     }
 
     IEnumerator ExecuteLastWaveMessageFadeOut(float time)
     {
         yield return new WaitForSeconds(time);
 
+        float blinkInterval = 0.1f;
         finalWaveStartText.color = new Color(finalWaveStartText.color.r, finalWaveStartText.color.g, finalWaveStartText.color.b, 1);
         float timeElapsed = 0;
         float startAlpha = 1f; 
@@ -193,6 +206,16 @@ public class UIManager : Singleton<UIManager>
             timeElapsed += Time.deltaTime;
             float alpha = Mathf.Lerp(startAlpha, targetAlpha, timeElapsed / fadeDuration);
             finalWaveStartText.color = new Color(finalWaveStartText.color.r, finalWaveStartText.color.g, finalWaveStartText.color.b, alpha);
+
+            if (timeElapsed % (2 * blinkInterval) < blinkInterval)
+            {
+                finalWaveStartText.color = new Color(finalWaveStartText.color.r, finalWaveStartText.color.g, finalWaveStartText.color.b, 0);
+            }
+            else
+            {
+                finalWaveStartText.color = new Color(finalWaveStartText.color.r, finalWaveStartText.color.g, finalWaveStartText.color.b, alpha);
+            }
+
             yield return null;
         }
     }
@@ -210,12 +233,14 @@ public class UIManager : Singleton<UIManager>
         yield return new WaitForSeconds(time);
 
         if (waveNum == Spawner.totalWave + 1)
-        {
+        {   
             waveNum = waveNum - 1;
             currentWaveText.text = "Wave "+ waveNum;
         }
         else if (waveNum <= Spawner.totalWave)
+        {
             currentWaveText.text = "Wave "+ waveNum;
+        }
     }
 
     IEnumerator FadeOut()

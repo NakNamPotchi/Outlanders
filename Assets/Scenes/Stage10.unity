@@ -3069,7 +3069,7 @@ Tilemap:
       - {fileID: -790848813, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1614506936, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1687263867, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -6, y: -4, z: 0}
@@ -3079,7 +3079,7 @@ Tilemap:
       - {fileID: 1249042333, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1531615538, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1256369601, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 6, y: -3, z: 0}
@@ -3179,7 +3179,7 @@ Tilemap:
       - {fileID: 1494742340, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1142375987, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 2034131448, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 3, y: 0, z: 0}
@@ -3269,7 +3269,7 @@ Tilemap:
       - {fileID: 1088372464, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 821730882, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1792549320, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 9, y: 2, z: 0}
@@ -3299,7 +3299,7 @@ Tilemap:
       - {fileID: -150009358, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -837459674, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1925079697, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 9, y: 3, z: 0}
@@ -3734,6 +3734,7 @@ MonoBehaviour:
   - {fileID: 1181869916}
   - {fileID: 1664313472}
   - {fileID: 1572995438}
+  UIM: {fileID: 1085614509}
 --- !u!4 &380588821
 Transform:
   m_ObjectHideFlags: 0
