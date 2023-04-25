@@ -44,6 +44,7 @@ public class Spawner : MonoBehaviour
     
     public static int totalWave;
     private int Wave = 1;
+    public UIManager UIM;
     
     private Waypoint _waypoint;
 
@@ -201,10 +202,15 @@ public class Spawner : MonoBehaviour
         yield return new WaitForSeconds(delayBtwWaves);
         if (Wave < totalWave)
         {
+            if (Wave < totalWave - 1)
+                UIM.ShowWaveText();
+            else if (Wave == totalWave - 1)
+                UIM.ShowLastWaveText();
+                
             _enemiesRemaining = enemyWavePooler[Wave].enemyCount + enemyWave2Pooler[Wave].enemyCount;
             enemyCount = enemyWavePooler[Wave].enemyCount;
             enemyCount2 = enemyWave2Pooler[Wave].enemyCount;
-            _spawnTimer = 0f;
+            _spawnTimer = 4f;
             _enemiesSpawned = 0;
             _enemiesSpawned2 = 0;
         }

@@ -22,7 +22,15 @@ public class Waypoint : MonoBehaviour
 
     public Vector3 GetWaypointPosition(int index)
     {
-        return CurrentPosition + Points[index];
+        try
+        {
+            return CurrentPosition + Points[index];
+        }
+        catch (NullReferenceException e)
+        {
+            Debug.LogError("Error: " + e.Message);
+            return Vector3.zero;
+        }
     }
 
     private void OnDrawGizmos()
