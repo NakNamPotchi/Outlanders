@@ -32,6 +32,6 @@ public class PinyaTowerProjectile : TowerProjectile
         _currentProjectileLoaded.SetEnemy(enemy);
         _currentProjectileLoaded.Damage = Damage;
         instance.SetActive(true);
-        AudioManager.Instance.PlayerSound(AudioManager.Sound.pinya);
+        AudioManager.Instance.PlaySound("Pinya");
     }
 }

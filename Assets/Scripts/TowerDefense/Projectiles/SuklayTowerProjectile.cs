@@ -32,6 +32,6 @@ public class SuklayTowerProjectile : TowerProjectile
         _currentProjectileLoaded.SetEnemy(enemy);
         _currentProjectileLoaded.Damage = Damage;
         instance.SetActive(true);
-        AudioManager.Instance.PlayerSound(AudioManager.Sound.suklay);
+        AudioManager.Instance.PlaySound("Suklay");
     }
 }

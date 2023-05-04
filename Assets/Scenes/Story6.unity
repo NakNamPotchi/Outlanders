@@ -419,7 +419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173967011}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -7.0035753, z: -5.74}
+  m_LocalPosition: {x: 0, y: -7.0083013, z: -5.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1654,7 +1654,7 @@ Tilemap:
       - {fileID: -1230466837, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 1043164047, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1756136718, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 8, y: -2, z: 0}
@@ -1744,7 +1744,7 @@ Tilemap:
       - {fileID: 372563754, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -1869802658, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -56695309, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 23, y: 6, z: 0}
@@ -12094,7 +12094,7 @@ Tilemap:
       - {fileID: -1357902804, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 863618376, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -1655719156, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 8, y: 0, z: 0}
@@ -12108,7 +12108,7 @@ Tilemap:
       - {fileID: -1917133780, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -970646269, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1679839599, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 10, y: 0, z: 0}
@@ -12508,7 +12508,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5035753
+  orthographic size: 7.5083013
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12929,9 +12929,9 @@ RectTransform:
   m_Father: {fileID: 2061140093}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -540}
   m_SizeDelta: {x: 2100, y: 1400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &966673667
@@ -13706,9 +13706,9 @@ RectTransform:
   m_Father: {fileID: 246326036}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -523.2}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 16.799988}
   m_SizeDelta: {x: 1224.4, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1262695839
@@ -13860,7 +13860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388351586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.993575, z: -5.74}
+  m_LocalPosition: {x: 0, y: 6.9983015, z: -5.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14361,7 +14361,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2200, y: 1200}
+  m_SizeDelta: {x: 2300, y: 1200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1511579446
 GameObject:

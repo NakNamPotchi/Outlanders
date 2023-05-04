@@ -203,9 +203,15 @@ public class Spawner : MonoBehaviour
         if (Wave < totalWave)
         {
             if (Wave < totalWave - 1)
+            {
+                AudioManager.Instance.PlaySound("WaveStart");
                 UIM.ShowWaveText();
+            }
             else if (Wave == totalWave - 1)
+            {
+                AudioManager.Instance.PlaySound("WaveStart");
                 UIM.ShowLastWaveText();
+            }
                 
             _enemiesRemaining = enemyWavePooler[Wave].enemyCount + enemyWave2Pooler[Wave].enemyCount;
             enemyCount = enemyWavePooler[Wave].enemyCount;

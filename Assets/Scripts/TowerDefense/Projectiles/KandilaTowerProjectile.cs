@@ -32,6 +32,6 @@ public class KandilaTowerProjectile : TowerProjectile
         _currentProjectileLoaded.SetEnemy(enemy);
         _currentProjectileLoaded.Damage = Damage;
         instance.SetActive(true);
-        AudioManager.Instance.PlayerSound(AudioManager.Sound.kandila);
+        AudioManager.Instance.PlaySound("Kandila");
     }
 }
