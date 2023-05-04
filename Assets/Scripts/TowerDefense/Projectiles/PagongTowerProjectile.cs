@@ -32,6 +32,6 @@ public class PagongTowerProjectile : TowerProjectile
         _currentProjectileLoaded.SetEnemy(enemy);
         _currentProjectileLoaded.Damage = Damage;
         instance.SetActive(true);
-        AudioManager.Instance.PlayerSound(AudioManager.Sound.pagong);
+        AudioManager.Instance.PlaySound("Pagong");
     }
 }

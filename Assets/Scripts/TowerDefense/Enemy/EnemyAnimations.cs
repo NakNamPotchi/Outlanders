@@ -38,6 +38,7 @@ public class EnemyAnimations : MonoBehaviour
 
     private IEnumerator PlayDead()
     {
+        AudioManager.Instance.PlaySound("Death");
         _enemy.StopMovement();
         Instantiate(deathParticles, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(0.1f);

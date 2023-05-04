@@ -23,7 +23,9 @@ public class LevelManager : Singleton<LevelManager>
         StartCoroutine(PlayHeartReduce());
         if (TotalLives <= 0)
         {
+            AudioManager.Instance.musicSource.Stop();
             TotalLives = 0;
+            AudioManager.Instance.PlaySound("GameOver");
             GameOver();
         }
     }
@@ -31,6 +33,7 @@ public class LevelManager : Singleton<LevelManager>
     private IEnumerator PlayHeartReduce()
     {
         heartController.TriggerHeartShaker();
+        AudioManager.Instance.PlaySound("LoseHeart");
         yield return new WaitForSeconds(0.1f);
     }
 
@@ -42,6 +45,8 @@ public class LevelManager : Singleton<LevelManager>
 
     private void YouWin()
     {
+        AudioManager.Instance.musicSource.Stop();
+        AudioManager.Instance.PlaySound("Win");
         StartCoroutine(ExecuteAfterTime(4));
     }
 

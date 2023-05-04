@@ -166,6 +166,7 @@ public class UIManager : Singleton<UIManager>
 
             yield return null;
         }
+        AudioManager.Instance.PlaySound("WaveStart");
     }
 
     public void ShowLastWaveText() 
