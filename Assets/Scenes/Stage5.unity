@@ -1609,7 +1609,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ReturnCabin
+        m_MethodName: ReturnGameStageMap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3021,7 +3021,7 @@ Tilemap:
       - {fileID: -1357902804, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 863618376, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -1655719156, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -8, y: -4, z: 0}
@@ -3175,7 +3175,7 @@ Tilemap:
       - {fileID: -1357902804, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 863618376, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: -1655719156, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 6, y: 1, z: 0}
@@ -3231,7 +3231,7 @@ Tilemap:
       - {fileID: -142257695, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 1791580437, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
       - {fileID: 832384480, guid: 9406953d7deaf784fb6e1e0ad5596fb1, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -4370,7 +4370,7 @@ Tilemap:
       - {fileID: 32436669, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -518777148, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 501818669, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 1, y: 2, z: 0}
@@ -4380,7 +4380,7 @@ Tilemap:
       - {fileID: -577818977, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: 139703636, guid: 37c3142ea60721745a87e45321916d73, type: 3}
       - {fileID: -2146241329, guid: 37c3142ea60721745a87e45321916d73, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -9, y: 3, z: 0}
@@ -4842,7 +4842,7 @@ GameObject:
   - component: {fileID: 479938315}
   - component: {fileID: 479938314}
   m_Layer: 5
-  m_Name: Cabin - Button
+  m_Name: MapStages - Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4914,7 +4914,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ReturnCabin
+        m_MethodName: ReturnGameStageMap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5639,7 +5639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569722110}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -5.5, y: 4.34, z: 0}
+  m_LocalPosition: {x: -5.5, y: 4.7, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5800,7 +5800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 614761348}
   m_Layer: 5
-  m_Name: CabinConfirmPanel
+  m_Name: MapStagesConfirmPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5919,7 +5919,7 @@ GameObject:
   - component: {fileID: 666839718}
   - component: {fileID: 666839717}
   m_Layer: 5
-  m_Name: Cabin - Button
+  m_Name: MapStages - Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5943,7 +5943,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 254.49998, y: -207.92}
-  m_SizeDelta: {x: 409, y: 119}
+  m_SizeDelta: {x: 529, y: 119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &666839717
 MonoBehaviour:
@@ -6021,7 +6021,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 859f50dd8ae829e4f80fa784c2c8cb6c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a4103d779e79a44da7bf77ed3254261, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6094,7 +6094,7 @@ Camera:
   far clip plane: 9.7
   field of view: 60
   orthographic: 1
-  orthographic size: 5.744621
+  orthographic size: 6.469406
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6990,7 +6990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842223879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.244621, z: 0}
+  m_LocalPosition: {x: 0, y: 5.969406, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17970,7 +17970,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Are you sure you want to return to Cabin?
+  m_text: Are you sure you want to return to the Map?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79c4c8ba91ef60b498e9e9cda1de26ca, type: 2}
   m_sharedMaterial: {fileID: 5022791117089066462, guid: 79c4c8ba91ef60b498e9e9cda1de26ca, type: 2}
@@ -18298,7 +18298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807467451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.244621, z: 0}
+  m_LocalPosition: {x: 0, y: -5.969406, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18332,7 +18332,7 @@ GameObject:
   - component: {fileID: 1818131049}
   - component: {fileID: 1818131048}
   m_Layer: 5
-  m_Name: Cabin - Button
+  m_Name: MapStages - Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18356,7 +18356,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -17.6}
-  m_SizeDelta: {x: 409, y: 119}
+  m_SizeDelta: {x: 529, y: 119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1818131048
 MonoBehaviour:
@@ -18404,7 +18404,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1085614509}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: ReturnCabin
+        m_MethodName: ReturnGameStageMap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18434,7 +18434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 859f50dd8ae829e4f80fa784c2c8cb6c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a4103d779e79a44da7bf77ed3254261, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19143,7 +19143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -254.49998, y: -207.92}
+  m_AnchoredPosition: {x: -305, y: -207.92}
   m_SizeDelta: {x: 409, y: 119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1921500062

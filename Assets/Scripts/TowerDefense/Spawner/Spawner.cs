@@ -40,7 +40,7 @@ public class Spawner : MonoBehaviour
     private int enemyCount2;
     private int _enemiesSpawned;
     private int _enemiesSpawned2;
-    private int _enemiesRemaining;
+    public static int _enemiesRemaining;
     
     public static int totalWave;
     private int Wave = 1;

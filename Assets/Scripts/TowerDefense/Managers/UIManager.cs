@@ -297,15 +297,21 @@ public class UIManager : Singleton<UIManager>
     public void RestartGame()
     {
         Time.timeScale = 1f;
+
+        GameObject objToDestroy = GameObject.Find("AudioManager");
+        if (objToDestroy != null) 
+        {
+            Destroy(objToDestroy);
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void ReturnCabin()
+    public void ReturnGameStageMap()
     {
         int UnlockedStage = PlayerPrefs.GetInt("stageReached");
 
         Time.timeScale = 1f;
-        if (UnlockedStage <= StageToUnlock)
+        if (UnlockedStage <= StageToUnlock && LevelManager.Instance.CurrentWave == Spawner.totalWave + 1 && Spawner._enemiesRemaining < 1)
         {
             PlayerPrefs.SetInt("stageReached", StageToUnlock);
             PlayerPrefs.SetInt("storyReached", StoryToUnlock);
