@@ -14,22 +14,12 @@ public class AudioManager : MonoBehaviour
     private bool musicPlaying = true;
     private int startingSceneIndex;
 
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            //DontDestroyOnLoad(gameObject);
-            startingSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
     public void Start()
     {
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        startingSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
         PlayMusic("Theme");
         if (SceneManager.GetActiveScene().name == "Cabin")
             PlayCabinSFX();
@@ -47,14 +37,9 @@ public class AudioManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene().buildIndex != startingSceneIndex)
-        {
             Destroy(gameObject);
-        }
-
         if (!musicPlaying)
-        {
             musicSource.Stop();
-        }
     }
 
     private void PlayCabinSFX()

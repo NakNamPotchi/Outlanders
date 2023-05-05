@@ -41519,7 +41519,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f8d68b5cb8c257b44be3b4631eb3cd99, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -92792,7 +92792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b011898f66429eb498c161b997abccf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repeatTime: 1
   musicSound:
   - name: Theme
     clip: {fileID: 8300000, guid: f8d68b5cb8c257b44be3b4631eb3cd99, type: 3}
@@ -93864,7 +93863,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -94117,7 +94116,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Attack Range: 1.5\t\t\nDelay per Attack: 0.7 (- 0.15 per Upgrade)\nDamage
+  m_text: "Attack Range: 2.5\t\t\nDelay per Attack: 0.7 (- 0.15 per Upgrade)\nDamage
     per shot: 3 (+ 2 per Upgrade)\n\nBuild Cost: 15 Coins\nUpgrade to Level 2 Cost:
     18 Coins\t\nUpgrade to Level 3 Cost: 32 Coins\t\t"
   m_isRightToLeft: 0
