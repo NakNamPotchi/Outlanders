@@ -16,6 +16,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject coinPanel;
     [SerializeField] private GameObject wavePanel;
     [SerializeField] private GameObject countdownPanel;
+    [SerializeField] private GameObject cheatPanel;
 
     [Header("Images")]
     [SerializeField] private Image countdownBlackImage;
@@ -34,6 +35,7 @@ public class UIManager : Singleton<UIManager>
 
     [Header("Button")]
     [SerializeField] private Button towerUpgradeButton;
+    [SerializeField] private Button cheatButton;
     
     [Header("PlayerPrefs")]
     [SerializeField] public string GoToAfterWin = "Cabin";
@@ -46,6 +48,14 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] public int ToresToUnlock;
     [SerializeField] public int MooltosToUnlock;
     [SerializeField] public int TowerToUnlock;
+    [SerializeField] public int FolktaleNewReward;
+    [SerializeField] public int RiddleNewReward;
+    [SerializeField] public int LegendNewReward;
+    [SerializeField] public int HumanNewReward;
+    [SerializeField] public int ToresNewReward;
+    [SerializeField] public int MooltosNewReward;
+    [SerializeField] public int EncyclopediaNewReward;
+    [SerializeField] public int BookshelfNewReward;
 
     private int SkipIntroductionStory = 1;
     private int SkipTutorialStage = 1;
@@ -55,6 +65,22 @@ public class UIManager : Singleton<UIManager>
     private float fadeDuration = 1f;
     private float startingAlpha;
     private float startingAlpha2;
+
+    private readonly KeyCode[] sequence = new KeyCode[]
+    {
+        KeyCode.UpArrow,
+        KeyCode.UpArrow,
+        KeyCode.DownArrow,
+        KeyCode.DownArrow,
+        KeyCode.LeftArrow,
+        KeyCode.RightArrow,
+        KeyCode.LeftArrow,
+        KeyCode.RightArrow
+    };
+    private readonly int[] sequence2 = new int[] { 1, 1, 2, 2, 3, 4, 3, 4 }; // 1 = up, 2 = down, 3 = left, 4 = right
+
+    private int sequenceIndex = 0;
+    private int sequenceIndex2 = 0;
 
     [Header("Scene Fader")]
     public SceneFader fader;
@@ -72,10 +98,86 @@ public class UIManager : Singleton<UIManager>
 
     private void Update()
     {
+        // Mobile Touch 
+        if (Input.GetKeyDown(sequence[sequenceIndex]))
+        {
+            sequenceIndex++;
+
+            if (sequenceIndex == sequence.Length)
+            {
+                cheatPanel.SetActive(true);
+                cheatButton.interactable = true;
+
+                sequenceIndex = 0;
+            }
+        }
+        else
+        {
+            sequenceIndex = 0;
+        }
+
+        // Desktop/Laptop Touch
+        if (Input.GetMouseButtonDown(0)) // Check if left mouse button is clicked
+        {
+            Vector3 mousePos = Input.mousePosition; // Get mouse position
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            int input = GetMouseInput();
+            
+            if (input == sequence2[sequenceIndex2])
+            {
+                sequenceIndex2++;
+
+                if (sequenceIndex2 == sequence2.Length)
+                {
+                    cheatPanel.SetActive(true);
+                    cheatButton.interactable = true;
+
+                    sequenceIndex2 = 0;
+                }
+            }
+            else
+            {
+                sequenceIndex2 = 0;
+            }
+        }
+
         totalCoinsText.text = CurrencySystem.Instance.TotalCoins.ToString();
         livesText.text = LevelManager.Instance.TotalLives.ToString();
         int waveNum = LevelManager.Instance.CurrentWave;
         StartCoroutine(ExecuteAfterTime(1f, waveNum));
+    }
+
+    private int GetMouseInput()
+    {
+        Vector2 mousePosition = Input.mousePosition;
+
+        if (mousePosition.y > Screen.height / 2) // Mouse is in the upper half of the screen
+        {
+            if (mousePosition.x < Screen.width / 2) // Mouse is in the left third of the upper half
+            {
+                return 1; // Up
+            }
+            else if (mousePosition.x > Screen.width / 2) // Mouse is in the right third of the upper half
+            {
+                return 4; // Right
+            }
+        }
+        else if (mousePosition.y < Screen.height / 2) // Mouse is in the lower half of the screen
+        {
+            if (mousePosition.x < Screen.width / 2) // Mouse is in the left third of the lower half
+            {
+                return 3; // Left
+            }
+            else if (mousePosition.x > Screen.width / 2) // Mouse is in the right third of the lower half
+            {
+                return 2; // Down
+            }
+        }
+
+        return 0; // No direction detected
     }
 
     private void Start()
@@ -113,6 +215,59 @@ public class UIManager : Singleton<UIManager>
             --seconds;
             StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
         }
+    }
+
+    public void CheatCode() 
+    {
+        int UnlockedStage = PlayerPrefs.GetInt("stageReached");
+        
+        if (UnlockedStage <= StageToUnlock)
+        {
+            ResumeTime();
+
+            PlayerPrefs.SetInt("stageReached", StageToUnlock);
+            PlayerPrefs.SetInt("storyReached", StoryToUnlock);
+            PlayerPrefs.SetInt("FolktaleBookSelector", FolktaleToUnlock);
+            PlayerPrefs.SetInt("LegendBookSelector", LegendToUnlock);
+            PlayerPrefs.SetInt("RiddleBookSelector", RiddleToUnlock);
+            PlayerPrefs.SetInt("HumanBookSelector", HumanToUnlock);
+            PlayerPrefs.SetInt("ToresBookSelector", ToresToUnlock);
+            PlayerPrefs.SetInt("MooltosBookSelector", MooltosToUnlock);
+            PlayerPrefs.SetInt("SkipIntroductionStory", SkipIntroductionStory);
+            PlayerPrefs.SetInt("SkipTutorialStage", SkipTutorialStage);
+            PlayerPrefs.SetInt("SkipTutorialScene", SkipTutorialScene);
+            PlayerPrefs.SetInt("SkipStoryUnlock", SkipStoryUnlock);
+            PlayerPrefs.SetInt("CabinButtonInteract", CabinButtonInteract);
+            PlayerPrefs.SetInt("TowerToUnlock", TowerToUnlock);
+            
+            int FolktaleCurrentReward = PlayerPrefs.GetInt("FolktaleNewReward");
+            int RiddleCurrentReward = PlayerPrefs.GetInt("RiddleNewReward");
+            int LegendCurrentReward = PlayerPrefs.GetInt("LegendNewReward");
+            int HumanCurrentReward = PlayerPrefs.GetInt("HumanNewReward");
+            int ToresCurrentReward = PlayerPrefs.GetInt("ToresNewReward");
+            int MooltosCurrentReward = PlayerPrefs.GetInt("MooltosNewReward");
+            int EncyclopediaCurrentReward = PlayerPrefs.GetInt("EncyclopediaNewReward");
+            int BookshelfCurrentReward = PlayerPrefs.GetInt("BookshelfNewReward");
+
+            if (FolktaleCurrentReward != 1)
+                PlayerPrefs.SetInt("FolktaleNewReward", FolktaleNewReward);
+            if (RiddleCurrentReward != 1)
+                PlayerPrefs.SetInt("RiddleNewReward", RiddleNewReward);
+            if (LegendCurrentReward != 1)
+                PlayerPrefs.SetInt("LegendNewReward", LegendNewReward);
+            if (HumanCurrentReward != 1)
+                PlayerPrefs.SetInt("HumanNewReward", HumanNewReward);
+            if (ToresCurrentReward != 1)
+                PlayerPrefs.SetInt("ToresNewReward", ToresNewReward);
+            if (MooltosCurrentReward != 1)
+                PlayerPrefs.SetInt("MooltosNewReward", MooltosNewReward);
+            if (EncyclopediaCurrentReward != 1)
+                PlayerPrefs.SetInt("EncyclopediaNewReward", EncyclopediaNewReward);
+            if (BookshelfCurrentReward != 1)
+                PlayerPrefs.SetInt("BookshelfNewReward", BookshelfNewReward);
+        }
+
+        fader.FadeTo(GoToAfterWin);
     }
 
     public void ShowWaveText() 
@@ -327,6 +482,32 @@ public class UIManager : Singleton<UIManager>
             PlayerPrefs.SetInt("SkipStoryUnlock", SkipStoryUnlock);
             PlayerPrefs.SetInt("CabinButtonInteract", CabinButtonInteract);
             PlayerPrefs.SetInt("TowerToUnlock", TowerToUnlock);
+            
+            PlayerPrefs.GetInt("FolktaleNewReward");
+            PlayerPrefs.GetInt("RiddleNewReward");
+            PlayerPrefs.GetInt("LegendNewReward");
+            PlayerPrefs.GetInt("HumanNewReward");
+            PlayerPrefs.GetInt("ToresNewReward");
+            PlayerPrefs.GetInt("MooltosNewReward");
+            PlayerPrefs.GetInt("EncyclopediaNewReward");
+            PlayerPrefs.GetInt("BookshelfNewReward");
+
+            if (FolktaleNewReward != 1)
+                PlayerPrefs.SetInt("FolktaleNewReward", FolktaleNewReward);
+            if (RiddleNewReward != 1)
+                PlayerPrefs.SetInt("RiddleNewReward", RiddleNewReward);
+            if (LegendNewReward != 1)
+                PlayerPrefs.SetInt("LegendNewReward", LegendNewReward);
+            if (HumanNewReward != 1)
+                PlayerPrefs.SetInt("HumanNewReward", HumanNewReward);
+            if (ToresNewReward != 1)
+                PlayerPrefs.SetInt("ToresNewReward", ToresNewReward);
+            if (MooltosNewReward != 1)
+                PlayerPrefs.SetInt("MooltosNewReward", MooltosNewReward);
+            if (EncyclopediaNewReward != 1)
+                PlayerPrefs.SetInt("EncyclopediaNewReward", EncyclopediaNewReward);
+            if (BookshelfNewReward != 1)
+                PlayerPrefs.SetInt("BookshelfNewReward", BookshelfNewReward);
         }
 
         fader.FadeTo(GoToAfterWin);
