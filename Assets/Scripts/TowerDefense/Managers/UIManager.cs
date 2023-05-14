@@ -316,7 +316,7 @@ public class UIManager : Singleton<UIManager>
                 {
                     PlayerPrefs.SetInt("Legends" + i, 1);
                 }
-                
+
                 for (int i = ToresCurrentUnlocked; i < ToresToUnlock; i++)
                 {
                     PlayerPrefs.SetInt("Tores" + i, 1);
@@ -587,14 +587,8 @@ public class UIManager : Singleton<UIManager>
                 PlayerPrefs.SetInt("Tores0", 1);
                 PlayerPrefs.SetInt("Mooltos0", 1);
             }
-            else
+            else if (SceneManager.GetActiveScene().name == "Stage1")
             {
-                int FolktalesBooksNotified = PlayerPrefs.GetInt("FolktaleBookSelector") - 1;
-                int RiddlesBooksNotified = PlayerPrefs.GetInt("RiddleBookSelector") - 1;
-                int LegendsBooksNotified = PlayerPrefs.GetInt("LegendBookSelector") - 1;
-                int ToresBooksNotified = PlayerPrefs.GetInt("ToresBookSelector") - 1;
-                int MooltosBooksNotified = PlayerPrefs.GetInt("MooltosBookSelector") - 1;
-
                 for (int i = FolktaleCurrentUnlocked; i < FolktaleToUnlock; i++)
                 {
                     PlayerPrefs.SetInt("Folktales" + i, 1);
@@ -609,7 +603,24 @@ public class UIManager : Singleton<UIManager>
                 {
                     PlayerPrefs.SetInt("Legends" + i, 1);
                 }
+            }
+            else 
+            {
+                for (int i = FolktaleCurrentUnlocked; i < FolktaleToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Folktales" + i, 1);
+                }
 
+                for (int i = RiddleCurrentUnlocked; i < RiddleToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Riddles" + i, 1);
+                }
+
+                for (int i = LegendCurrentUnlocked; i < LegendToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Legends" + i, 1);
+                }
+                
                 for (int i = ToresCurrentUnlocked; i < ToresToUnlock; i++)
                 {
                     PlayerPrefs.SetInt("Tores" + i, 1);
