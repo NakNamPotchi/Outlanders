@@ -10,7 +10,8 @@ public class FolktaleLevelSelector : MonoBehaviour
     public SceneFader fader;
 
     public Button[] levelButtons;
-    public TextMeshProUGUI[] levelTexts;
+    public Image[] levelImages;
+    [SerializeField] private Sprite[] unlockedFolktalesIcons;
 
     private int FolktaleBookSelector;
 
@@ -22,12 +23,12 @@ public class FolktaleLevelSelector : MonoBehaviour
         {
             if (i + 1 > FolktaleBookSelector)
             {
-                levelTexts[i].text = "?";
                 levelButtons[i].interactable = false;
             }
             else
             {
                 levelButtons[i].interactable = true;
+                levelImages[i].sprite = unlockedFolktalesIcons[i];
             }
         }
     }
