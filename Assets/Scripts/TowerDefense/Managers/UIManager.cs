@@ -48,6 +48,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] public int ToresToUnlock;
     [SerializeField] public int MooltosToUnlock;
     [SerializeField] public int TowerToUnlock;
+
+    [Header("PlayerPrefs Notification")]
     [SerializeField] public int FolktaleNewReward;
     [SerializeField] public int RiddleNewReward;
     [SerializeField] public int LegendNewReward;
@@ -182,7 +184,7 @@ public class UIManager : Singleton<UIManager>
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == "TutorialStage" || SceneManager.GetActiveScene().name == "Stage0")
+        if (SceneManager.GetActiveScene().name == "Stage0")
         {
             int seconds = 16;
             StartCoroutine(ExecuteCountdownAfterTime(seconds, 1f));
@@ -219,12 +221,17 @@ public class UIManager : Singleton<UIManager>
 
     public void CheatCode() 
     {
+        ResumeTime();
         int UnlockedStage = PlayerPrefs.GetInt("stageReached");
+
+        int FolktaleCurrentUnlocked = PlayerPrefs.GetInt("FolktaleBookSelector");
+        int LegendCurrentUnlocked = PlayerPrefs.GetInt("LegendBookSelector");
+        int RiddleCurrentUnlocked = PlayerPrefs.GetInt("RiddleBookSelector");
+        int ToresCurrentUnlocked = PlayerPrefs.GetInt("ToresBookSelector");
+        int MooltosCurrentUnlocked = PlayerPrefs.GetInt("MooltosBookSelector");
         
         if (UnlockedStage <= StageToUnlock)
         {
-            ResumeTime();
-
             PlayerPrefs.SetInt("stageReached", StageToUnlock);
             PlayerPrefs.SetInt("storyReached", StoryToUnlock);
             PlayerPrefs.SetInt("FolktaleBookSelector", FolktaleToUnlock);
@@ -265,6 +272,61 @@ public class UIManager : Singleton<UIManager>
                 PlayerPrefs.SetInt("EncyclopediaNewReward", EncyclopediaNewReward);
             if (BookshelfCurrentReward != 1)
                 PlayerPrefs.SetInt("BookshelfNewReward", BookshelfNewReward);
+
+            if (SceneManager.GetActiveScene().name == "Stage0")
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    PlayerPrefs.SetInt("Humans" + i, 1);
+                }
+
+                PlayerPrefs.SetInt("Tores0", 1);
+                PlayerPrefs.SetInt("Mooltos0", 1);
+            }
+            else if (SceneManager.GetActiveScene().name == "Stage1")
+            {
+                for (int i = FolktaleCurrentUnlocked; i < FolktaleToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Folktales" + i, 1);
+                }
+
+                for (int i = RiddleCurrentUnlocked; i < RiddleToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Riddles" + i, 1);
+                }
+
+                for (int i = LegendCurrentUnlocked; i < LegendToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Legends" + i, 1);
+                }
+            }
+            else 
+            {
+                for (int i = FolktaleCurrentUnlocked; i < FolktaleToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Folktales" + i, 1);
+                }
+
+                for (int i = RiddleCurrentUnlocked; i < RiddleToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Riddles" + i, 1);
+                }
+
+                for (int i = LegendCurrentUnlocked; i < LegendToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Legends" + i, 1);
+                }
+                
+                for (int i = ToresCurrentUnlocked; i < ToresToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Tores" + i, 1);
+                }
+
+                for (int i = MooltosCurrentUnlocked; i < MooltosToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Mooltos" + i, 1);
+                }
+            }
         }
 
         fader.FadeTo(GoToAfterWin);
@@ -465,6 +527,12 @@ public class UIManager : Singleton<UIManager>
     {
         int UnlockedStage = PlayerPrefs.GetInt("stageReached");
 
+        int FolktaleCurrentUnlocked = PlayerPrefs.GetInt("FolktaleBookSelector");
+        int LegendCurrentUnlocked = PlayerPrefs.GetInt("LegendBookSelector");
+        int RiddleCurrentUnlocked = PlayerPrefs.GetInt("RiddleBookSelector");
+        int ToresCurrentUnlocked = PlayerPrefs.GetInt("ToresBookSelector");
+        int MooltosCurrentUnlocked = PlayerPrefs.GetInt("MooltosBookSelector");
+
         Time.timeScale = 1f;
         if (UnlockedStage <= StageToUnlock && LevelManager.Instance.CurrentWave == Spawner.totalWave + 1 && Spawner._enemiesRemaining < 1)
         {
@@ -508,6 +576,50 @@ public class UIManager : Singleton<UIManager>
                 PlayerPrefs.SetInt("EncyclopediaNewReward", EncyclopediaNewReward);
             if (BookshelfNewReward != 1)
                 PlayerPrefs.SetInt("BookshelfNewReward", BookshelfNewReward);
+
+            if (SceneManager.GetActiveScene().name == "Stage0")
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    PlayerPrefs.SetInt("Humans" + i, 1);
+                }
+
+                PlayerPrefs.SetInt("Tores0", 1);
+                PlayerPrefs.SetInt("Mooltos0", 1);
+            }
+            else
+            {
+                int FolktalesBooksNotified = PlayerPrefs.GetInt("FolktaleBookSelector") - 1;
+                int RiddlesBooksNotified = PlayerPrefs.GetInt("RiddleBookSelector") - 1;
+                int LegendsBooksNotified = PlayerPrefs.GetInt("LegendBookSelector") - 1;
+                int ToresBooksNotified = PlayerPrefs.GetInt("ToresBookSelector") - 1;
+                int MooltosBooksNotified = PlayerPrefs.GetInt("MooltosBookSelector") - 1;
+
+                for (int i = FolktaleCurrentUnlocked; i < FolktaleToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Folktales" + i, 1);
+                }
+
+                for (int i = RiddleCurrentUnlocked; i < RiddleToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Riddles" + i, 1);
+                }
+
+                for (int i = LegendCurrentUnlocked; i < LegendToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Legends" + i, 1);
+                }
+
+                for (int i = ToresCurrentUnlocked; i < ToresToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Tores" + i, 1);
+                }
+
+                for (int i = MooltosCurrentUnlocked; i < MooltosToUnlock; i++)
+                {
+                    PlayerPrefs.SetInt("Mooltos" + i, 1);
+                }
+            }
         }
 
         fader.FadeTo(GoToAfterWin);

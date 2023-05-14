@@ -10,7 +10,8 @@ public class LegendLevelSelector : MonoBehaviour
     public SceneFader fader;
 
     public Button[] levelButtons;
-    public TextMeshProUGUI[] levelTexts;
+    public Image[] levelImages;
+    [SerializeField] private Sprite[] unlockedLegendsIcons;
 
     private int LegendBookSelector;
 
@@ -22,12 +23,12 @@ public class LegendLevelSelector : MonoBehaviour
         {
             if (i + 1 > LegendBookSelector)
             {
-                levelTexts[i].text = "?";
                 levelButtons[i].interactable = false;
             }
             else
             {
                 levelButtons[i].interactable = true;
+                levelImages[i].sprite = unlockedLegendsIcons[i];
             }
         }
     }
