@@ -48,4 +48,4 @@ The game is made using softwares such as Unity, an all-around engine that uses C
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To modify the content of the Unity project, you will need to install the latest version of <a href="https://unity.com/download">Unity Hub</a> and <a href="https://unity.com/releases/editor/qa/lts-releases?version=2021.3">Unity LTS Version 2021.3.19f1</a>.
+To modify the content of the Unity project, you will need to install the latest version of <a href="https://unity.com/download">Unity Hub</a> and <a href="https://unity.com/releases/editor/qa/lts-releases?version=2021.3">Unity LTS Version 2021.3.19f1</a> with Android Build Support.
