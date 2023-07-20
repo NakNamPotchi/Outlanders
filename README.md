@@ -1,4 +1,12 @@
-# Outlanders
+<br />
+<div align="center">
+  <a href="https://github.com/NakNamPotchi/Outlanders">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+
+<h3 align="center">Outlanders</h3>
+
 
 Made by 4th Year Computer Science students of Arellano University – Juan Sumulong Campus 
 
