@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/NakNamPotchi/Outlanders">
-    <img src="images/logo.png" alt="Logo" width="180" height="180">
+    <img src="Assets/App_icon/logo.png" alt="Logo" width="180" height="180">
   </a>
   <h2 align="center">Outlanders</h2>
 </div>
